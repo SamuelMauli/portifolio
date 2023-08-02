@@ -21,11 +21,14 @@ body {
 /* Header */
 
 header {
-    background-color: #000;
+    background-color: #111;
     padding: 10px;
     display: flex;
     align-items: center;
+    position: fixed;
     justify-content: space-around;
+    z-index: 9999; /* Valor alto para ficar acima de outros elementos */
+    width: 89%;
 }
 
 header h1 {
@@ -72,7 +75,7 @@ header .navegacao-primaria li a:hover::after {
 
 .section-div{
     animation: initialize .7s forwards;
-    background-color: #000;
+    background-color: #111;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
@@ -163,6 +166,7 @@ main .sobre {
 
 .sobre_titulo {
     margin: 30px 0;
+    padding: 50px;
     grid-column: 1/-1;
     text-align: center;
     color: #fff;
@@ -780,8 +784,7 @@ form {
 /* FOOTER */
 
 footer {
-    background-color: #000000;
-    padding: 30px;
+    background-color: #111;
 }
 
 .footer_sociais {
