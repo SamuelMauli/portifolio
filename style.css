@@ -27,8 +27,9 @@ header {
     align-items: center;
     position: fixed;
     justify-content: space-around;
-    z-index: 9999; /* Valor alto para ficar acima de outros elementos */
-    width: 89%;
+    z-index: 9999;
+    width: 63%;
+    animation: initialize .7s forwards;
 }
 
 header h1 {
@@ -202,7 +203,6 @@ main .sobre {
 
 .sobre img {
     animation: ladoSecao .5s ease-in-out forwards;
-    cursor: pointer;
     grid-row: 2;
     max-width: 100%;
     border-radius: 4px;
@@ -310,6 +310,7 @@ main .sobre {
     header {
         justify-content: space-between;
         padding: 30px 70px;
+        width: 5000px;
     }
 
     header .navegacao-primaria {
@@ -319,6 +320,18 @@ main .sobre {
     header i {
         color: #f7f7f7;
         font-size: 3rem;
+        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+        position: absolute;
+        display: grid;
+        top: 80px;
+        color: white;
+        z-index: 1;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 20px;
+        animation: sobeSecao .8s ease-in-out forwards;
     }
 
     header .navegacao-primaria.ativado {
@@ -772,7 +785,7 @@ form {
   .error {
     text-align: center;
   }
-  
+
   .success {
     color: greenyellow;
   }
