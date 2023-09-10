@@ -214,4 +214,8 @@ function writeTitle() {
     success: "<h1 class='success'>Mensagem enviada!</h1>",
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
   });
+<<<<<<< HEAD
   formSubmit.init();
+=======
+  formSubmit.init();
+>>>>>>> 8f7ffb490378df8fbfc177fd82260c9facd10079
