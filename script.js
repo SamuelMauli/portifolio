@@ -214,8 +214,24 @@ function writeTitle() {
     success: "<h1 class='success'>Mensagem enviada!</h1>",
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
   });
-<<<<<<< HEAD
   formSubmit.init();
-=======
-  formSubmit.init();
->>>>>>> 8f7ffb490378df8fbfc177fd82260c9facd10079
+
+  function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Adicione um evento de clique aos links da navegação
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.navegacao-primaria a');
+
+        links.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Impede o comportamento padrão do link
+                const targetSectionId = this.getAttribute('href').substring(1); // Obtém o ID da seção alvo
+                scrollToSection(targetSectionId); // Chama a função de deslocamento suave
+            });
+        });
+    });
