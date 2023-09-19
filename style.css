@@ -73,6 +73,7 @@ header .navegacao-primaria li a:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
+  margin-bottom: 50px;
   align-items: center;
   gap: 60px;
   padding: 60px;
@@ -110,7 +111,7 @@ header .navegacao-primaria li a:hover::after {
 }
 
 .section-div img {
-  max-width: 80%;
+  max-width: 100%;
   padding-bottom: 50px;
 }
 
@@ -146,6 +147,7 @@ header .navegacao-primaria li a:hover::after {
 main {
   background-color: #111;
   color: white;
+  margin-bottom: 25px;
 }
 
 main .sobre {
@@ -156,26 +158,18 @@ main .sobre {
 }
 
 .sobre_titulo {
-    margin: 30px auto;
-    padding: 50px;
-    text-align: center;
-    color: #fff;
-    grid-column: 1/-1; 
-  }
-  
+  margin: 30px auto;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  grid-column: 1/-1;
+}
 
 .sobre_titulo h1 {
   font-size: 2.5rem;
   color: #35a4dc;
   margin-bottom: 15px;
   font-family: "Berkshire Swash", cursive;
-}
-
-.sobre_titulo p {
-  color: #707070;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  position: relative;
 }
 
 .sobre_titulo div {
@@ -196,7 +190,7 @@ main .sobre {
   animation: ladoSecao 0.5s ease-in-out forwards;
   cursor: pointer;
   grid-row: 2;
-  max-width: 100%;
+  max-width: 30%;
   border-radius: 4px;
   filter: blur(0);
 }
@@ -242,6 +236,36 @@ main .sobre {
   font-size: 1.3rem;
   grid-row: 2;
   grid-column: 1/-1;
+  padding: 50px;
+}
+
+/* Sobre Info*/
+.sobre_info {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  gap: 15px;
+  align-items: center;
+  padding: 50px;
+}
+
+.sobre_info i {
+  color: #35a4dc;
+  display: inline-block;
+  padding-right: 15px;
+  font-size: 1.5rem;
+}
+
+.sobre_info p {
+  font-size: 1rem;
+}
+
+.sobre_titulo p {
+  color: #707070;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .sobre_info {
@@ -264,7 +288,7 @@ main .sobre {
   font-size: 0.9rem;
 }
 
-@keyframes sobeSecao {
+.sobre_infor @keyframes sobeSecao {
   from {
     transition: 0.5s;
     transform: translate3d(60px, 0, 0);
@@ -294,9 +318,9 @@ main .sobre {
   }
 
   .section-div {
-    background-image: url(eu5.png);
+    background-image: url(eu3.png);
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: right;
   }
 
   header {
@@ -325,12 +349,13 @@ main .sobre {
     font-weight: bold;
     border-radius: 0 0 4px 4px;
     right: 20px;
+    margin-top: 25px;
     animation: sobeSecao 0.8s ease-in-out forwards;
   }
 
   .sobre img {
     grid-column: 1/-1;
-    justify-self: center;
+    justify-self: right;
   }
 
   .sobre_conteudo {
