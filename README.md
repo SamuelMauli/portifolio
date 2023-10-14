@@ -1,4 +1,4 @@
-# portifolio-1.0
+# Portifolio
 
 ## Desenvolvedor | JavaScript | HTML | CSS | Python | C | SQL
 
