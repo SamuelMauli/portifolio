@@ -45,10 +45,10 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 
 ## Certificações
 
--Programação Python
--Desenvolvimento Web básico
--Banco de dados MySQL, SQLServer, Oracle Database.
--Curso  de SQL ePL/SQL
+- Programação Python
+- Desenvolvimento Web básico
+- Banco de dados MySQL, SQLServer, Oracle Database.
+- Curso  de SQL ePL/SQL
 - Microsoft Excel
 - Trello (Organização de Rotinas)
 - Microsoft PowerPoint
