@@ -175,43 +175,38 @@
               
                 <div class="item custom-card" style="background-image: url(IMG/microsoft-logo.jpg);">
                     <div class="item-desc">
-                        <h3 class="custom2">Clone Microsoft</h3>
-                        <p class="custom2">Foi um projeto desenvolvido para a matéria de desenvolvimento Front-End, utilizando tecnologias de HTML, CSS e JS.
-                        o site é simples porem atende todas as requisições da matéria.</p>
+                        <h3 class="custom2">Clone da Microsoft</h3>
+                        <p class="custom2">Foi um projeto desenvolvido para a disciplina de Desenvolvimento Front-End, utilizando tecnologias de HTML, CSS e JS. O site é simples, porém atende a todas as exigências da disciplina.</p>
                         <a href="https://github.com/SamuelMauli/Clone_Microsoft" target="_blank" class="custom-button">Abrir no GitHub</a>
+                    </div>
                 </div>
-              </div>
-
-              <div class="item custom-card" style="background-image: url(IMG/Insano_capa.png);">
-                <div class="item-desc">
-                  <h3 class="custom">Site Atlética</h3>
-                  <p class="custom2">Site desenvolvido para a atlética da Universidade Positivo para os cursos de tecnologia</p>
-                  <a href="https://github.com/SamuelMauli/AAATI-Up" target="_blank" class="custom-button">Abrir no GitHub</a>
+                
+                <div class="item custom-card" style="background-image: url(IMG/Insano_capa.png);">
+                    <div class="item-desc">
+                        <h3 class="custom">Site da Atlética</h3>
+                        <p class="custom2">Site desenvolvido para a atlética da Universidade Positivo para os cursos de tecnologia.</p>
+                        <a href="https://github.com/SamuelMauli/AAATI-Up" target="_blank" class="custom-button">Abrir no GitHub</a>
+                    </div>
                 </div>
-              </div>
-
-              <div class="item custom-card" style="background-image: url(IMG/junto.png);">
-                <div class="item-desc">
-                    <h3 class="custom2">Hackthon</h3>
-                    <p class="custom2">Desenvolvido um sistema de aviso de sinistros para a competição do programa de estágio da Junto seguros, resultando na primeira colocaçao. O programa foi realizado em dupla em 5 horas de desenvolvimento utilizando tecnologias de Typescript, React, Express, Postman entre outras.</p>
-                    <a href="https://github.com/SamuelMauli/Hackthon" target="_blank" class="custom-button">Abrir no GitHub</a>
+                
+                <div class="item custom-card" style="background-image: url(IMG/junto.png);">
+                    <div class="item-desc">
+                        <h3 class="custom2">Hackathon</h3>
+                        <p class="custom2">Desenvolvemos um sistema de aviso de sinistros para a competição do programa de estágio da Junto Seguros, resultando na primeira colocação. O programa foi realizado em dupla em 5 horas de desenvolvimento, utilizando tecnologias como TypeScript, React, Express e Postman, entre outras.</p>
+                        <a href="https://github.com/SamuelMauli/Hackathon" target="_blank" class="custom-button">Abrir no GitHub</a>
+                    </div>
                 </div>
+                
+                <div class="item custom-card" style="background-image: url(IMG/JuntoSeguros.jpeg);">
+                    <div class="item-desc">
+                        <h3 class="custom">Pré-Hackathon</h3>
+                        <p class="custom2">Desenvolvido como uma etapa de pré-seleção, este sistema permitia a criação de sinistros, além de uma tela de cadastro e login, utilizando HTML, CSS, JS e Python para a parte do backend. Foi a etapa anterior ao Hackathon, na qual também obtive sucesso.</p>
+                        <a href="https://github.com/SamuelMauli/Hackathon" target="_blank" class="custom-button">Abrir no GitHub</a>
+                    </div>
+                </div>                
             </div>
-
-            <div class="item custom-card" style="background-image: url(IMG/JuntoSegutos.jpeg);">
-                <div class="item-desc">
-                    <h3 class="custom">Pre-Hackthon</h3>
-                    <p class="custom2">desenvolvido um sistema de aviso de sinistros para a competição do programa de estágio da Junto seguros, resultando na primeira colocaçao. O programa foi realizado em dupla em 5 horas de desenvolvimento utilizando tecnologias de Typescript, React, Express, Postman entre outras.</p>
-                    <a href="https://github.com/SamuelMauli/Hackthon" target="_blank" class="custom-button">Abrir no GitHub</a>
-                </div>
-            </div>
-
-                      
-        </div>
-
         </section>
     
-
     <script>
         $(document).ready(function () {
         $(".custom-carousel").owlCarousel({
@@ -239,7 +234,7 @@
                 <form action="mailto::samuel.mauli@gmail.com.br" method="POST" enctype="text/plain">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required />
-                    <label for "email">E-mail</label>
+                    <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" required />
                     <label for="telefone">Telefone</label>
                     <input type="tel" name="telefone" id="telefone" required />
@@ -260,15 +255,10 @@
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            // Simule um envio de formulário bem-sucedido com uma mensagem de popup.
-            // Neste ponto, você pode usar uma biblioteca de notificação ou implementar seu próprio popup.
             alert("Mensagem enviada com sucesso! Obrigado pelo contato. :)");
 
-            // Limpe os campos do formulário.
             form.reset();
             
-            // Envie os dados do formulário para o servidor FormSubmit.
-            // Isso deve ser feito por meio de uma solicitação AJAX, mas o exemplo acima é apenas uma simulação.
             const formData = new FormData(form);
             fetch(form.action, {
                 method: "POST",
