@@ -13,7 +13,7 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 ## Experiência
 
 ### Technical Consultant at TRI CS Inc.
-#### Abril de 2023 - Presente (5 meses)
+#### Abril de 2023 - Agosto (5 meses)
 - Atuando como Consultor Técnico na TRI CS Inc.
 
 ### Técnico de Suporte N1 at ICI - Instituto Curitiba de Informática
@@ -45,6 +45,10 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 
 ## Certificações
 
+-Programação Python
+-Desenvolvimento Web básico
+-Banco de dados MySQL, SQLServer, Oracle Database.
+-Curso  de SQL ePL/SQL
 - Microsoft Excel
 - Trello (Organização de Rotinas)
 - Microsoft PowerPoint
