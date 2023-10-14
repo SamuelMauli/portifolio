@@ -893,7 +893,6 @@ button {
 
 .contato {
   display: grid;
-  place-iten: center;
   background: #111;
   margin-top: 50px;
   margin-bottom: 50px;
