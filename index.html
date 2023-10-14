@@ -6,8 +6,9 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
-    <script src="JavaScript1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <header>
     <h1>Samuel <span>Mauli</span></h1>
@@ -16,6 +17,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">sobre</a></li>
             <li><a href="#resume">Curriculo</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
@@ -25,7 +27,7 @@
     <section aria-label="Seção Curriculo dowload Samuel" class="section-div" id="home">
         <div>
             <h2><span>Hello world!</span> sou um programador </h2>
-            <h2 class="digitando">Front-End e Back-End</h2>
+            <h3 class="digitando">Front-End</h3>
             <p>Me chamo Samuel tenho 19 anos, sou estudante de ciência da computação, e estou buscando uma oportunidade como desenvolvedor!!</p>
             <a href="Samuel Giuseppe Mauli.pdf" download>Baixar Cv</a>
 
@@ -36,7 +38,7 @@
     <section class="sobre" id="about">
         <main>
             <div class="sobre_titulo">
-                <h1>sobre mim</h1>
+                <h1>Sobre mim</h1>
                 <p>- Perfil Profissional -</p>
                 <div aria-label="Seção apenas de ilustrações de botões">
                     <span></span>
@@ -70,31 +72,22 @@
     
 
     <section class="services">
-        <div class="sobre_titulo">
-            <h1>Um pouco mais</h1>
-            <p></p>
-            <div aria-label="Seção apenas de ilustrações de botões">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
         <div class="my_services">
             <ul aria-label="Navegação secundaria">
                 <li>
                     <i class="fa-solid fa-code"></i>
                     <h3> Front-End development</h3>
-                    <p>Comprometido com o desenvolvimento front-end, busco atualizar-me em HTML, CSS e JavaScript, visando criar interfaces responsivas e intuitivas.</p>
+                    <p>Comprometido com o desenvolvimento front-end, busco atualizar-me em HTML, CSS e JavaScript, React visando criar interfaces responsivas e intuitivas.</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-terminal"></i>
                     <h3>Back-End development</h3>
-                    <p>Focado no desenvolvimento back-end, aprimoro minhas habilidades em Python, C# e SQL buscando soluções eficientes e seguras, integrando bancos de dados e APIs.</p>
+                    <p>Focado no desenvolvimento back-end, aprimoro minhas habilidades em Python e C# buscando soluções eficientes e seguras, integrando bancos de dados e APIs.</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-layer-group"></i>
                     <h3>Database</h3>
-                    <p>Tenho conhecimentos em gerenciamento de bancos de dados e consultas SQL, buscando aprimorar minhas habilidades nessa área. Estou pronto para integrar bancos de dados e garantir a eficiência dos sistemas.</p>
+                    <p>Tenho conhecimentos em  SQL e PL/SQL, gerenciamento de bancos de dados e consultas SQL, buscando aprimorar minhas habilidades nessa área. Estou pronto para integrar bancos de dados e garantir a eficiência dos sistemas.</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-users"></i>
@@ -117,7 +110,7 @@
     <section class="my_resume" id="resume">
         <div class="sobre_titulo">
             <h1>Meu Curriculo</h1>
-            <p>Um pouco sobre minhas experiencias profissionais e vida academica</p>
+            <p>- Um pouco sobre minhas experiencias profissionais e vida academica -</p>
             <div aria-label="">
                 <span></span>
                 <span></span>
@@ -130,7 +123,7 @@
                 <div>
                     <span>2023-2023</span>
                 <h3>Oracle Technical Consultant Tainee - TRI CS Inc.</h3>
-                <p>Como Consultor Oracle Trainee na TRI CS Inc., sou especializado em fornecer suporte, implementação e resolução de problemas em sistemas Oracle. Trabalho em colaboração com a equipe sênior para implementar soluções seguindo as melhores práticas e requisitos do cliente.</p>
+                <p>Como Consultor Oracle Trainee na TRI CS Inc. Tive a uma vivencia em fornecer suporte, implementação e resolução de problemas em sistemas Oracle. Trabalho em colaboração com a equipe sênior para implementar soluções seguindo as melhores práticas e requisitos do cliente.</p>
 
                 </div>
                 <div>
@@ -148,14 +141,14 @@
             <h2 class="education"><i class="fa-solid fa-book"></i>EDUCAÇÃO</h2>
             <div class="education_content">
                 <div>
-                    <span>2022 - 2026</span>
+                    <span>2023 - 2027</span>
                     <h3>Bacharelado - Universidade Positivo</h3>
-                    <p>Estou no 4º período da graduação em Ciências da Computação, com habilidades sólidas em programação, desenvolvimento web e banco de dados. Meu entusiasmo pela área e experiência em projetos práticos me tornam um candidato preparado para contribuir efetivamente como programador, buscando sempre aprender e me aprimorar para enfrentar desafios e colaborar no crescimento da empresa.</p>
+                    <p>Estou no 3º período da graduação em Ciências da Computação, com habilidades sólidas em programação, desenvolvimento web e banco de dados. Meu entusiasmo pela área e experiência em projetos práticos me tornam um candidato preparado para contribuir efetivamente como programador, buscando sempre aprender e me aprimorar para enfrentar desafios e colaborar no crescimento da empresa.</p>
                 </div>
                 <div>
                     <span>2022 - 2023</span>
                     <h3>Cursos - Udemy</h3>
-                    <p>Realizei diversos cursos na Udemy, abrangendo uma ampla gama de habilidades. Como estudante versátil, demonstrei uma facilidade maior em aprender novas tecnologias, incluindo o pacote completo do Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript), Python, SQL e PL/SQL, além de lógica de programação em C#, C e Java. Adquiri conhecimentos essenciais para aplicações práticas e manipulação de dados, me preparando para enfrentar desafios e me destacar como um profissional em constante aprimoramento.</p>
+                    <p>Realizei diversos cursos na Udemy, abrangendo uma ampla gama de habilidades. Como estudante versátil, demonstrei uma facilidade maior em aprender novas tecnologias, incluindo o pacote completo do Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript), Python, SQL e PL/SQL, além de lógica de programação em C#, C e Java, junto com cursos de ITIL, e gestao de tempo para melhorar minhass entregas e meu rendimento. Adquiri conhecimentos essenciais para aplicações práticas e manipulação de dados, me preparando para enfrentar desafios e me destacar como um profissional em constante aprimoramento.</p>
                 </div>
                 <ul>
                     <li><i class="fa-sharp fa-solid fa-circle"></i></li>
@@ -165,19 +158,91 @@
             </div>
         </div>
     </section>
-        
-    <section id="contact">
+
+    <section class="Projetos" id="Projetos">
+        <div class="sobre_titulo">
+            <h1>Meus Projetos</h1>
+            <p>- Um pouco sobre meus projetos que realizei -</p>
+            <div aria-label="">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <section class="game-section">
+            <div class="owl-carousel custom-carousel owl-theme">
+              
+                <div class="item custom-card" style="background-image: url(microsoft-logo.jpg);">
+                    <div class="item-desc">
+                        <h3 class="custom2">Clone Microsoft</h3>
+                        <p class="custom2">Foi um projeto desenvolvido para a matéria de desenvolvimento Front-End, utilizando tecnologias de HTML, CSS e JS.
+                        o site é simples porem atende todas as requisições da matéria.</p>
+                        <a href="https://github.com/SamuelMauli/Clone_Microsoft" target="_blank" class="custom-button">Abrir no GitHub</a>
+                </div>
+              </div>
+
+              <div class="item custom-card" style="background-image: url(Insano_capa.png);">
+                <div class="item-desc">
+                  <h3 class="custom">Site Atlética</h3>
+                  <p class="custom2">Site desenvolvido para a atlética da Universidade Positivo para os cursos de tecnologia</p>
+                  <a href="https://github.com/SamuelMauli/AAATI-Up" target="_blank" class="custom-button">Abrir no GitHub</a>
+                </div>
+              </div>
+
+              <div class="item custom-card" style="background-image: url(junto.png);">
+                <div class="item-desc">
+                    <h3 class="custom2">Hackthon</h3>
+                    <p class="custom2">Desenvolvido um sistema de aviso de sinistros para a competição do programa de estágio da Junto seguros, resultando na primeira colocaçao. O programa foi realizado em dupla em 5 horas de desenvolvimento utilizando tecnologias de Typescript, React, Express, Postman entre outras.</p>
+                    <a href="https://github.com/SamuelMauli/Hackthon" target="_blank" class="custom-button">Abrir no GitHub</a>
+                </div>
+            </div>
+
+            <div class="item custom-card" style="background-image: url(JuntoSegutos.jpeg);">
+                <div class="item-desc">
+                    <h3 class="custom">Pre-Hackthon</h3>
+                    <p class="custom2">desenvolvido um sistema de aviso de sinistros para a competição do programa de estágio da Junto seguros, resultando na primeira colocaçao. O programa foi realizado em dupla em 5 horas de desenvolvimento utilizando tecnologias de Typescript, React, Express, Postman entre outras.</p>
+                    <a href="https://github.com/SamuelMauli/Hackthon" target="_blank" class="custom-button">Abrir no GitHub</a>
+                </div>
+            </div>
+
+                      
+        </div>
+
+        </section>
+    
+
+    <script>
+        $(document).ready(function () {
+        $(".custom-carousel").owlCarousel({
+          autoWidth: true,
+          loop: true,
+        });
+      
+        $(".custom-carousel .item").click(function () {
+          $(".custom-carousel .item").removeClass("active"); // Remove a classe "active" de todos os itens
+          $(this).addClass("active"); // Adiciona a classe "active" ao item clicado
+        });
+      });
+      </script>
+    </section>
+    
+
+    
+<!-- Contatos -->
+<section id="contact">
     <div class="contact">
         <div class="my_contatos">
             <h1>Entre em contato!</h1>
             <p>Caso tenha se interessado me mande uma mensagem.</p>
-            <h2><i class="fa-solid fa-laptop-mobile"></i></i></i></h2>
             <div class="Contatos">
-                    <formaction="https://formsubmit.co/ajax/samuel.mauli@gmail.com.br"method="POST"data-form />
+                <form action="mailto::samuel.mauli@gmail.com.br" method="POST" enctype="text/plain">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required />
-                    <label for="email">E-mail</label>
+                    <label for "email">E-mail</label>
                     <input type="email" name="email" id="email" required />
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" required />
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="mensagem" required></textarea>
                     <button type="submit" data-button>Enviar</button>
@@ -185,16 +250,52 @@
             </div>
         </div>
     </div>
-        </section>
-    
+</section>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form[data-form]");
+        const submitButton = document.querySelector("button[data-button]");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Simule um envio de formulário bem-sucedido com uma mensagem de popup.
+            // Neste ponto, você pode usar uma biblioteca de notificação ou implementar seu próprio popup.
+            alert("Mensagem enviada com sucesso! Obrigado pelo contato. :)");
+
+            // Limpe os campos do formulário.
+            form.reset();
+            
+            // Envie os dados do formulário para o servidor FormSubmit.
+            // Isso deve ser feito por meio de uma solicitação AJAX, mas o exemplo acima é apenas uma simulação.
+            const formData = new FormData(form);
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+            });
+        });
+    });
+</script>
+
+
+    
+<!--Footer-->
     <footer>
         <div class="sobre_titulo">
             <h1>Obrigado!</h1>
             <p>Gostaria de agradecer pelo seu tempo! Espero que tenha gostado!! Este foi meu primeiro projeto. </p>
+            <div aria-label="">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="projetos.js"></script>
+
+
 </body>
 
 </html>
