@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 
 * {
   margin: 0;
@@ -13,7 +15,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-repeat: repeat;
-  background-image: url(mapa.jpg);
+  background-image: url(IMG/mapa.jpg);
   background-size: auto;
 }
 
@@ -93,8 +95,17 @@ header .navegacao-primaria li a:hover::after {
 .section-div div h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 1000;
+  font-size: 30px;
   color: #f7f7f7;
 }
+
+.section-div div h3 {
+  font-weight: 1000;
+  font-size: 6rem;
+  color: #f7f7f7;
+  line-height: 80px
+}
+
 
 .section-div div p {
   font-family: "Poppins", sans-serif;
@@ -673,12 +684,218 @@ main .sobre {
   }
 }
 
+/*Projetoss*/
+
+.Projetos {
+  background-color: #111;
+}
+
+.sobre_titulo {
+  margin: 30px auto;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  grid-column: 1/-1;
+}
+
+.sobre_titulo h1 {
+  font-size: 2.5rem;
+  color: #35a4dc;
+  margin-bottom: 15px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.sobre_titulo div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sobre_titulo span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #35a4dc;
+}
+
+/******* Fonts Import Start **********/
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h3 microsoft{
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+  color: #111;
+} 
+
+button {
+  outline: none !important;
+}
+
+/* -------- Landing page ------- */
+/* Adicione o CSS para o layout dos cards */
+.game-section {
+  padding: 60px 50px;
+  display: flex; /* Tornar os cards flexíveis para ficarem lado a lado */
+  overflow-x: auto; /* Role horizontalmente quando necessário */
+}
+
+/* Adicione o CSS para fazer os cards ficarem lado a lado */
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/* Adicione o CSS para a classe "active" */
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Adicione o CSS para a descrição do card */
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* Adicione o CSS para o texto do card */
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+
+/* Adicione o CSS para a classe "p" dentro da descrição */
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+
+/* Adicione o CSS para a classe "p" dentro da descrição quando o card estiver ativo */
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.game-section .item.active .item-desc-microsoft p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* Adicione o CSS para os pontos do carrossel */
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Adicione um estilo personalizado para o texto dentro do card personalizado */
+.custom-card .custom {
+  color: #ffffff; /* Defina a cor do texto que desejar */
+}
+
+
+.custom-card .custom2 {
+  backdrop-filter: blur(10px); /* Adicione um desfoque ao fundo */
+  background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
+  padding: 10px;
+  color: #000000; /* Cor do texto */
+}
+
+.custom-card .custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Remova a decoração de texto do link */
+  margin-top: 10px; /* Espaçamento superior para separar o botão do texto */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adicione uma transição de cor de fundo */
+}
+
+.custom-card .custom-button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão no hover */
+}
+
+
 /*Cotato*/
 
 .contato {
   display: grid;
-  place-items: center;
   background: #111;
+  margin-top: 50px;
   margin-bottom: 50px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
