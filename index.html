@@ -1,291 +1,471 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-</head>
+  </head>
 
-    <header>
+  <header>
     <h1>Samuel <span>Mauli</span></h1>
     <nav>
-        <ul aria-label="Navegação primária" class="navegacao-primaria">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">sobre</a></li>
-            <li><a href="#resume">Curriculo</a></li>
-            <li><a href="#Projetos">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
+      <ul aria-label="Navegação primária" class="navegacao-primaria">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">sobre</a></li>
+        <li><a href="#resume">Curriculo</a></li>
+        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
     </nav>
-</header>
-<body>
-
-    <section aria-label="Seção Curriculo dowload Samuel" class="section-div" id="home">
-        <div>
-            <h2><span>Hello world!</span> sou um programador </h2>
-            <h3 class="digitando">Front-End</h3>
-            <p>Me chamo Samuel, tenho 19 anos, sou estudante de Ciência da Computação e estou buscando uma oportunidade como desenvolvedor!!</p>
-            <a href="Doc/Samuel Giuseppe Mauli.pdf" download>Baixar Cv</a>
-
-        </div>
-        <img src="IMG/Eu3.png" alt="Este sou eu, bonitão não é?">
+  </header>
+  <body>
+    <section
+      aria-label="Seção Curriculo dowload Samuel"
+      class="section-div"
+      id="home"
+    >
+      <div>
+        <h2><span>Hello world!</span> sou um programador</h2>
+        <h3 class="digitando">Front-End</h3>
+        <p>
+          Me chamo Samuel, tenho 19 anos, sou estudante de Ciência da Computação
+          e estou buscando uma oportunidade como desenvolvedor!!
+        </p>
+        <a href="Doc/Samuel Giuseppe Mauli.pdf" download>Baixar Cv</a>
+      </div>
+      <img src="IMG/Eu3.png" alt="Este sou eu, bonitão não é?" />
     </section>
-    
+
     <section class="sobre" id="about">
-        <main>
-            <div class="sobre_titulo">
-                <h1>Sobre mim</h1>
-                <p>- Perfil Profissional -</p>
-                <div aria-label="Seção apenas de ilustrações de botões">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div class="sobre_conteudo">
-                <img src="IMG/Eu.png" alt="img">
-                <div class="sobre_texto">
-                    <h1>Este sou eu</h1>
-                    <p>Meu nome é Samuel, sou natural de Joinville, SC. Atualmente, estou morando em Curitiba e sou um estudante de graduação no 2º período de Ciência da Computação, após ter me transferido para a Universidade Positivo. Sou extremamente dedicado aos meus estudos e estou sempre em busca de novas oportunidades de aprendizado.
-                        <br>
-                        <br>
-                        Ao longo da minha graduação, tive a incrível oportunidade de me aprofundar em diversas tecnologias, linguagens e áreas dentro do campo da TI. Explorei as redes de computadores, a infraestrutura física e me aventurei em linguagens como Python, JavaScript, C#, Java, HTML, CSS, SQL e PL/SQL, o que me permitiu expandir meus conhecimentos. No entanto, foquei principalmente no desenvolvimento web, Python e SQL.
-                    </p>
-                </div>
-            </div>
-            <div class="sobre_info">
-                <p><i class="fa-solid fa-calendar-days"></i>Data de Nascimento: 07 Jan 2004</p>
-                <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Novas oportunidades: Disponível</p>
-                <p><i class="fa-solid fa-location-dot"></i>Endereço: Curitiba, Brasil</p>
-                <p><i class="fa-sharp fa-solid fa-globe"></i>Línguas Faladas: Português (Brasil), Espanhol, Inglês</p>
-                <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
-                <p><i class="fa-solid fa-phone-volume"></i>Telefone: +55 (47) 99277-0701</p>
-                <p><i class="fa-solid fa-envelope"></i>Email: Samuel.mauli@gmail.com</p>
-            </div>
-        </main>
+      <main>
+        <div class="sobre_titulo">
+          <h1>Sobre mim</h1>
+          <p>- Perfil Profissional -</p>
+          <div aria-label="Seção apenas de ilustrações de botões">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="sobre_conteudo">
+          <img src="IMG/Eu.png" alt="img" />
+          <div class="sobre_texto">
+            <h1>Este sou eu</h1>
+            <p>
+              Meu nome é Samuel, sou natural de Joinville, SC. Atualmente, estou
+              morando em Curitiba e sou um estudante de graduação no 2º período
+              de Ciência da Computação, após ter me transferido para a
+              Universidade Positivo. Sou extremamente dedicado aos meus estudos
+              e estou sempre em busca de novas oportunidades de aprendizado.
+              <br />
+              <br />
+              Ao longo da minha graduação, tive a incrível oportunidade de me
+              aprofundar em diversas tecnologias, linguagens e áreas dentro do
+              campo da TI. Explorei as redes de computadores, a infraestrutura
+              física e me aventurei em linguagens como Python, JavaScript, C#,
+              Java, HTML, CSS, SQL e PL/SQL, o que me permitiu expandir meus
+              conhecimentos. No entanto, foquei principalmente no
+              desenvolvimento web, Python e SQL.
+            </p>
+          </div>
+        </div>
+        <div class="sobre_info">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>Data de Nascimento: 07 Jan
+            2004
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-laptop-code"></i>Novas oportunidades:
+            Disponível
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>Endereço: Curitiba, Brasil
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-globe"></i>Línguas Faladas: Português
+            (Brasil), Espanhol, Inglês
+          </p>
+          <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
+          <p>
+            <i class="fa-solid fa-phone-volume"></i>Telefone: +55 (47)
+            99277-0701
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>Email: Samuel.mauli@gmail.com
+          </p>
+        </div>
+      </main>
     </section>
-
-    
 
     <section class="services">
-        <div class="my_services">
-            <ul aria-label="Navegação secundaria">
-                <li>
-                    <i class="fa-solid fa-code"></i>
-                    <h3> Front-End development</h3>
-                    <p>Comprometido com o desenvolvimento front-end, busco me atualizar em HTML, CSS e JavaScript, bem como React, com o objetivo de criar interfaces responsivas e intuitivas.</p>
-                    </li>
-                <li>
-                    <i class="fa-solid fa-terminal"></i>
-                    <h3>Back-End development</h3>
-                    <p>Focado no desenvolvimento back-end, estou aprimorando minhas habilidades em Python e C# com o objetivo de buscar soluções eficientes e seguras, integrando bancos de dados e APIs.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-layer-group"></i>
-                    <h3>Database</h3>
-                    <p>Possuo conhecimentos em SQL e PL/SQL, incluindo gerenciamento de bancos de dados e consultas SQL. Estou em constante busca para aprimorar minhas habilidades nessa área e estou preparado para integrar bancos de dados, garantindo a eficiência dos sistemas.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    <h3>Trabalho em equipe</h3>
-                    <p>Valorizo o trabalho em equipe, colaborando de forma efetiva e contribuindo para o sucesso coletivo. Tenho habilidades de comunicação e sou capaz de trabalhar em projetos conjuntos, compartilhando ideias e promovendo um ambiente colaborativo para alcançar metas comuns.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-school"></i>
-                    <h3>Aprendizado Continuo</h3>
-                    <p>Estou comprometido com o aprendizado contínuo e a atualização constante para enfrentar desafios tecnológicos com soluções inovadoras. Busco oportunidades de cursos, workshops e recursos educacionais para aprimorar minhas habilidades de programação.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-medal"></i>
-                    <h3>Foco na entrega </h3>
-                    <p>Comprometido com a entrega, sou organizado e focado em concluir projetos dentro dos prazos estabelecidos, garantindo qualidade e atendendo às expectativas. Sou determinado a cumprir responsabilidades e a contribuir para o sucesso do projeto.</p>
-                </li>
-            </ul>
-        </div>
+      <div class="my_services">
+        <ul aria-label="Navegação secundaria">
+          <li>
+            <i class="fa-solid fa-code"></i>
+            <h3>Front-End development</h3>
+            <p>
+              Comprometido com o desenvolvimento front-end, busco me atualizar
+              em HTML, CSS e JavaScript, bem como React, com o objetivo de criar
+              interfaces responsivas e intuitivas.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Back-End development</h3>
+            <p>
+              Focado no desenvolvimento back-end, estou aprimorando minhas
+              habilidades em Python e C# com o objetivo de buscar soluções
+              eficientes e seguras, integrando bancos de dados e APIs.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Database</h3>
+            <p>
+              Possuo conhecimentos em SQL e PL/SQL, incluindo gerenciamento de
+              bancos de dados e consultas SQL. Estou em constante busca para
+              aprimorar minhas habilidades nessa área e estou preparado para
+              integrar bancos de dados, garantindo a eficiência dos sistemas.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-users"></i>
+            <h3>Trabalho em equipe</h3>
+            <p>
+              Valorizo o trabalho em equipe, colaborando de forma efetiva e
+              contribuindo para o sucesso coletivo. Tenho habilidades de
+              comunicação e sou capaz de trabalhar em projetos conjuntos,
+              compartilhando ideias e promovendo um ambiente colaborativo para
+              alcançar metas comuns.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-school"></i>
+            <h3>Aprendizado Continuo</h3>
+            <p>
+              Estou comprometido com o aprendizado contínuo e a atualização
+              constante para enfrentar desafios tecnológicos com soluções
+              inovadoras. Busco oportunidades de cursos, workshops e recursos
+              educacionais para aprimorar minhas habilidades de programação.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-medal"></i>
+            <h3>Foco na entrega</h3>
+            <p>
+              Comprometido com a entrega, sou organizado e focado em concluir
+              projetos dentro dos prazos estabelecidos, garantindo qualidade e
+              atendendo às expectativas. Sou determinado a cumprir
+              responsabilidades e a contribuir para o sucesso do projeto.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="my_resume" id="resume">
-        <div class="sobre_titulo">
-            <h1>Meu Curriculo</h1>
-            <p>- Um pouco sobre minhas experiências profissionais e vida acadêmica -</p>
-            <div aria-label="">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="sobre_titulo">
+        <h1>Meu Curriculo</h1>
+        <p>
+          - Um pouco sobre minhas experiências profissionais e vida acadêmica -
+        </p>
+        <div aria-label="">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="resume_gerenico">
-            <h2 class="experience"><i class="fa-solid fa-handshake"></i>EXPERIENCIAS</h2>
-            <div class="experience_content">
-                <div>
-                    <span>2023-2023</span>
-                <h3>Oracle Technical Consultant Trainee - TRI CS Inc.</h3>
-                <p>Como Consultor Oracle Trainee na TRI CS Inc., tive a oportunidade de vivenciar o fornecimento de suporte, implementação e resolução de problemas em sistemas Oracle. Trabalhei em colaboração com a equipe sênior para implementar soluções, seguindo as melhores práticas e atendendo aos requisitos do cliente.</p>
-
-                </div>
-                <div>
-                    <span>2022-2023</span>
-                <h3>Suporte N1 - ICI - Instituto Curitiba de Informática</h3>
-                <p>Enquanto membro da equipe de Service Desk da Prefeitura de Curitiba, forneci suporte técnico eficiente e satisfatório aos usuários dos sistemas e serviços. Atendi chamados por telefone e e-mail, registrando e acompanhando cada solicitação até a sua resolução. Também colaborei com outras equipes para identificar e corrigir problemas recorrentes, sempre em busca de aprimorar a qualidade do serviço prestado.</p>
-                </div>
-                <ul>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                </ul>
-            </div>
-            <h2 class="education"><i class="fa-solid fa-book"></i>EDUCAÇÃO</h2>
-            <div class="education_content">
-                <div>
-                    <span>2023 - 2027</span>
-                    <h3>Bacharelado - Universidade Positivo</h3>
-                    <p>Estou no 3º período da graduação em Ciências da Computação, com habilidades sólidas em programação, desenvolvimento web e banco de dados. Meu entusiasmo pela área e minha experiência em projetos práticos me tornam um candidato preparado para contribuir efetivamente como programador, buscando sempre aprender e aprimorar minhas habilidades, enfrentar desafios e colaborar no crescimento da empresa.</p>
-                </div>
-                <div>
-                    <span>2022 - 2023</span>
-                    <h3>Cursos - Udemy</h3>
-                    <p>Realizei diversos cursos na Udemy, abrangendo uma ampla gama de habilidades. Como estudante versátil, demonstrei facilidade em aprender novas tecnologias, incluindo o pacote completo do Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript), Python, SQL e PL/SQL, além de lógica de programação em C#, C e Java. Também concluí cursos de ITIL e gestão de tempo para melhorar minhas entregas e meu desempenho. Adquiri conhecimentos essenciais para aplicações práticas e manipulação de dados, preparando-me para enfrentar desafios e me destacar como um profissional em constante aprimoramento.</p>
-                </div>
-                <ul>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                </ul>
-            </div>
+      </div>
+      <div class="resume_gerenico">
+        <h2 class="experience">
+          <i class="fa-solid fa-handshake"></i>EXPERIENCIAS
+        </h2>
+        <div class="experience_content">
+          <div>
+            <span>2023-2023</span>
+            <h3>Oracle Technical Consultant Trainee - TRI CS Inc.</h3>
+            <p>
+              Como Consultor Oracle Trainee na TRI CS Inc., tive a oportunidade
+              de vivenciar o fornecimento de suporte, implementação e resolução
+              de problemas em sistemas Oracle. Trabalhei em colaboração com a
+              equipe sênior para implementar soluções, seguindo as melhores
+              práticas e atendendo aos requisitos do cliente.
+            </p>
+          </div>
+          <div>
+            <span>2022-2023</span>
+            <h3>Suporte N1 - ICI - Instituto Curitiba de Informática</h3>
+            <p>
+              Enquanto membro da equipe de Service Desk da Prefeitura de
+              Curitiba, forneci suporte técnico eficiente e satisfatório aos
+              usuários dos sistemas e serviços. Atendi chamados por telefone e
+              e-mail, registrando e acompanhando cada solicitação até a sua
+              resolução. Também colaborei com outras equipes para identificar e
+              corrigir problemas recorrentes, sempre em busca de aprimorar a
+              qualidade do serviço prestado.
+            </p>
+          </div>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          </ul>
         </div>
+        <h2 class="education"><i class="fa-solid fa-book"></i>EDUCAÇÃO</h2>
+        <div class="education_content">
+          <div>
+            <span>2023 - 2027</span>
+            <h3>Bacharelado - Universidade Positivo</h3>
+            <p>
+              Estou no 3º período da graduação em Ciências da Computação, com
+              habilidades sólidas em programação, desenvolvimento web e banco de
+              dados. Meu entusiasmo pela área e minha experiência em projetos
+              práticos me tornam um candidato preparado para contribuir
+              efetivamente como programador, buscando sempre aprender e
+              aprimorar minhas habilidades, enfrentar desafios e colaborar no
+              crescimento da empresa.
+            </p>
+          </div>
+          <div>
+            <span>2022 - 2023</span>
+            <h3>Cursos - Udemy</h3>
+            <p>
+              Realizei diversos cursos na Udemy, abrangendo uma ampla gama de
+              habilidades. Como estudante versátil, demonstrei facilidade em
+              aprender novas tecnologias, incluindo o pacote completo do
+              Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript),
+              Python, SQL e PL/SQL, além de lógica de programação em C#, C e
+              Java. Também concluí cursos de ITIL e gestão de tempo para
+              melhorar minhas entregas e meu desempenho. Adquiri conhecimentos
+              essenciais para aplicações práticas e manipulação de dados,
+              preparando-me para enfrentar desafios e me destacar como um
+              profissional em constante aprimoramento.
+            </p>
+          </div>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="Projetos" id="Projetos">
-        <div class="sobre_titulo">
-            <h1>Meus Projetos</h1>
-            <p>- Veja um pouco sobre os projetos que realizei -</p>
-            <div aria-label="">
-                <span></span>
-                <span></span>   
-                <span></span>
-            </div>
+      <div class="sobre_titulo">
+        <h1>Meus Projetos</h1>
+        <p>- Veja um pouco sobre os projetos que realizei -</p>
+        <div aria-label="">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
 
-        <section class="game-section">
-            <div class="owl-carousel custom-carousel owl-theme">
-              
-                <div class="item custom-card" style="background-image: url(IMG/microsoft-logo.jpg);">
-                    <div class="item-desc">
-                        <h3 class="custom2">Clone da Microsoft</h3>
-                        <p class="custom2">Foi um projeto desenvolvido para a disciplina de Desenvolvimento Front-End, no qual utilizei as tecnologias HTML, CSS e JavaScript. O site é simples, porém cumpre todos os requisitos da disciplina.</p>
-                        <a href="https://github.com/SamuelMauli/Clone_Microsoft" target="_blank" class="custom-button">Abrir no GitHub</a>
-                    </div>
-                </div>
-                
-                <div class="item custom-card" style="background-image: url(IMG/Insano_capa.png);">
-                    <div class="item-desc">
-                        <h3 class="custom">Site da Atlética</h3>
-                        <p class="custom2">Desenvolvi um site para a atlética da Universidade Positivo, voltado para os cursos de tecnologia. O projeto ainda está em desenvolvimento, em colaboração com a equipe de design da atlética. No entanto, a maior parte do projeto já foi concluída.</p>
-                        <a href="https://github.com/SamuelMauli/AAATI-Up" target="_blank" class="custom-button">Abrir no GitHub</a>
-                    </div>
-                </div>
-                
-                <div class="item custom-card" style="background-image: url(IMG/junto.png);">
-                    <div class="item-desc">
-                        <h3 class="custom2">Hackathon</h3>
-                        <p class="custom2">Desenvolvemos um sistema de aviso de sinistros para a competição do programa de estágio da Junto Seguros, que resultou na nossa conquista da primeira colocação. O programa foi desenvolvido em equipe, em dupla, e levou apenas 5 horas para ser concluído. Utilizamos uma variedade de tecnologias, incluindo TypeScript, React, Express e Postman, entre outras.</p>
-                        <a href="https://github.com/SamuelMauli/Hackathon" target="_blank" class="custom-button">Abrir no GitHub</a>
-                    </div>
-                </div>
-                
-                <div class="item custom-card" style="background-image: url(IMG/JuntoSegutos.jpeg);">
-                    <div class="item-desc">
-                        <h3 class="custom">Pré-Hackathon</h3>
-                        <p class="custom2">Desenvolvi este sistema como parte de uma etapa de pré-seleção, permitindo a criação de sinistros, além de telas de cadastro e login. Utilizamos HTML, CSS, JavaScript e Python para a parte do backend. Essa etapa antecedeu o Hackathon, na qual também obtive sucesso. </p>
-                        <a href="https://github.com/SamuelMauli/Hackathon" target="_blank" class="custom-button">Abrir no GitHub</a>
-                    </div>
-                </div>                
+      <section class="game-section">
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div
+            class="item custom-card"
+            style="background-image: url(IMG/microsoft-logo.jpg)"
+          >
+            <div class="item-desc">
+              <h3 class="custom2">Clone da Microsoft</h3>
+              <p class="custom2">
+                Foi um projeto desenvolvido para a disciplina de Desenvolvimento
+                Front-End, no qual utilizei as tecnologias HTML, CSS e
+                JavaScript. O site é simples, porém cumpre todos os requisitos
+                da disciplina.
+              </p>
+              <a
+                href="https://github.com/SamuelMauli/Clone_Microsoft"
+                target="_blank"
+                class="custom-button"
+                >Abrir no GitHub</a
+              >
             </div>
-        </section>
-    
-    <script>
+          </div>
+
+          <div
+            class="item custom-card"
+            style="background-image: url(IMG/Insano_capa.png)"
+          >
+            <div class="item-desc">
+              <h3 class="custom2">Site da Atlética</h3>
+              <p class="custom2">
+                Desenvolvi um site para a atlética da Universidade Positivo,
+                voltado para os cursos de tecnologia. O projeto ainda está em
+                desenvolvimento, em colaboração com a equipe de design da
+                atlética. No entanto, a maior parte do projeto já foi concluída.
+              </p>
+              <a
+                href="https://github.com/SamuelMauli/AAATI-Up"
+                target="_blank"
+                class="custom-button"
+                >Abrir no GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="item custom-card"
+            style="background-image: url(IMG/junto.png)"
+          >
+            <div class="item-desc">
+              <h3 class="custom2">Hackathon</h3>
+              <p class="custom2">
+                Desenvolvemos um sistema de aviso de sinistros para a competição
+                do programa de estágio da Junto Seguros, que resultou na nossa
+                conquista da primeira colocação. O programa foi desenvolvido em
+                equipe, em dupla, e levou apenas 5 horas para ser concluído.
+                Utilizamos uma variedade de tecnologias, incluindo TypeScript,
+                React, Express e Postman, entre outras.
+              </p>
+              <a
+                href="https://github.com/SamuelMauli/Hackathon"
+                target="_blank"
+                class="custom-button"
+                >Abrir no GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="item custom-card"
+            style="background-image: url(IMG/JuntoSegutos.jpeg)"
+          >
+            <div class="item-desc">
+              <h3 class="custom2">Pré-Hackathon</h3>
+              <p class="custom2">
+                Desenvolvi este sistema como parte de uma etapa de pré-seleção,
+                permitindo a criação de sinistros, além de telas de cadastro e
+                login. Utilizamos HTML, CSS, JavaScript e Python para a parte do
+                backend. Essa etapa antecedeu o Hackathon, na qual também obtive
+                sucesso.
+              </p>
+              <a
+                href="https://github.com/SamuelMauli/Hackathon"
+                target="_blank"
+                class="custom-button"
+                >Abrir no GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="item custom-card"
+            style="background-image: url(IMG/Tempo.png)"
+          >
+            <div class="item-desc">
+              <h3 class="custom2">App do Tempo</h3>
+              <p class="custom2">
+                Meu primeiro projeto com uma API. Desenvolvi uma aplicação
+                simples em HTML, CSS e JavaScript para fornecer previsões do
+                tempo. Os usuários inserem uma data e cidade, com a opção de
+                preencher a data atual automaticamente. Espero continuar
+                explorando o mundo da programação e APIs.
+              </p>
+              <a
+                href="https://github.com/SamuelMauli/Tempo"
+                target="_blank"
+                class="custom-button"
+                >Abrir no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
         $(document).ready(function () {
-        $(".custom-carousel").owlCarousel({
-          autoWidth: true,
-          loop: true,
+          $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true,
+          });
+
+          $(".custom-carousel .item").click(function () {
+            $(".custom-carousel .item").removeClass("active"); // Remove a classe "active" de todos os itens
+            $(this).addClass("active"); // Adiciona a classe "active" ao item clicado
+          });
         });
-      
-        $(".custom-carousel .item").click(function () {
-          $(".custom-carousel .item").removeClass("active"); // Remove a classe "active" de todos os itens
-          $(this).addClass("active"); // Adiciona a classe "active" ao item clicado
-        });
-      });
       </script>
     </section>
-    
 
-    
-<!-- Contatos -->
-<section id="contact">
-    <div class="contact">
+    <!-- Contatos -->
+    <section id="contact">
+      <div class="contact">
         <div class="my_contatos">
-            <h1>Entre em contato!</h1>
-            <p>Caso tenha se interessado me mande uma mensagem.</p>
-            <div class="Contatos">
-                <form action="mailto::samuel.mauli@gmail.com.br" method="POST" enctype="text/plain">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required />
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" required />
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone" required />
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" required></textarea>
-                    <button type="submit" data-button>Enviar</button>
-                </form>
-            </div>
+          <h1>Entre em contato!</h1>
+          <p>Caso tenha se interessado me mande uma mensagem.</p>
+          <div class="Contatos">
+            <form
+              action="mailto::samuel.mauli@gmail.com.br"
+              method="POST"
+              enctype="text/plain"
+            >
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required />
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" required />
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" required></textarea>
+              <button type="submit" data-button>Enviar</button>
+            </form>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         const form = document.querySelector("form[data-form]");
         const submitButton = document.querySelector("button[data-button]");
 
         form.addEventListener("submit", function (e) {
-            e.preventDefault();
+          e.preventDefault();
 
-            alert("Mensagem enviada com sucesso! Obrigado pelo contato. :)");
+          alert("Mensagem enviada com sucesso! Obrigado pelo contato. :)");
 
-            form.reset();
-            
-            const formData = new FormData(form);
-            fetch(form.action, {
-                method: "POST",
-                body: formData,
-            });
+          form.reset();
+
+          const formData = new FormData(form);
+          fetch(form.action, {
+            method: "POST",
+            body: formData,
+          });
         });
-    });
-</script>
+      });
+    </script>
 
-
-    
-<!--Footer-->
+    <!--Footer-->
     <footer>
-        <div class="sobre_titulo">
-            <h1>Obrigado!</h1>
-            <p>Gostaria de agradecer pelo seu tempo! Espero que tenha gostado!! Este foi meu primeiro projeto. </p>
-            <div aria-label="">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="sobre_titulo">
+        <h1>Obrigado!</h1>
+        <p>
+          Gostaria de agradecer pelo seu tempo! Espero que tenha gostado!! Este
+          foi meu primeiro projeto.
+        </p>
+        <div aria-label="">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </footer>
     <script src="script.js"></script>
     <script src="projetos.js"></script>
-
-
-</body>
-
+  </body>
 </html>
