@@ -4,7 +4,7 @@
 
 ## Sobre Mim
 
-Sou o Samuel Mauli, um estudante de Ciência da Computação movido por uma grande paixão pela tecnologia e pela programação. Com meus 19 anos, estou trilhando o caminho da aprendizagem com o objetivo de me tornar um desenvolvedor competente, capaz de contribuir para soluções inteligentes e inovadoras no futuro. Minha jornada até agora me proporcionou experiência valiosa em áreas como atendimento ao cliente, suporte técnico e manutenção de sistemas. Essas oportunidades me permitiram entender as necessidades dos usuários e aprimorar minha capacidade de resolver problemas de forma eficiente. 
+Sou o Samuel Mauli, um estudante de Ciência da Computação movido por uma grande paixão pela tecnologia e pela programação. Com meus 20 anos, estou trilhando o caminho da aprendizagem com o objetivo de me tornar um desenvolvedor competente, capaz de contribuir para soluções inteligentes e inovadoras no futuro. Minha jornada até agora me proporcionou experiência valiosa em áreas como atendimento ao cliente, suporte técnico e manutenção de sistemas. Essas oportunidades me permitiram entender as necessidades dos usuários e aprimorar minha capacidade de resolver problemas de forma eficiente. 
 
 Expandi recentemente meus conhecimentos para me tornar um consultor Oracle, focado em tecnologias como SQL e PL/SQL, sistemas ERP e ferramentas como Oracle Transactional Business Intelligence (OTBI), BI Publisher, Oracle Integration Cloud (OIC) e Visual Builder. Minha bagagem inclui sólidos conhecimentos em lógica de programação, fluência em inglês e espanhol para uma comunicação eficaz e habilidades no pacote Microsoft Office. Além disso, estou familiarizado com linguagens como Python e C, e me sinto à vontade com desenvolvimento web usando HTML, JS e CSS.
 
@@ -19,6 +19,10 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 ### Técnico de Suporte N1 at ICI - Instituto Curitiba de Informática
 #### Agosto de 2022 - Março de 2023 (8 meses)
 - Prestação de suporte técnico de nível 1 no ICI - Instituto Curitiba de Informática.
+
+### Agente de suporte de TI at Positivo Técnologia.
+#### dez de 2023 - (até o momento )
+- Realização de suporte Back-office para um novo projeto de tech services da Positivo Tecnologia
 
 ## Formação Acadêmica
 
@@ -46,9 +50,11 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 ## Certificações
 
 - Programação Python
+- Programação C
 - Desenvolvimento Web básico
 - Banco de dados MySQL, SQLServer, Oracle Database.
 - Curso  de SQL ePL/SQL
+- Microsoft Power BI
 - Microsoft Excel
 - Trello (Organização de Rotinas)
 - Microsoft PowerPoint
