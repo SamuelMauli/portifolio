@@ -21,8 +21,12 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 - Prestação de suporte técnico de nível 1 no ICI - Instituto Curitiba de Informática.
 
 ### Agente de suporte de TI at Positivo Técnologia.
-#### dez de 2023 - (até o momento )
+#### Nov de 2023 - Jul  de 2024
 - Realização de suporte Back-office para um novo projeto de tech services da Positivo Tecnologia
+
+### Java Intern - Meisters Solutions
+#### Jul de 2024 - O momento
+- Auxiliar na programação em diversas linguagens computacionais. Apoiar a análise e o desenvolvimento de sistemas. Acompanhar o progresso no desenvolvimento de softwares e programas. Contribuir na elaboração de relatórios técnicos. Junto a uma equipe multicultural tendo a oportunidade de me comunicar em ingles e espanhol diariamente.
 
 ## Formação Acadêmica
 
@@ -38,6 +42,8 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 
 ## Principais Competências
 
+- Programação Java
+- Programação Python
 - Programação Lógica
 - Desenvolvimento de Front-end
 - HTML5
@@ -50,14 +56,11 @@ Além das habilidades técnicas, valorizo a colaboração em equipe e acredito q
 ## Certificações
 
 - Programação Python
-- Programação C
+- Programação Java
 - Desenvolvimento Web básico
 - Banco de dados MySQL, SQLServer, Oracle Database.
-- Curso  de SQL ePL/SQL
-- Microsoft Power BI
-- Microsoft Excel
-- Trello (Organização de Rotinas)
-- Microsoft PowerPoint
+- Curso  de SQL e PL/SQL
+- Pacote Office
 - Cyber Security Essential
 - IT Service Management: Gestão de Serviços de TI (ITSM/GSTI)
 
