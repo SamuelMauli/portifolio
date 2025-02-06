@@ -105,4 +105,3 @@ btnMobile.addEventListener('touchstart', toggleMenu);
   sobreMim();
 
 //Card projetos
-

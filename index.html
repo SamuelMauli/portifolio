@@ -25,13 +25,24 @@
     <nav>
       <ul aria-label="Navegação primária" class="navegacao-primaria">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">sobre</a></li>
-        <li><a href="#resume">Curriculo</a></li>
-        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#resume">Currículo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
+        <!-- Dropdown de idiomas moderno -->
+        <li class="dropdown">
+          <a href="#">Idioma</a>
+          <ul class="dropdown-content">
+            <li><a href="index.html"><img src="IMG/brasil.jpg" alt="Portuguese"></a></li>
+            <li><a href="index_us.html"><img src="IMG/uk.png" alt="English"></a></li>
+            <li><a href="index_es.html"><img src="IMG/Es.png" alt="Spanish"></a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
+  
+  
   <body>
     <section
       aria-label="Seção Curriculo dowload Samuel"
@@ -39,15 +50,14 @@
       id="home"
     >
       <div>
-        <h2><span>Hello world!</span> sou um programador</h2>
-        <h3 class="digitando">Front-End</h3>
+        <h2><span>Hello world!</span> sou um desenvolvedor</h2>
+        <h3 class="digitando">Back-End</h3>
         <p>
-          Me chamo Samuel, tenho 20 anos, sou estudante de Ciência da Computação
-          e estou buscando uma oportunidade como desenvolvedor!!
+          Me chamo Samuel, tenho 20 anos, sou estudante de Ciência da Computação.
         </p>
-        <a href="Doc/SamuelMauli_Cv.pdf" download>Baixar Cv</a>
+        <a href="Doc/SamuelMauli_PtBr.pdf" download>Baixar Cv</a>
       </div>
-      <img src="IMG/Eu3.png" alt="Este sou eu, bonitão não é?" />
+      <img src="IMG/Eu.png" class="img-me" />
     </section>
 
     <section class="sobre" id="about">
@@ -62,24 +72,22 @@
           </div>
         </div>
         <div class="sobre_conteudo">
-          <img src="IMG/Eu.png" alt="img" />
+          <img src="IMG/Eu3.png" class="img-me" />
           <div class="sobre_texto">
             <h1>Este sou eu</h1>
             <p>
-              Meu nome é Samuel, sou natural de Joinville, SC. Atualmente, estou
+              Meu nome é Samuel Mauli, atualmente, estou
               morando em Curitiba e sou um estudante de graduação no 4º período
-              de Ciência da Computação, após ter me transferido para a
-              Universidade Positivo. Sou extremamente dedicado aos meus estudos
-              e estou sempre em busca de novas oportunidades de aprendizado.
+              de Ciência da Computação, Sou extremamente dedicado aos meus estudos
+              e estou sempre em buscando aprender.
               <br />
               <br />
               Ao longo da minha graduação, tive a incrível oportunidade de me
               aprofundar em diversas tecnologias, linguagens e áreas dentro do
               campo da TI. Explorei as redes de computadores, a infraestrutura
-              física e me aventurei em linguagens como Python, JavaScript, C#,
-              Java, HTML, CSS, SQL e PL/SQL, o que me permitiu expandir meus
-              conhecimentos. No entanto, foquei principalmente no
-              desenvolvimento web, Python e SQL.
+              física e me aventurei em linguagens como Java, Python, C#,
+              Angular, SQL e PL/SQL, o que me permitiu expandir meus
+              conhecimentos.
             </p>
           </div>
         </div>
@@ -88,10 +96,12 @@
             <i class="fa-solid fa-calendar-days"></i>Data de Nascimento: 07 Jan
             2004
           </p>
+           <!--
           <p>
             <i class="fa-sharp fa-solid fa-laptop-code"></i>Novas oportunidades:
             Disponível
-          </p>
+          </p> 
+          -->
           <p>
             <i class="fa-solid fa-location-dot"></i>Endereço: Curitiba, Brasil
           </p>
@@ -119,7 +129,7 @@
             <h3>Front-End development</h3>
             <p>
               Comprometido com o desenvolvimento front-end, busco me atualizar
-              em HTML, CSS e JavaScript, bem como React, com o objetivo de criar
+              em HTML, CSS e JavaScript, bem como React e Angular, com o objetivo de criar
               interfaces responsivas e intuitivas.
             </p>
           </li>
@@ -128,7 +138,7 @@
             <h3>Back-End development</h3>
             <p>
               Focado no desenvolvimento back-end, estou aprimorando minhas
-              habilidades em Python e C# com o objetivo de buscar soluções
+              habilidades em Java e Python com o objetivo de buscar soluções
               eficientes e seguras, integrando bancos de dados e APIs.
             </p>
           </li>
@@ -136,21 +146,24 @@
             <i class="fa-solid fa-layer-group"></i>
             <h3>Database</h3>
             <p>
-              Possuo conhecimentos em SQL e PL/SQL, incluindo gerenciamento de
-              bancos de dados e consultas SQL. Estou em constante busca para
-              aprimorar minhas habilidades nessa área e estou preparado para
-              integrar bancos de dados, garantindo a eficiência dos sistemas.
+              Possuo conhecimentos em bancos MySQL, Oracle, SQL Server e 
+              tive a oportunidade de aprender SQL e PL/SQL. Estou em 
+              constante busca para aprimorar minhas habilidades nessa área 
+              e estou preparado para integrar bancos de dados, garantindo 
+              a eficiência dos sistemas.
             </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-users"></i>
-            <h3>Trabalho em equipe</h3>
-            <p>
-              Valorizo o trabalho em equipe, colaborando de forma efetiva e
-              contribuindo para o sucesso coletivo. Tenho habilidades de
-              comunicação e sou capaz de trabalhar em projetos conjuntos,
-              compartilhando ideias e promovendo um ambiente colaborativo para
-              alcançar metas comuns.
+            </li>
+            <li>
+              <i class="fa-solid fa-users"></i>
+              <h3>Trabalho em equipe</h3>
+              <p>
+                Valorizo muito o trabalho em equipe e tive a oportunidade 
+                de trabalhar em equipes multiculturais, com pessoas de 
+                diferentes países e idiomas. Desenvolvo um papel de liderança 
+                na minha igreja, realizando trabalhos com jovens e atuando em 
+                diversas áreas do ministério de jovens.
+              </p>
+            
             </p>
           </li>
           <li>
@@ -169,8 +182,7 @@
             <p>
               Comprometido com a entrega, sou organizado e focado em concluir
               projetos dentro dos prazos estabelecidos, garantindo qualidade e
-              atendendo às expectativas. Sou determinado a cumprir
-              responsabilidades e a contribuir para o sucesso do projeto.
+              atendendo às expectativas.
             </p>
           </li>
         </ul>
@@ -194,7 +206,19 @@
         </h2>
         <div class="experience_content">
           <div>
-            <span>2023-2024</span>
+            <span>2023 - O Momento</span>
+            <h3>Java Intern - Meisters Solutions</h3>
+            <p>
+              Auxiliar na programação em diversas linguagens computacionais.
+              Apoiar a análise e o desenvolvimento de sistemas.
+              Acompanhar o progresso no desenvolvimento de softwares e programas.
+              Contribuir na elaboração de relatórios técnicos.
+              Junto a uma equipe multicultural tendo a oportunidade de me comunicar
+              em ingles e espanhol diariamente. 
+            </p>
+          </div>
+          <div>
+            <span>2023 - 2024</span>
             <h3>Agente de Suporte I - Positivo Técnologia</h3>
             <p>
               Como agente de suporte na Positivo, estou tendo a oportunidade de
@@ -207,7 +231,7 @@
             </p>
           </div>
           <div>
-            <span>2023-2023</span>
+            <span>2023 - 2023</span>
             <h3>Oracle Technical Consultant Trainee - TRI CS Inc.</h3>
             <p>
               Como Consultor Trainee Oracle na TRI CS Inc., tive a oportunidade
@@ -221,7 +245,7 @@
             </p>
           </div>
           <div>
-            <span>2022-2023</span>
+            <span>2022 - 2023</span>
             <h3>Suporte N1 - ICI - Instituto Curitiba de Informática</h3>
             <p>
               Enquanto membro da equipe de Service Desk da Prefeitura de
@@ -242,7 +266,7 @@
         <h2 class="education"><i class="fa-solid fa-book"></i>EDUCAÇÃO</h2>
         <div class="education_content">
           <div>
-            <span>2023 - 2027</span>
+            <span>2023 - 2026</span>
             <h3>Bacharelado - Universidade Positivo</h3>
             <p>
               Estou no 3º período da graduação em Ciências da Computação, com
@@ -253,22 +277,38 @@
               aprimorar minhas habilidades, enfrentar desafios e colaborar no
               crescimento da empresa.
             </p>
+          
           </div>
           <div>
             <span>2022 - 2024</span>
-            <h3>Cursos - Udemy</h3>
-            <p>
-              Realizei diversos cursos na Udemy, abrangendo uma ampla gama de
-              habilidades. Como estudante versátil, demonstrei facilidade em
-              aprender novas tecnologias, incluindo o pacote completo do
-              Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript),
-              Python, SQL e PL/SQL, além de lógica de programação em C#, C e
-              Java. Também concluí cursos de ITIL e gestão de tempo para
-              melhorar minhas entregas e meu desempenho. Adquiri conhecimentos
-              essenciais para aplicações práticas e manipulação de dados,
-              preparando-me para enfrentar desafios e me destacar como um
-              profissional em constante aprimoramento.
-            </p>
+              <h3>Cursos - Udemy</h3>
+              <p>
+                Realizei diversos cursos na Udemy, abrangendo uma ampla gama de
+                habilidades. Como estudante versátil, demonstrei facilidade em
+                aprender novas tecnologias, incluindo o pacote completo do
+                Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript),
+                Python, SQL e PL/SQL, além de lógica de programação em C#, C e
+                Java. Também concluí cursos de ITIL e gestão de tempo para
+                melhorar minhas entregas e meu desempenho. Adquiri conhecimentos
+                essenciais para aplicações práticas e manipulação de dados,
+                preparando-me para enfrentar desafios e me destacar como um
+                profissional em constante aprimoramento.
+              </p>
+          </div>
+          <div>
+              <span>2024 - 2024</span>
+                <h3>Cursos - Alura</h3>
+                <p>
+                  Realizei uma série de cursos na Alura, focados em aprimorar 
+                  minhas habilidades em desenvolvimento de software, bancos de 
+                  dados e boas práticas de programação. Durante essa jornada de 
+                  aprendizado, obtive certificações e desenvolvi competências 
+                  essenciais, como o consumo de APIs externas e o manuseio de 
+                  arquivos em Java, aprendi a integrar Java com bancos de dados 
+                  através do JDBC, onhecimentos em persistência de dados utilizando 
+                  o Hibernate e as funcionalidades do JPA e estudei os fundamentos 
+                  do Spring Boot
+                </p>
           </div>
           <ul>
             <li><i class="fa-sharp fa-solid fa-circle"></i></li>
@@ -292,6 +332,51 @@
 
       <section class="game-section">
         <div class="owl-carousel custom-carousel owl-theme">
+
+          <div
+          class="item custom-card"
+          style="background-image: url(IMG/Portifolio.jpg)"
+        >
+          <div class="item-desc">
+            <h3 class="custom2">Portifolio</h3>
+            <p class="custom2">
+              Sendo um dos primeiros projetos pessoais, o portifólio foi desenvolvido com html, css e Js. 
+              100% responsivo, com um design moderno, e algumas funcionalidades. 
+              O intuito inicial erá a pŕatica do front-end, de uma forma utilizavel. Espero que goste!
+            </p>
+            <a
+              href="https://github.com/SamuelMauli/portifolio"
+              target="_blank"
+              class="custom-button"
+              >Abrir no GitHub</a
+            >
+          </div>
+        </div>
+
+          <div
+          class="item custom-card"
+          style="background-image: url(IMG/To-do.png)"
+        >
+          <div class="item-desc">
+            <h3 class="custom2">To-Do-List com python</h3>
+            <p class="custom2">
+              Foi um projeto desenvolvido para a disciplina de Desenvolvimento 
+              de Sistemas Inteligentes. O conceito simples de CRUD do projeto 
+              serviu como uma introdução aos frameworks Django e Flask. O projeto 
+              foi desenvolvido com Flask e SQLite. Possui uma funcionalidade de 
+              tela de login utilizando o algoritmo de hash SHA-256. As tarefas 
+              são criadas, editadas e manipuladas diretamente no banco de dados 
+              e são expostas no front-end.
+            </p>
+            <a
+              href="https://github.com/SamuelMauli/to-do-List-main"
+              target="_blank"
+              class="custom-button"
+              >Abrir no GitHub</a
+            >
+          </div>
+        </div>
+        
           <div
             class="item custom-card"
             style="background-image: url(IMG/microsoft-logo.jpg)"
@@ -348,24 +433,6 @@
                 tempo. Os usuários inserem uma data e cidade, com a opção de
                 preencher a data atual automaticamente. Espero continuar
                 explorando o mundo da programação e APIs.
-              </p>
-              <a
-                href="https://github.com/SamuelMauli/Tempo"
-                target="_blank"
-                class="custom-button"
-                >Abrir no GitHub</a
-              >
-            </div>
-          </div>
-          <div
-            class="item custom-card"
-            style="background-image: url(IMG/Tempo.png)"
-          >
-            <div class="item-desc">
-              <h3 class="custom2">Projeto Pokemon</h3>
-              <p class="custom2">
-                O projeto foi realizado como uma atividade de
-                encerramentodesementeste
               </p>
               <a
                 href="https://github.com/SamuelMauli/Tempo"
