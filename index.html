@@ -1,587 +1,617 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  </head>
-
-  <header>
-    <h1>Samuel <span>Mauli</span></h1>
-    <nav>
-      <ul aria-label="Navegação primária" class="navegacao-primaria">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#resume">Currículo</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-        <!-- Dropdown de idiomas moderno -->
-        <li class="dropdown">
-          <a href="#">Idioma</a>
-          <ul class="dropdown-content">
-            <li><a href="index.html"><img src="IMG/brasil.jpg" alt="Portuguese"></a></li>
-            <li><a href="index_en.html"><img src="IMG/uk.png" alt="English"></a></li>
-            <li><a href="index_es.html"><img src="IMG/Es.png" alt="Spanish"></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-  
-  <body>
-    <section
-      aria-label="Seção Curriculo dowload Samuel"
-      class="section-div"
-      id="home"
-    >
-      <div>
-        <h2><span>Hello world!</span> sou um desenvolvedor</h2>
-        <h3 class="digitando">Back-End</h3>
-        <p>
-          Me chamo Samuel, tenho 21 anos, sou estudante de Ciência da Computação.
-        </p>
-        <a href="Doc/SamuelMauli_PtBr.pdf" download>Baixar Cv</a>
-      </div>
-      <img src="IMG/Eu.png" class="img-me" />
-    </section>
-
-    <section class="sobre" id="about">
-      <main>
-        <div class="sobre_titulo">
-          <h1>Sobre mim</h1>
-          <p>- Perfil Profissional -</p>
-          <div aria-label="Seção apenas de ilustrações de botões">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Mauli - Desenvolvedor Full Stack especializado em IA, Fintech e Martech">
+    <meta name="keywords" content="desenvolvedor, full stack, python, php, javascript, react, laravel, inteligencia artificial">
+    <meta name="author" content="Samuel Mauli">
+    
+    <title>Samuel Mauli | Desenvolvedor Full Stack</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <meta property="og:title" content="Samuel Mauli | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em IA, Fintech e Martech">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samuelmauli.github.io/portifolio/">
+    
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-text">SM</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-message" data-key="loadingMessage">Inicializando sistema...</p>
         </div>
-        <div class="sobre_conteudo">
-          <img src="IMG/Eu3.png" class="img-me" />
-          <div class="sobre_texto">
-            <h1>Este sou eu</h1>
-            <p>
-              Meu nome é Samuel Mauli, atualmente, estou
-              morando em Curitiba e sou um estudante de graduação no 4º período
-              de Ciência da Computação, Sou extremamente dedicado aos meus estudos
-              e estou sempre em buscando aprender.
-              <br />
-              <br />
-              Ao longo da minha graduação, tive a incrível oportunidade de me
-              aprofundar em diversas tecnologias, linguagens e áreas dentro do
-              campo da TI. Explorei as redes de computadores, a infraestrutura
-              física e me aventurei em linguagens como Java, Python, C#,
-              Angular, SQL e PL/SQL, o que me permitiu expandir meus
-              conhecimentos.
-            </p>
-          </div>
-        </div>
-        <div class="sobre_info">
-          <p>
-            <i class="fa-solid fa-calendar-days"></i>Data de Nascimento: 07 Jan
-            2004
-          </p>
-           <!--
-          <p>
-            <i class="fa-sharp fa-solid fa-laptop-code"></i>Novas oportunidades:
-            Disponível
-          </p> 
-          -->
-          <p>
-            <i class="fa-solid fa-location-dot"></i>Endereço: Curitiba, Brasil
-          </p>
-          <p>
-            <i class="fa-sharp fa-solid fa-globe"></i>Línguas Faladas: Português
-            (Brasil), Espanhol, Inglês
-          </p>
-          <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
-          <p>
-            <i class="fa-solid fa-phone-volume"></i>Telefone: +55 (47)
-            99277-0701
-          </p>
-          <p>
-            <i class="fa-solid fa-envelope"></i>Email: Samuel.mauli@gmail.com
-          </p>
-        </div>
-      </main>
-    </section>
+        <div class="matrix-bg"></div>
+    </div>
 
-    <section class="services">
-      <div class="my_services">
-        <ul aria-label="Navegação secundaria">
-          <li>
-            <i class="fa-solid fa-code"></i>
-            <h3>Front-End development</h3>
-            <p>
-              Comprometido com o desenvolvimento front-end, busco me atualizar
-              em HTML, CSS e JavaScript, bem como React e Angular, com o objetivo de criar
-              interfaces responsivas e intuitivas.
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-terminal"></i>
-            <h3>Back-End development</h3>
-            <p>
-              Focado no desenvolvimento back-end, estou aprimorando minhas
-              habilidades em Java e Python com o objetivo de buscar soluções
-              eficientes e seguras, integrando bancos de dados e APIs.
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-layer-group"></i>
-            <h3>Database</h3>
-            <p>
-              Possuo conhecimentos em bancos MySQL, Oracle, SQL Server e 
-              tive a oportunidade de aprender SQL e PL/SQL. Estou em 
-              constante busca para aprimorar minhas habilidades nessa área 
-              e estou preparado para integrar bancos de dados, garantindo 
-              a eficiência dos sistemas.
-            </p>
-            </li>
-            <li>
-              <i class="fa-solid fa-users"></i>
-              <h3>Trabalho em equipe</h3>
-              <p>
-                Valorizo muito o trabalho em equipe e tive a oportunidade 
-                de trabalhar em equipes multiculturais, com pessoas de 
-                diferentes países e idiomas. Desenvolvo um papel de liderança 
-                na minha igreja, realizando trabalhos com jovens e atuando em 
-                diversas áreas do ministério de jovens.
-              </p>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-box">
+                    <span class="logo-text-initials">SM</span>
+                </div>
+                <a href="#home" class="logo-full-name">
+                    <span class="logo-text">Samuel</span>
+                    <span class="logo-accent">Mauli</span>
+                </a>
+            </div>
             
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-school"></i>
-            <h3>Aprendizado Continuo</h3>
-            <p>
-              Estou comprometido com o aprendizado contínuo e a atualização
-              constante para enfrentar desafios tecnológicos com soluções
-              inovadoras. Busco oportunidades de cursos, workshops e recursos
-              educacionais para aprimorar minhas habilidades de programação.
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-medal"></i>
-            <h3>Foco na entrega</h3>
-            <p>
-              Comprometido com a entrega, sou organizado e focado em concluir
-              projetos dentro dos prazos estabelecidos, garantindo qualidade e
-              atendendo às expectativas.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="my_resume" id="resume">
-      <div class="sobre_titulo">
-        <h1>Meu Curriculo</h1>
-        <p>
-          - Um pouco sobre minhas experiências profissionais e vida acadêmica -
-        </p>
-        <div aria-label="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="resume_gerenico">
-        <h2 class="experience">
-          <i class="fa-solid fa-handshake"></i>EXPERIENCIAS
-        </h2>
-        <div class="experience_content">
-          <div>
-            <span>2023 - O Momento</span>
-            <h3>Java Intern - Meisters Solutions</h3>
-            <p>
-              Auxiliar na programação em diversas linguagens computacionais.
-              Apoiar a análise e o desenvolvimento de sistemas.
-              Acompanhar o progresso no desenvolvimento de softwares e programas.
-              Contribuir na elaboração de relatórios técnicos.
-              Junto a uma equipe multicultural tendo a oportunidade de me comunicar
-              em ingles e espanhol diariamente. 
-            </p>
-          </div>
-          <div>
-            <span>2023 - 2024</span>
-            <h3>Agente de Suporte I - Positivo Técnologia</h3>
-            <p>
-              Como agente de suporte na Positivo, estou tendo a oportunidade de
-              participar de um novo projeto de Tech Service que está sendo
-              implementado, realizando suporte em back-office para a IMC -
-              International Meal Company. Durante esse período, estou
-              aprofundando-me em novas tecnologias e aprimorando meus
-              conhecimentos em ITIL para auxiliar na nova dinâmica de trabalho
-              da equipe.
-            </p>
-          </div>
-          <div>
-            <span>2023 - 2023</span>
-            <h3>Oracle Technical Consultant Trainee - TRI CS Inc.</h3>
-            <p>
-              Como Consultor Trainee Oracle na TRI CS Inc., tive a oportunidade
-              de vivenciar o fornecimento de suporte, implementação e resolução
-              de problemas em sistemas Oracle. Ao longo desse período, pude
-              aprimorar meus conhecimentos nos sistemas ERP da Oracle Cloud, bem
-              como aprofundar-me no manuseio de ferramentas como Otbi e BI
-              Publisher. Além disso, tive a valiosa oportunidade de praticar e
-              aprimorar minhas habilidades na língua inglesa, tanto em vivências
-              quanto em conversações.
-            </p>
-          </div>
-          <div>
-            <span>2022 - 2023</span>
-            <h3>Suporte N1 - ICI - Instituto Curitiba de Informática</h3>
-            <p>
-              Enquanto membro da equipe de Service Desk da Prefeitura de
-              Curitiba, forneci suporte técnico eficiente e satisfatório aos
-              usuários dos sistemas e serviços. Atendi chamados por telefone e
-              e-mail, registrando e acompanhando cada solicitação até a sua
-              resolução. Também colaborei com outras equipes para identificar e
-              corrigir problemas recorrentes, sempre em busca de aprimorar a
-              qualidade do serviço prestado.
-            </p>
-          </div>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          </ul>
-        </div>
-        <h2 class="education"><i class="fa-solid fa-book"></i>EDUCAÇÃO</h2>
-        <div class="education_content">
-          <div>
-            <span>2023 - 2026</span>
-            <h3>Bacharelado - Universidade Positivo</h3>
-            <p>
-              Estou no 5º período da graduação em Ciências da Computação, com
-              habilidades sólidas em programação, desenvolvimento web e banco de
-              dados. Meu entusiasmo pela área e minha experiência em projetos
-              práticos me tornam um candidato preparado para contribuir
-              efetivamente como programador, buscando sempre aprender e
-              aprimorar minhas habilidades, enfrentar desafios e colaborar no
-              crescimento da empresa.
-            </p>
-          
-          </div>
-          <div>
-            <span>2022 - 2024</span>
-              <h3>Cursos - Udemy</h3>
-              <p>
-                Realizei diversos cursos na Udemy, abrangendo uma ampla gama de
-                habilidades. Como estudante versátil, demonstrei facilidade em
-                aprender novas tecnologias, incluindo o pacote completo do
-                Microsoft Office, desenvolvimento web (HTML, CSS e JavaScript),
-                Python, SQL e PL/SQL, além de lógica de programação em C#, C e
-                Java. Também concluí cursos de ITIL e gestão de tempo para
-                melhorar minhas entregas e meu desempenho. Adquiri conhecimentos
-                essenciais para aplicações práticas e manipulação de dados,
-                preparando-me para enfrentar desafios e me destacar como um
-                profissional em constante aprimoramento.
-              </p>
-          </div>
-          <div>
-              <span>2024 - 2024</span>
-                <h3>Cursos - Alura</h3>
-                <p>
-                  Realizei uma série de cursos na Alura, focados em aprimorar 
-                  minhas habilidades em desenvolvimento de software, bancos de 
-                  dados e boas práticas de programação. Durante essa jornada de 
-                  aprendizado, obtive certificações e desenvolvi competências 
-                  essenciais, como o consumo de APIs externas e o manuseio de 
-                  arquivos em Java, aprendi a integrar Java com bancos de dados 
-                  através do JDBC, onhecimentos em persistência de dados utilizando 
-                  o Hibernate e as funcionalidades do JPA e estudei os fundamentos 
-                  do Spring Boot
-                </p>
-          </div>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="Projetos" id="Projetos">
-      <div class="sobre_titulo">
-        <h1>Meus Projetos</h1>
-        <p>- Veja um pouco sobre os projetos que realizei -</p>
-        <div aria-label="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
-      <section class="game-section">
-        <div class="owl-carousel custom-carousel owl-theme">
-
-          <div
-          class="item custom-card"
-          style="background-image: url(IMG/Portifolio.jpg)"
-        >
-          <div class="item-desc">
-            <h3 class="custom2">Portifolio</h3>
-            <p class="custom2">
-              Sendo um dos primeiros projetos pessoais, o portifólio foi desenvolvido com html, css e Js. 
-              100% responsivo, com um design moderno, e algumas funcionalidades. 
-              O intuito inicial erá a pŕatica do front-end, de uma forma utilizavel. Espero que goste!
-            </p>
-            <a
-              href="https://github.com/SamuelMauli/portifolio"
-              target="_blank"
-              class="custom-button"
-              >Abrir no GitHub</a
-            >
-          </div>
-        </div>
-
-          <div
-          class="item custom-card"
-          style="background-image: url(IMG/To-do.png)"
-        >
-          <div class="item-desc">
-            <h3 class="custom2">To-Do-List com python</h3>
-            <p class="custom2">
-              Foi um projeto desenvolvido para a disciplina de Desenvolvimento 
-              de Sistemas Inteligentes. O conceito simples de CRUD do projeto 
-              serviu como uma introdução aos frameworks Django e Flask. O projeto 
-              foi desenvolvido com Flask e SQLite. Possui uma funcionalidade de 
-              tela de login utilizando o algoritmo de hash SHA-256. As tarefas 
-              são criadas, editadas e manipuladas diretamente no banco de dados 
-              e são expostas no front-end.
-            </p>
-            <a
-              href="https://github.com/SamuelMauli/to-do-List-main"
-              target="_blank"
-              class="custom-button"
-              >Abrir no GitHub</a
-            >
-          </div>
-        </div>
-
-          <div
-            class="item custom-card"
-            style="background-image: url(IMG/junto.png)"
-          >
-            <div class="item-desc">
-              <h3 class="custom2">Hackathon</h3>
-              <p class="custom2">
-                Desenvolvemos um sistema de aviso de sinistros para a competição
-                do programa de estágio da Junto Seguros, que resultou na nossa
-                conquista da primeira colocação. O programa foi desenvolvido em
-                equipe, em dupla, e levou apenas 5 horas para ser concluído.
-                Utilizamos uma variedade de tecnologias, incluindo TypeScript,
-                React, Express e Postman, entre outras.
-              </p>
-              <a
-                href="https://github.com/SamuelMauli/Hackathon"
-                target="_blank"
-                class="custom-button"
-                >Abrir no GitHub</a
-              >
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active" data-section="home" data-key="navHome">Início</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-section="about" data-key="navAbout">Sobre</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link" data-section="experience" data-key="navExperience">Experiência</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects" data-key="navProjects">Projetos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" data-section="skills" data-key="navSkills">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact" data-key="navContact">Contato</a></li>
+                <li class="nav-item nav-item-mobile-only">
+                    <a href="Doc/SamuelMauli_PtBr.pdf" download class="btn btn-secondary" id="cv-download-link-mobile">
+                        <span class="btn-text" data-key="navCurriculum">Currículo</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="language-btn" data-lang="pt"><img src="assets/images/icons/brasil.jpg" alt="Português"></button>
+                    <button class="language-btn" data-lang="en"><img src="assets/images/icons/uk.png" alt="English"></button>
+                    <button class="language-btn" data-lang="es"><img src="assets/images/icons/Es.png" alt="Español"></button>
+                </div>
+                <a href="Doc/SamuelMauli_PtBr.pdf" download class="btn btn-primary nav-cv-btn" id="cv-download-link">
+                    <span class="btn-text" data-key="navCurriculum">Currículo</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-          </div>
+        </div>
+    </nav>
 
-          <div
-            class="item custom-card"
-            style="background-image: url(IMG/Tempo.png)"
-          >
-            <div class="item-desc">
-              <h3 class="custom2">App do Tempo</h3>
-              <p class="custom2">
-                Meu primeiro projeto com uma API. Desenvolvi uma aplicação
-                simples em HTML, CSS e JavaScript para fornecer previsões do
-                tempo. Os usuários inserem uma data e cidade, com a opção de
-                preencher a data atual automaticamente. Espero continuar
-                explorando o mundo da programação e APIs.
-              </p>
-              <a
-                href="https://github.com/SamuelMauli/Tempo"
-                target="_blank"
-                class="custom-button"
-                >Abrir no GitHub</a
-              >
+    <main class="main-content">
+        
+        <section id="home" class="hero-section">
+            <div class="particles-container" id="particles"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line" data-key="heroTitleLine">Olá, eu sou</span>
+                        <br>
+                        <span class="title-name">Samuel Mauli</span>
+                        <span class="title-role typing-text" data-text-keys="heroRole"></span>
+                    </h1>
+                    <p class="hero-description" data-key="heroDescription">
+                        Transformando ideias em soluções tecnológicas inovadoras. 
+                        Especializado em <span class="highlight">Fintech</span>, 
+                        <span class="highlight">Martech</span> e 
+                        <span class="highlight">Inteligência Artificial</span>.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span class="btn-text" data-key="heroBtnProjects">Ver Projetos</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span class="btn-text" data-key="heroBtnContact">Contato</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hologram-effect">
+                            <img src="assets/images/hero/samuel-photo.jpg" alt="Samuel Mauli" class="hero-image">
+                            <div class="hologram-lines"></div>
+                            <div class="hologram-glitch"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" data-tech="Python">
+                                <img src="assets/images/icons/python.png" alt="Python" class="floating-tech-icon">
+                            </div>
+                            <div class="floating-icon" data-tech="JavaScript">
+                                <img src="assets/images/icons/js.png" alt="JavaScript" class="floating-tech-icon">
+                            </div>
+                            <div class="floating-icon" data-tech="React">
+                                <img src="assets/images/icons/php.png" alt="php" class="floating-tech-icon">
+                            </div>
+                            <div class="floating-icon" data-tech="Java">
+                                <img src="assets/images/icons/java.png" alt="java" class="floating-tech-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div
-            class="item custom-card"
-            style="background-image: url(IMG/rust.png)"
-          >
-            <div class="item-desc">
-              <h3 class="custom2">Rust LavaLamp</h3>
-              <p class="custom2">
-                Rust LavaLamp é um projeto educacional em Rust inspirado no LavaRand da Cloudflare, que usa imagens aleatórias da API Picsum.photos para gerar entropia criptográfica. Cada usuário é identificado por um hash do nome e tem a senha criptografada com base em uma chave derivada de uma imagem única. A interface em terminal permite criar, editar e autenticar usuários. O projeto usa hashing com SHA256 e foca em práticas de segurança e autenticação. Seu objetivo é ensinar conceitos de criptografia de forma prática e acessível.
-              </p>
-              <a
-                href="https://github.com/SamuelMauli/Rust-LavaLamp"
-                target="_blank"
-                class="custom-button"
-                >Abrir no GitHub</a
-              >
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="scroll-text" data-key="heroScroll">Scroll para explorar</p>
             </div>
-          </div>
+        </section>
 
-        <div
-          class="item custom-card"
-          style="background-image: url(IMG/portaria.png)"
-        >
-          <div class="item-desc">
-            <h3 class="custom2">Sistema de Portaria </h3>
-            <p class="custom2">
-              O sistema foi feito como um freelance para a empresa AEB Bioquimica. Consiste em um sistema completo de cadastro de entradas e saidas da empresa. 
-              Alem de um sistema de agendamento para reunião.
-              Gerando relátorios e feedbacks sobre os dados. 
-            </p>
-            <a
-              href="https://github.com/SamuelMauli/Sistema-Portaria"
-              target="_blank"
-              class="custom-button"
-              >Abrir no GitHub</a
-            >   
-          </div>
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-number">01.</span>
+                        <span data-key="aboutTitle">Sobre Mim</span>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-card glass-card">
+                            <h3 class="about-subtitle" data-key="aboutSubtitle">Desenvolvedor Full Stack</h3>
+                            <p class="about-description" data-key="aboutDesc1">
+                                Sou Samuel Mauli, desenvolvedor apaixonado por tecnologia e inovação. 
+                                Atualmente trabalho no <strong>Grupo Negócios Públicos</strong> como 
+                                Desenvolvedor Full Stack, mergulhando nos desafios dos mercados de 
+                                <strong>Fintech</strong> e <strong>Martech</strong>.
+                            </p>
+                            <p class="about-description" data-key="aboutDesc2">
+                                Minha jornada inclui o desenvolvimento de sistemas complexos, desde 
+                                sistemas de gestão comercial até integrações seguras com instituições 
+                                bancárias. A projetos complexos de <strong>inteligência artificial</strong> e 
+                                <strong>visão computacional</strong>. Tenho experiência com diversas 
+                                tecnologias, incluindo 
+                                <strong>Laravel</strong>, <strong>Python</strong> e <strong>React</strong>.
+                            </p>
+                            <p class="about-description" data-key="aboutDesc3">
+                                Grande tive diversas oporotunidades em projetos internacionais,
+                                aprimorando minhas habilidades técnicas e de comunicação. Estou sempre
+                                em busca de novos desafios e oportunidades para crescer e contribuir
+                                com soluções inovadoras.
+                            </p>
+                        </div>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label" data-key="aboutStat1">Anos de Experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label" data-key="aboutStat2">Projetos Concluídos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">0</span>
+                                <span class="stat-label" data-key="aboutStat3">Tecnologias</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="about-visual">
+                            <div class="about-image-container">
+                                <div class="tech-orbit">
+                                    <div class="orbit-center">
+                                        <img src="assets/images/hero/samuel-photo.jpg" alt="Samuel Mauli" class="about-image">
+                                    </div>
+                                    <div class="orbit-ring ring-1">
+                                        <div class="orbit-item" data-tech="js">
+                                            <img src="assets/images/icons/js.png" alt="js" class="tech-icon">
+                                        </div>
+                                        <div class="orbit-item" data-tech="Python">
+                                            <img src="assets/images/icons/python.png" alt="Python" class="tech-icon">
+                                        </div>
+                                    </div>
+                                    <div class="orbit-ring ring-2">
+                                        <div class="orbit-item" data-tech="React">
+                                            <img src="assets/images/icons/react.png" alt="React" class="tech-icon">
+                                        </div>
+                                        <div class="orbit-item" data-tech="JavaScript">
+                                            <img src="assets/images/icons/html-5.png" alt="HTML5" class="tech-icon">
+                                        </div>
+                                        <div class="orbit-item" data-tech="PHP">
+                                            <img src="assets/images/icons/php.png" alt="PHP" class="tech-icon">
+                                        </div>
+                                    </div>
+                                    <div class="orbit-ring ring-3">
+                                        <div class="orbit-item" data-tech="AI/ML">
+                                            <img src="assets/images/icons/java.png" alt="Java" class="tech-icon">
+                                        </div>
+                                        <div class="orbit-item" data-tech="Database">
+                                            <img src="assets/images/icons/sql.png" alt="SQL" class="tech-icon">
+                                        </div>
+                                        <div class="orbit-item" data-tech="Cloud">
+                                            <img src="assets/images/icons/cloud.png" alt="Cloud" class="tech-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-number">02.</span>
+                        <span data-key="experienceTitle">Experiência Profissional</span>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item active" data-year="2025">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card glass-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title" data-key="exp1Title">Full Stack Developer</h3>
+                                    <span class="timeline-company">Grupo Negócios Públicos</span>
+                                    <span class="timeline-period" data-key="exp1Period">Jul 2025 - o momento</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p data-key="exp1Desc">
+                                        Atuação nos mercados de Martech e Fintech, desenvolvendo sistemas complexos, desde plataformas de gestão comercial até integrações seguras para processamento de pagamentos. Destaque para a criação de um sistema de Active Directory customizado para controle de acesso granular.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card glass-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title" data-key="exp2Title">Java Developer</h3>
+                                    <span class="timeline-company">Meisters Solutions (Grupo)</span>
+                                    <span class="timeline-period" data-key="exp2Period">Ago 2024 - Jul 2025</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p data-key="exp2Desc">
+                                        Foco em soluções escaláveis, automação e IA. Desenvolvi uma plataforma fiscal completa com Laravel, automatizei processos manuais com Python e criei duas ferramentas de IA (Ballesol CareAI e BlauSight) utilizando Flask, React, TensorFlow e PyTorch em ambiente AWS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card glass-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title" data-key="exp3Title">Agente de Suporte de TI</h3>
+                                    <span class="timeline-company">Positivo Tecnologia</span>
+                                    <span class="timeline-period" data-key="exp3Period">Dez 2023 - Jul 2024</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p data-key="exp3Desc">
+                                        Suporte técnico para a International Meal Company (IMC), administrando o backlog, gerenciando demandas e aplicando as melhores práticas da ITIL. Atuei na comunicação direta com fornecedores para resolver questões técnicas complexas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card glass-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title" data-key="exp4Title">Technical Consultant</h3>
+                                    <span class="timeline-company">TRI CS Inc.</span>
+                                    <span class="timeline-period" data-key="exp4Period">Mar 2023 - Ago 2023</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p data-key="exp4Desc">
+                                        Atuei em projetos nacionais e internacionais de implementação Oracle, desenvolvendo integrações e aplicativos com Oracle Integration Cloud (OIC) e criando relatórios com Oracle BI Publisher.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card glass-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title" data-key="exp5Title">Técnico de Suporte N1</h3>
+                                    <span class="timeline-company">ICI - Instituto Curitiba de Informática</span>
+                                    <span class="timeline-period" data-key="exp5Period">Ago 2022 - Mar 2023</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p data-key="exp5Desc">
+                                        Forneci suporte técnico inicial à Prefeitura de Curitiba, resolvendo problemas de software e hardware, colaborando com equipes de infraestrutura e NOC para garantir soluções rápidas e eficazes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-number">03.</span>
+                        <span data-key="projectsTitle">Projetos em Destaque</span>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all" data-key="projFilterAll">Todos</button>
+                    <button class="filter-btn" data-filter="ai" data-key="projFilterAi">IA/ML</button>
+                    <button class="filter-btn" data-filter="web" data-key="projFilterWeb">Web</button>
+                    <button class="filter-btn" data-filter="system" data-key="projFilterSystem">Sistemas</button>
+                </div>
+                
+                <div class="projects-grid">                   
+                    <div class="project-card glass-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/images/projects/quimera.jpg" alt="Quimera Chess AI">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-key="proj1Title">Quimera - Chess AI</h3>
+                            <p class="project-description" data-key="proj1Desc">
+                                Modelo de IA para xadrez com dupla habilidade e modelagem preditiva do oponente. 
+                                Algoritmos avançados de machine learning.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/images/projects/blausight.jpg" alt="BlauSight">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">BlauSight</h3>
+                            <p class="project-description" data-key="proj2Desc">
+                                Sistema de visão computacional avançado para análise e processamento 
+                                de imagens em tempo real com aplicações em IA.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/images/projects/librasnow.jpg" alt="LibrasNow">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">LibrasNow</h3>
+                            <p class="project-description" data-key="proj3Desc">
+                                Plataforma de acessibilidade para tradução e interpretação de Libras 
+                                usando inteligência artificial e visão computacional.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/images/projects/managerai.jpg" alt="ManagerAI">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ManagerAI</h3>
+                            <p class="project-description" data-key="proj4Desc">
+                                Sistema inteligente de gerenciamento empresarial com IA para 
+                                otimização de processos e tomada de decisões automatizada.
+                            </p>
+                        </div>
+                    </div>
+                                        <div class="project-card glass-card" data-category="system">
+                        <div class="project-image">
+                            <img src="assets/images/projects/active-directory.jpg" alt="Sistema Active Directory">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-key="proj5Title">Sistema Active Directory Customizado</h3>
+                            <p class="project-description" data-key="proj5Desc">
+                                Sistema de controle de acesso granular e centralizado desenvolvido para 
+                                resolver necessidades críticas de segurança empresarial.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card" data-category="system">
+                        <div class="project-image">
+                            <img src="assets/images/projects/rust-lavalamp.jpg" alt="Rust LavaLamp">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Rust LavaLamp</h3>
+                            <p class="project-description" data-key="proj6Desc">
+                                Projeto educacional inspirado no LavaRand da Cloudflare para geração 
+                                de entropia criptográfica usando imagens aleatórias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-number">04.</span>
+                        <span data-key="skillsTitle">Habilidades Técnicas</span>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+                <br>
+
+                <div class="skills-content">
+                    <div class="skills-radar">
+                        <canvas id="skillsRadar" width="400" height="400"></canvas>
+                    </div>
+                    
+                    <div class="skills-categories">
+                        <div class="skill-category">
+                            <h3 class="category-title">Frontend</h3>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="category-title">Backend</h3>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="category-title" data-key="skillsCat3">AI/ML & Data</h3>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="category-title" data-key="skillsCat4">DevOps & Tools</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="matrix-rain"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-number">05.</span>
+                        <span data-key="contactTitle">Vamos Conversar?</span>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card glass-card">
+                            <h3 class="contact-subtitle" data-key="contactSubtitle">Entre em Contato</h3>
+                            <p class="contact-description" data-key="contactDesc">
+                                Estou sempre aberto a novas oportunidades e projetos interessantes. 
+                                Vamos criar algo incrível juntos!
+                            </p>
+                            
+                            <div class="contact-methods">
+                                <a href="mailto:samuel.mauli@gmail.com" class="contact-method">
+                                    <div class="method-icon">
+                                        <img src="assets/images/icons/gmail.png" alt="Email" class="method-img-icon">
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">Email</span>
+                                        <span class="method-value">samuel.mauli@gmail.com</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="tel:+5547992770701" class="contact-method">
+                                    <div class="method-icon">
+                                        <img src="assets/images/icons/smartphone.png" alt="Telefone" class="method-img-icon">
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label" data-key="contactPhone">Telefone</span>
+                                        <span class="method-value">+55 (47) 99277-0701</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/samuelmauli/" class="contact-method">
+                                    <div class="method-icon">
+                                        <img src="assets/images/icons/linkedin.png" alt="LinkedIn" class="method-img-icon">
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">LinkedIn</span>
+                                        <span class="method-value">in/samuelmauli</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://github.com/SamuelMauli" class="contact-method">
+                                    <div class="method-icon">
+                                        <img src="assets/images/icons/github.png" alt="GitHub" class="method-img-icon">
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">GitHub</span>
+                                        <span class="method-value">SamuelMauli</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form glass-card" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label" data-key="formName">Nome</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label" data-key="formSubject">Assunto</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label" data-key="formMessage">Mensagem</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span class="btn-text" data-key="formSubmit">Enviar Mensagem</span>
+                                <span class="btn-glow"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p data-key="footerText">&copy; 2025 Samuel Mauli. Desenvolvido com 💙 e muito ☕</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/SamuelMauli" class="social-link" title="GitHub">
+                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuelmauli/" class="social-link" title="LinkedIn">
+                        <img src="assets/images/icons/linkedin.png" alt="LinkedIn" class="social-img-icon">
+                    </a>
+                    <a href="mailto:samuel.mauli@gmail.com" class="social-link" title="Email">
+                        <img src="assets/images/icons/gmail.png" alt="Email" class="social-img-icon">
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div
-        class="item custom-card"
-        style="background-image: url(IMG/balleai.png)"
-      >
-        <div class="item-desc">
-          <h3 class="custom2">System Chatbot</h3>
-          <p class="custom2">
-            O projeto consiste em um modelo de LLM, que interpreta a linguagem semantica e transcreve para um SQL e executa. 
-            A ideia por tras do projeto é facilitar o acesso a informação do usuário. gerando querys mais complexas e mais completas
-            O sistema foi testado e aprovado pelo cliente.
-          </p>
-          <a
-            href="https://drive.google.com/file/d/1gaMzadO8IE27Ofc0db9KHjcATyTPRlls/view?usp=sharing"
-            target="_blank"
-            class="custom-button"
-            >Veja funcionando!</a
-          >   
-        </div>
-      </div>
-
-      <div
-        class="item custom-card"
-        style="background-image: url(IMG/tracker.png)"
-      >
-        <div class="item-desc">
-          <h3 class="custom2">File Tracker</h3>
-          <p class="custom2">
-            O File tracker é um sistema para backup, O sistema atual está sendo migrado saindo de um legado de 2003 para uma versão mais moderna. 
-            A regra de negocios atual é manter apenas documentos ate 5 anos porem existe um grande numero de solicitações para arquivos antigos. 
-            Para automatizar e facilidar o dia a dia do usuário foi desenvolvido o file tracker. 
-          </p>
-          <a
-            href="https://drive.google.com/file/d/1gaMzadO8IE27Ofc0db9KHjcATyTPRlls/view?usp=sharing"
-            target="_blank"
-            class="custom-button"
-            >Veja funcionando!</a
-          >   
-        </div>
-      </div>
-
-        </div>
-      </section>
-
-      <script>
-        $(document).ready(function () {
-          $(".custom-carousel").owlCarousel({
-            autoWidth: true,
-            loop: true,
-          });
-
-          $(".custom-carousel .item").click(function () {
-            $(".custom-carousel .item").removeClass("active"); // Remove a classe "active" de todos os itens
-            $(this).addClass("active"); // Adiciona a classe "active" ao item clicado
-          });
-        });
-      </script>
-    </section>
-
-    <!-- Contatos -->
-    <section id="contact">
-      <div class="contact">
-        <div class="my_contatos">
-          <h1>Entre em contato!</h1>
-          <p>Caso tenha se interessado me mande uma mensagem.</p>
-          <div class="Contatos">
-            <form
-              action="mailto::samuel.mauli@gmail.com.br"
-              method="POST"
-              enctype="text/plain"
-            >
-              <label for="nome">Nome</label>
-              <input type="text" name="nome" id="nome" required />
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" required />
-              <label for="telefone">Telefone</label>
-              <input type="tel" name="telefone" id="telefone" required />
-              <label for="mensagem">Mensagem</label>
-              <textarea name="mensagem" id="mensagem" required></textarea>
-              <button type="submit" data-button>Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form[data-form]");
-        const submitButton = document.querySelector("button[data-button]");
-
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          alert("Mensagem enviada com sucesso! Obrigado pelo contato. :)");
-
-          form.reset();
-
-          const formData = new FormData(form);
-          fetch(form.action, {
-            method: "POST",
-            body: formData,
-          });
-        });
-      });
-    </script>
-
-    <!--Footer-->
-    <footer>
-      <div class="sobre_titulo">
-        <h1>Obrigado!</h1>
-        <p>
-          Gostaria de agradecer pelo seu tempo! Espero que tenha gostado!! Este
-          foi meu primeiro projeto.
-        </p>
-        <div aria-label="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="projetos.js"></script>
-  </body>
+
+    <script src="assets/js/main.js"></script>
+    <script src="components/particles.js"></script>
+    <script src="components/matrix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/skills-chart.js"></script>
+</body>
 </html>
