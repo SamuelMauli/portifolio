@@ -143,15 +143,6 @@ Edite as variáveis CSS em `assets/css/main.css`:
 - Links para redes sociais
 - Informações de contato
 
-## 🎮 Easter Eggs
-
-O portfólio inclui alguns easter eggs divertidos:
-
-- **Código Konami**: ↑↑↓↓←→←→BA (ativa modo Matrix)
-- **Duplo clique no logo**: Ativa modo Glitch
-- **Clique nas partículas**: Cria explosões
-- **Tecla Espaço**: Efeito de onda nas partículas
-
 ## 🔧 Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica
