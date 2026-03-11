@@ -1,577 +1,366 @@
-// ===== MAIN JAVASCRIPT FILE =====
-
-// Dicionário de Traduções
+// ===== TRANSLATIONS =====
 const translations = {
     pt: {
-        loadingMessage: 'Inicializando sistema...',
-        navHome: 'Início',
-        navAbout: 'Sobre',
-        navExperience: 'Experiência',
-        navProjects: 'Projetos',
-        navSkills: 'Skills',
-        navContact: 'Contato',
-        navCurriculum: 'Currículo',
-        heroTitleLine: 'Olá, eu sou',
-        heroRole: 'Desenvolvedor Full Stack,Especialista em IA,Arquiteto de Soluções,Inovador Tecnológico',
-        heroDescription: 'Transformando ideias em soluções tecnológicas inovadoras. Especializado em <span class="highlight">Fintech</span>, <span class="highlight">Martech</span> e <span class="highlight">Inteligência Artificial</span>.',
-        heroBtnProjects: 'Ver Projetos',
-        heroBtnContact: 'Contato',
-        heroScroll: 'Scroll para explorar',
+        navHome: 'Início', navAbout: 'Sobre', navExperience: 'Experiência',
+        navProjects: 'Projetos', navSkills: 'Stack', navContact: 'Contato', navCurriculum: 'Currículo',
+        heroGreeting: 'Olá, eu sou',
+        heroRole: 'Desenvolvedor Full-Stack,Engenheiro de Software,Especialista em IA,Arquiteto de Soluções',
+        heroDescription: 'Desenvolvedor Full-Stack trilíngue focado em arquitetura de soluções end-to-end. Construo sistemas escaláveis com <span class="text-accent">IA</span>, <span class="text-accent">Cloud</span> e <span class="text-accent">automação inteligente</span>.',
+        heroBtnProjects: 'Ver Projetos', heroBtnContact: 'Contato',
+        heroBadge: 'Disponível para projetos', heroScroll: 'scroll',
         aboutTitle: 'Sobre Mim',
-        aboutSubtitle: 'Desenvolvedor Full Stack',
-        aboutDesc1: 'Sou Samuel Mauli, desenvolvedor apaixonado por tecnologia e inovação. Atualmente trabalho no <strong>Grupo Negócios Públicos</strong> como Desenvolvedor Full Stack, mergulhando nos desafios dos mercados de <strong>Fintech</strong> e <strong>Martech</strong>.',
-        aboutDesc2: 'Minha jornada inclui o desenvolvimento de sistemas complexos, desde sistemas de gestão comercial até integrações seguras com instituições bancárias. A projetos complexos de <strong>inteligência artificial</strong> e <strong>visão computacional</strong>. Tenho experiência com diversas tecnologias, incluindo <strong>Laravel</strong>, <strong>Python</strong> e <strong>React</strong>.',
-        aboutDesc3: 'Tive diversas oportunidades em projetos internacionais, aprimorando minhas habilidades técnicas e de comunicação. Estou sempre em busca de novos desafios e oportunidades para crescer e contribuir com soluções inovadoras.',
-        aboutStat1: 'Anos de Experiência',
-        aboutStat2: 'Projetos Concluídos',
-        aboutStat3: 'Tecnologias',
-        experienceTitle: 'Experiência Profissional',
-        exp1Title: 'Full Stack Developer',
-        exp1Period: 'Jul 2025 - o momento',
-        exp1Desc: 'Atuação nos mercados de Martech e Fintech, desenvolvendo sistemas complexos, desde plataformas de gestão comercial até integrações seguras para processamento de pagamentos. Destaque para a criação de um sistema de Active Directory customizado para controle de acesso granular.',
-        exp2Title: 'Java Developer',
-        exp2Period: 'Ago 2024 - Jul 2025',
-        exp2Desc: 'Foco em soluções escaláveis, automação e IA. Desenvolvi uma plataforma fiscal completa com Laravel, automatizei processos manuais com Python e criei duas ferramentas de IA (Ballesol CareAI e BlauSight) utilizando Flask, React, TensorFlow e PyTorch em ambiente AWS.',
-        exp3Title: 'Agente de Suporte de TI',
-        exp3Period: 'Dez 2023 - Jul 2024',
-        exp3Desc: 'Suporte técnico para a International Meal Company (IMC), administrando o backlog, gerenciando demandas e aplicando as melhores práticas da ITIL. Atuei na comunicação direta com fornecedores para resolver questões técnicas complexas.',
-        exp4Title: 'Technical Consultant',
-        exp4Period: 'Mar 2023 - Ago 2023',
-        exp4Desc: 'Atuei em projetos nacionais e internacionais de implementação Oracle, desenvolvendo integrações e aplicativos com Oracle Integration Cloud (OIC) e criando relatórios com Oracle BI Publisher.',
-        exp5Title: 'Técnico de Suporte N1',
-        exp5Period: 'Ago 2022 - Mar 2023',
-        exp5Desc: 'Forneci suporte técnico inicial à Prefeitura de Curitiba, resolvendo problemas de software e hardware, colaborando com equipes de infraestrutura e NOC para garantir soluções rápidas e eficazes.',
+        aboutLead: 'Desenvolvedor Full-Stack trilíngue com foco em arquitetura de soluções end-to-end e impacto real nos negócios.',
+        aboutDesc1: 'Minha experiência abrange <strong>Java (Spring Boot)</strong>, <strong>PHP (Laravel)</strong>, <strong>Python</strong>, <strong>Go</strong>, <strong>Rust</strong> e <strong>Node.js</strong>, onde foco na construção de sistemas robustos e na automação inteligente de processos. No front-end, desenvolvo interfaces reativas com <strong>React</strong>, <strong>Vue</strong> e <strong>Next.js</strong>, além de aplicativos móveis multiplataforma com <strong>Flutter</strong>, <strong>Kotlin</strong> e <strong>Swift</strong>.',
+        aboutDesc2: 'Trabalho com infraestrutura Cloud e implemento práticas DevOps (CI/CD, Docker, Kubernetes) para garantir alta disponibilidade e escalabilidade. Aplico <strong>Inteligência Artificial</strong> — desde visão computacional até LLMs — para resolver problemas complexos e agregar valor mensurável, construindo plataformas escaláveis como SGI, CRMs e LMS com integrações bancárias e gateways de pagamento.',
+        aboutStat1: 'Anos de Experiência', aboutStat2: 'Projetos Entregues', aboutStat3: 'Tecnologias', aboutStat4: 'Idiomas',
+        experienceTitle: 'Experiência',
+        exp1Title: 'Desenvolvedor Pleno', exp1Period: '2025 — Presente',
+        exp1Desc: 'Lidero o desenvolvimento e a arquitetura da plataforma integrada de SGI e CRM. Responsável pela engenharia de sistemas de controle de pagamento e orquestração de APIs com gateways de pagamento e serviços de mensageria. Atuação cross-stack com PHP, Go, Python e Node.js para microsserviços e soluções de automação de processos (BPA). Gestão de infraestrutura Cloud (AWS), provisionamento de recursos e manutenção de pipelines CI/CD. Automação de processos com inteligência artificial, visão computacional e integrações com LLMs.',
+        exp2Title: 'Developer & Consultor', exp2Period: '2024 — Presente',
+        exp2Desc: 'Consultor de software entregando soluções end-to-end complexas — de aplicações web/móveis a sistemas de IA. Desenvolvi um motor de Inteligência Artificial para a indústria química (PLN + Machine Learning para análise preditiva de causa-raiz). Implementei soluções de Visão Computacional como sistema de almoxarifado com reconhecimento facial. Portfólio inclui apps mobile (gestão de faturas, energia solar), plataformas E-learning (LMS), sistemas de controle de acesso industrial e microserviços de geoprocessamento em tempo real.',
+        exp3Title: 'Java & PHP Developer', exp3Period: '2024 — 2025',
+        exp3Desc: 'Desenvolvedor Full-Stack com Java (Spring Boot, Hibernate/JPA, Maven) e PHP (Laravel) para APIs RESTful de alta performance. Liderança técnica em projetos de Python e Machine Learning, focado na otimização de pipelines de dados (ETL/ELT) para o setor farmacêutico. Criação do BlauSight — sistema de gestão da qualidade com IA generativa — e do Ballesol CareAI, agente de IA com criptografia E2E hospedado em AWS.',
+        exp4Title: 'Agente de Suporte TI', exp4Period: '2023 — 2024',
+        exp4Desc: 'Integrei o time de Tech Services da Positivo no suporte técnico à International Meal Company (IMC). Responsável pela administração e triagem do backlog, distribuição de demandas à equipe e aplicação de boas práticas ITIL para priorização por criticidade. Mantive comunicação direta com fornecedores para resolução de questões técnicas envolvendo infraestrutura, redes e sistemas críticos de operação. Experiência prática em troubleshooting de ambientes complexos e gestão de SLAs em operação de larga escala.',
+        exp5Title: 'Consultor Técnico Oracle', exp5Period: '2023',
+        exp5Desc: 'Atuei em projetos nacionais e internacionais de implementação do ecossistema Oracle. Desenvolvi integrações entre sistemas corporativos utilizando Oracle Integration Cloud (OIC), construindo fluxos de orquestração, transformação de dados e conexões com APIs REST/SOAP. Criei relatórios analíticos e operacionais com Oracle BI Publisher para tomada de decisão. Experiência em ambientes enterprise com ciclos de implementação complexos e stakeholders multinacionais.',
+        exp6Title: 'Técnico de Suporte N1', exp6Period: '2022 — 2023',
+        exp6Desc: 'Suporte técnico direto à Prefeitura de Curitiba, abrangendo diagnóstico e resolução de problemas de software, hardware e rede. Colaboração constante com equipes de infraestrutura, NOC e técnicos de campo para escalonamento eficiente de incidentes. Responsável pela documentação de chamados e contribuição ativa à base de conhecimento do projeto, garantindo rastreabilidade e melhoria contínua dos processos de atendimento.',
         projectsTitle: 'Projetos em Destaque',
-        projFilterAll: 'Todos',
-        projFilterAi: 'IA/ML',
-        projFilterWeb: 'Web',
-        projFilterSystem: 'Sistemas',
-        proj1Title: 'Quimera - Chess AI',
-        proj1Desc: 'Modelo de IA para xadrez com dupla habilidade e modelagem preditiva do oponente. Algoritmos avançados de machine learning.',
-        proj2Desc: 'Sistema de visão computacional avançado para análise e processamento de imagens em tempo real com aplicações em IA.',
-        proj3Desc: 'Plataforma de acessibilidade para tradução e interpretação de Libras usando inteligência artificial e visão computacional.',
-        proj4Desc: 'Sistema inteligente de gerenciamento empresarial com IA para otimização de processos e tomada de decisões automatizada.',
-        proj5Title: 'Sistema Active Directory Customizado',
-        proj5Desc: 'Sistema de controle de acesso granular e centralizado desenvolvido para resolver necessidades críticas de segurança empresarial.',
-        proj6Desc: 'Projeto educacional inspirado no LavaRand da Cloudflare para geração de entropia criptográfica usando imagens aleatórias.',
-        skillsTitle: 'Habilidades Técnicas',
-        skillsCat3: 'IA/ML & Dados',
-        skillsCat4: 'DevOps & Ferramentas',
+        projFilterAll: 'Todos', projFilterAi: 'IA / ML', projFilterPlatform: 'Plataformas', projFilterSystem: 'Sistemas',
+        proj1Subtitle: 'Motor Preditivo de Qualidade e Compliance',
+        proj1Desc: 'Solução de Machine Learning para a indústria farmacêutica que identifica falhas sistêmicas em linhas de produção, categoriza anomalias por origem (humana, operacional, maquinário) e gera planos de ação corretiva automatizados. Integra chatbot de suporte à qualidade com IA generativa, conectado ao banco de dados em tempo real via API REST, com criptografia ponta a ponta. Arquitetura Flask + React hospedada em AWS.',
+        proj2Title: 'IA Aplicada com Propósito', proj2Subtitle: 'Inteligência Artificial para Impacto Real',
+        proj2Desc: 'Desenvolvimento de soluções de IA com foco em impacto real e mensurável para negócios. Projetos que combinam modelos de linguagem (LLMs), visão computacional e automação inteligente para resolver desafios estratégicos — desde análise preditiva de causa-raiz em processos industriais até automação de documentos fiscais e agentes conversacionais com acesso a dados em tempo real.',
+        proj3Title: 'Solar Hub', proj3Subtitle: 'Plataforma de Gestão de Energia Solar',
+        proj3Desc: 'Plataforma integrada para gestão operacional de usinas solares e distribuição de energia em modelo cooperativo. Inclui aplicativo mobile B2C para consumidores finais com monitoramento em tempo real do consumo e geração, dashboard administrativo para operadores, hub de benefícios para cooperados e sistema de faturamento automatizado integrado a gateways de pagamento.',
+        proj4Title: 'EduStack', proj4Subtitle: 'Ecossistema EdTech & E-commerce Educacional',
+        proj4Desc: 'Plataforma educacional end-to-end para curso preparatório: gestão de conteúdo programático, aprendizagem gamificada com sistema de XP e rankings, análise de desempenho individual com dashboards visuais, motor de recomendações de estudo personalizadas e e-commerce integrado para venda de materiais e cursos com checkout próprio.',
+        proj5Title: 'CareLink', proj5Subtitle: 'Plataforma de Cuidados com Idosos',
+        proj5Desc: 'Plataforma digital para gestão integrada de cuidados com idosos, conectando famílias, cuidadores e equipes de saúde em um único ecossistema. Funcionalidades incluem monitoramento em tempo real de sinais vitais, agenda inteligente de cuidados e medicações, prontuário eletrônico compartilhado, canal de comunicação seguro entre stakeholders e sistema de alertas configuráveis.',
+        proj6Title: 'SecureGate', proj6Subtitle: 'Governança de Acessos & Gestão de Facilities',
+        proj6Desc: 'Sistema para o setor bioquímico com controle de segurança perimetral, credenciamento digital de fornecedores e motoristas, validação automática de NF-e na entrada e gestão inteligente de espaços corporativos (salas de reunião, auditórios, laboratórios). Inclui módulo de reconhecimento facial para controle de acesso e dashboard de ocupação em tempo real.',
+        proj7Subtitle: 'Interface de IA Assistiva',
+        proj7Desc: 'Solução de inclusão digital que automatiza a tradução de linguagem de sinais para texto utilizando Edge Computing com baixíssima latência. O sistema processa gestos em tempo real via câmera, eliminando barreiras de acessibilidade e permitindo comunicação fluida entre surdos e ouvintes sem necessidade de intérprete humano.',
+        proj8Title: 'GeoTrack', proj8Subtitle: 'Geoprocessamento em Tempo Real',
+        proj8Desc: 'Microserviço de alta performance desenvolvido em Go para rastreamento geoespacial em tempo real. Alimenta simultaneamente centenas de usuários conectados via WebSocket com atualização de posição de mais de 100 motoristas em tempo real. Arquitetura otimizada para baixa latência e alta concorrência, com persistência geoespacial e cache distribuído.',
+        proj9Subtitle: 'Chess AI Engine',
+        proj9Desc: 'Motor de xadrez com inteligência artificial que combina busca minimax com poda alfa-beta e avaliação posicional por redes neurais. O sistema analisa milhões de posições por segundo, prevê padrões de jogo do oponente e adapta sua estratégia dinamicamente. Implementado em C++ para máxima performance computacional.',
+        proj10Subtitle: 'Entropia Criptográfica',
+        proj10Desc: 'Projeto inspirado no LavaRand da Cloudflare para geração de entropia criptográfica verdadeiramente aleatória. Utiliza processamento de imagens para extrair ruído visual e convertê-lo em sementes criptográficas de alta qualidade. Implementado em Rust para garantir segurança de memória e performance bare-metal.',
+        skillsTitle: 'Tech Stack',
+        skillsCat1: 'Linguagens', skillsCat3: 'IA / ML & Dados', skillsCat4: 'Cloud & DevOps', skillsCat6: 'Mobile & Multiplataforma',
         contactTitle: 'Vamos Conversar?',
-        contactSubtitle: 'Entre em Contato',
-        contactDesc: 'Estou sempre aberto a novas oportunidades e projetos interessantes. Vamos criar algo incrível juntos!',
+        contactDesc: 'Estou sempre aberto a novas oportunidades, projetos desafiadores e parcerias estratégicas. Vamos construir algo extraordinário juntos.',
         contactPhone: 'Telefone',
-        formName: 'Nome',
-        formSubject: 'Assunto',
-        formMessage: 'Mensagem',
-        formSubmit: 'Enviar Mensagem',
-        footerText: '&copy; 2025 Samuel Mauli. Desenvolvido com 💙 e muito ☕'
+        formName: 'Nome', formSubject: 'Assunto', formMessage: 'Mensagem', formSubmit: 'Enviar Mensagem',
+        footerText: '© 2025 Samuel Mauli. Curitiba, PR.'
     },
     en: {
-        loadingMessage: 'Initializing system...',
-        navHome: 'Home',
-        navAbout: 'About',
-        navExperience: 'Experience',
-        navProjects: 'Projects',
-        navSkills: 'Skills',
-        navContact: 'Contact',
-        navCurriculum: 'Resume',
-        heroTitleLine: "Hi, I'm",
-        heroRole: 'Full Stack Developer,AI Specialist,Solutions Architect,Tech Innovator',
-        heroDescription: 'Transforming ideas into innovative technological solutions. Specializing in <span class="highlight">Fintech</span>, <span class="highlight">Martech</span>, and <span class="highlight">Artificial Intelligence</span>.',
-        heroBtnProjects: 'View Projects',
-        heroBtnContact: 'Contact',
-        heroScroll: 'Scroll to explore',
+        navHome: 'Home', navAbout: 'About', navExperience: 'Experience',
+        navProjects: 'Projects', navSkills: 'Stack', navContact: 'Contact', navCurriculum: 'Resume',
+        heroGreeting: "Hi, I'm",
+        heroRole: 'Full-Stack Developer,Software Engineer,AI Specialist,Solutions Architect',
+        heroDescription: 'Trilingual Full-Stack Developer focused on end-to-end solution architecture. I build scalable systems with <span class="text-accent">AI</span>, <span class="text-accent">Cloud</span>, and <span class="text-accent">intelligent automation</span>.',
+        heroBtnProjects: 'View Projects', heroBtnContact: 'Contact',
+        heroBadge: 'Available for projects', heroScroll: 'scroll',
         aboutTitle: 'About Me',
-        aboutSubtitle: 'Full Stack Developer',
-        aboutDesc1: "I'm Samuel Mauli, a developer passionate about technology and innovation. I currently work at <strong>Grupo Negócios Públicos</strong> as a Full Stack Developer, diving into the challenges of the <strong>Fintech</strong> and <strong>Martech</strong> markets.",
-        aboutDesc2: 'My journey includes developing complex systems, from commercial management systems to secure integrations with banking institutions and complex <strong>artificial intelligence</strong> and <strong>computer vision</strong> projects. I have experience with various technologies, including <strong>Laravel</strong>, <strong>Python</strong>, and <strong>React</strong>.',
-        aboutDesc3: 'I have had several opportunities in international projects, enhancing my technical and communication skills. I am always looking for new challenges and opportunities to grow and contribute with innovative solutions.',
-        aboutStat1: 'Years of Experience',
-        aboutStat2: 'Projects Completed',
-        aboutStat3: 'Technologies',
-        experienceTitle: 'Professional Experience',
-        exp1Title: 'Full Stack Developer',
-        exp1Period: 'Jul 2025 - Present',
-        exp1Desc: 'Working in the Martech and Fintech markets, developing complex systems, from commercial management platforms to secure integrations for payment processing. A highlight is the creation of a custom Active Directory system for granular access control.',
-        exp2Title: 'Java Developer',
-        exp2Period: 'Aug 2024 - Jul 2025',
-        exp2Desc: 'Focused on scalable solutions, automation, and AI. I developed a complete fiscal platform with Laravel, automated manual processes with Python, and created two AI tools (Ballesol CareAI and BlauSight) using Flask, React, TensorFlow, and PyTorch in an AWS environment.',
-        exp3Title: 'IT Support Agent',
-        exp3Period: 'Dec 2023 - Jul 2024',
-        exp3Desc: 'Provided technical support for the International Meal Company (IMC), managing the backlog, handling demands, and applying ITIL best practices. I was directly involved in communicating with suppliers to resolve complex technical issues.',
-        exp4Title: 'Technical Consultant',
-        exp4Period: 'Mar 2023 - Aug 2023',
-        exp4Desc: 'I worked on national and international Oracle implementation projects, developing integrations and applications with Oracle Integration Cloud (OIC) and creating reports with Oracle BI Publisher.',
-        exp5Title: 'N1 Support Technician',
-        exp5Period: 'Aug 2022 - Mar 2023',
-        exp5Desc: 'Provided initial technical support to the Curitiba City Hall, resolving software and hardware issues, and collaborating with infrastructure and NOC teams to ensure quick and effective solutions.',
+        aboutLead: 'Trilingual Full-Stack Developer focused on end-to-end solution architecture and real business impact.',
+        aboutDesc1: 'My experience spans <strong>Java (Spring Boot)</strong>, <strong>PHP (Laravel)</strong>, <strong>Python</strong>, <strong>Go</strong>, <strong>Rust</strong>, and <strong>Node.js</strong>, where I focus on building robust systems and intelligent process automation. On the front-end, I develop reactive interfaces with <strong>React</strong>, <strong>Vue</strong>, and <strong>Next.js</strong>, as well as cross-platform mobile applications using <strong>Flutter</strong>, <strong>Kotlin</strong>, and <strong>Swift</strong>.',
+        aboutDesc2: 'I work with Cloud infrastructure and implement DevOps practices (CI/CD, Docker, Kubernetes) to ensure high availability and scalability. I apply <strong>Artificial Intelligence</strong> — from computer vision to LLMs — to solve complex problems and deliver measurable value, building scalable platforms such as SGI, CRMs, and LMS with banking integrations and payment gateways.',
+        aboutStat1: 'Years of Experience', aboutStat2: 'Projects Delivered', aboutStat3: 'Technologies', aboutStat4: 'Languages',
+        experienceTitle: 'Experience',
+        exp1Title: 'Full Stack Developer', exp1Period: '2025 — Present',
+        exp1Desc: 'Leading the development and architecture of the integrated SGI and CRM platform. Responsible for engineering payment control systems and orchestrating APIs with payment gateways and messaging services. Cross-stack work using PHP, Go, Python, and Node.js for different microservices and business process automation (BPA) solutions. Managing cloud IT infrastructure (AWS), resource provisioning, and CI/CD pipeline maintenance. Process automation using AI, computer vision, and LLM integrations.',
+        exp2Title: 'Developer & Consultant', exp2Period: '2024 — Present',
+        exp2Desc: 'Software consultant delivering complex end-to-end solutions — from web/mobile applications to AI systems. Developed an AI engine for the chemical industry (NLP + Machine Learning for predictive root-cause analysis). Implemented Computer Vision solutions such as a warehouse management system with facial recognition. Portfolio includes mobile apps (invoice management, solar energy), E-learning platforms (LMS), industrial access control systems, and real-time geoprocessing microservices.',
+        exp3Title: 'Java & PHP Developer', exp3Period: '2024 — 2025',
+        exp3Desc: 'Full-Stack developer with Java (Spring Boot, Hibernate/JPA, Maven) and PHP (Laravel) for high-performance RESTful APIs. Technical leadership in Python and Machine Learning projects, focused on optimizing data pipelines (ETL/ELT) for the pharmaceutical sector. Created BlauSight — a quality management system with generative AI — and Ballesol CareAI, an E2E encrypted AI agent hosted on AWS.',
+        exp4Title: 'IT Support Agent', exp4Period: '2023 — 2024',
+        exp4Desc: 'Joined Positivo\'s Tech Services team providing technical support to International Meal Company (IMC). Responsible for backlog administration and triage, demand distribution across the team, and applying ITIL best practices for severity-based prioritization. Maintained direct communication with vendors to resolve technical issues involving infrastructure, networking, and mission-critical systems. Hands-on experience in complex environment troubleshooting and SLA management at scale.',
+        exp5Title: 'Oracle Technical Consultant', exp5Period: '2023',
+        exp5Desc: 'Worked on national and international Oracle ecosystem implementation projects. Developed corporate system integrations using Oracle Integration Cloud (OIC), building orchestration flows, data transformations, and REST/SOAP API connections. Created analytical and operational reports with Oracle BI Publisher for decision-making. Experience in enterprise environments with complex implementation cycles and multinational stakeholders.',
+        exp6Title: 'N1 Support Technician', exp6Period: '2022 — 2023',
+        exp6Desc: 'Direct technical support to the Curitiba City Hall, covering diagnosis and resolution of software, hardware, and network issues. Constant collaboration with infrastructure teams, NOC, and field technicians for efficient incident escalation. Responsible for ticket documentation and active contribution to the project knowledge base, ensuring traceability and continuous improvement of support processes.',
         projectsTitle: 'Featured Projects',
-        projFilterAll: 'All',
-        projFilterAi: 'AI/ML',
-        projFilterWeb: 'Web',
-        projFilterSystem: 'Systems',
-        proj1Title: 'Quimera - Chess AI',
-        proj1Desc: 'AI model for chess with dual abilities and opponent predictive modeling. Advanced machine learning algorithms.',
-        proj2Desc: 'Advanced computer vision system for real-time image analysis and processing with AI applications.',
-        proj3Desc: 'Accessibility platform for translating and interpreting Brazilian Sign Language (Libras) using artificial intelligence and computer vision.',
-        proj4Desc: 'Intelligent business management system with AI for process optimization and automated decision-making.',
-        proj5Title: 'Custom Active Directory System',
-        proj5Desc: 'A granular and centralized access control system developed to address critical enterprise security needs.',
-        proj6Desc: 'Educational project inspired by Cloudflare\'s LavaRand for generating cryptographic entropy using random images.',
-        skillsTitle: 'Technical Skills',
-        skillsCat3: 'AI/ML & Data',
-        skillsCat4: 'DevOps & Tools',
+        projFilterAll: 'All', projFilterAi: 'AI / ML', projFilterPlatform: 'Platforms', projFilterSystem: 'Systems',
+        proj1Subtitle: 'Predictive Quality & Compliance Engine',
+        proj1Desc: 'Machine Learning solution for the pharmaceutical industry that identifies systemic failures in production lines, categorizes anomalies by origin (human, operational, machinery), and generates automated corrective action plans. Integrates a quality support chatbot with generative AI, connected to the database in real-time via REST API with end-to-end encryption. Flask + React architecture hosted on AWS.',
+        proj2Title: 'Purpose-Driven AI', proj2Subtitle: 'AI for Real Business Impact',
+        proj2Desc: 'AI solutions development focused on real and measurable business impact. Projects combining language models (LLMs), computer vision, and intelligent automation to solve strategic challenges — from predictive root-cause analysis in industrial processes to fiscal document automation and conversational agents with real-time data access.',
+        proj3Title: 'Solar Hub', proj3Subtitle: 'Solar Energy Management Platform',
+        proj3Desc: 'Integrated platform for operational management of solar plants and energy distribution in a cooperative model. Includes B2C mobile app for end consumers with real-time consumption and generation monitoring, administrative dashboard for operators, benefits hub for cooperative members, and automated billing system integrated with payment gateways.',
+        proj4Title: 'EduStack', proj4Subtitle: 'EdTech & Educational E-commerce Ecosystem',
+        proj4Desc: 'End-to-end educational platform for preparatory courses: content management, gamified learning with XP system and rankings, individual performance analysis with visual dashboards, personalized study recommendation engine, and integrated e-commerce for selling materials and courses with native checkout.',
+        proj5Title: 'CareLink', proj5Subtitle: 'Elderly Care Platform',
+        proj5Desc: 'Digital platform for integrated elderly care management, connecting families, caregivers, and healthcare teams in a single ecosystem. Features include real-time vital sign monitoring, intelligent care and medication scheduling, shared electronic health records, secure communication channels between stakeholders, and configurable alert systems.',
+        proj6Title: 'SecureGate', proj6Subtitle: 'Access Governance & Facilities Management',
+        proj6Desc: 'System for the biochemical sector with perimeter security control, digital credentialing of suppliers and drivers, automatic NF-e validation at entry, and intelligent management of corporate spaces (meeting rooms, auditoriums, laboratories). Includes facial recognition module for access control and real-time occupancy dashboard.',
+        proj7Subtitle: 'Assistive AI Interface',
+        proj7Desc: 'Digital inclusion solution that automates sign language to text translation using Edge Computing with ultra-low latency. The system processes gestures in real-time via camera, eliminating accessibility barriers and enabling fluid communication between deaf and hearing individuals without the need for a human interpreter.',
+        proj8Title: 'GeoTrack', proj8Subtitle: 'Real-Time Geoprocessing',
+        proj8Desc: 'High-performance microservice developed in Go for real-time geospatial tracking. Simultaneously feeds hundreds of connected users via WebSocket with position updates from 100+ drivers in real-time. Architecture optimized for low latency and high concurrency, with geospatial persistence and distributed caching.',
+        proj9Subtitle: 'Chess AI Engine',
+        proj9Desc: 'Chess engine with artificial intelligence combining minimax search with alpha-beta pruning and positional evaluation via neural networks. The system analyzes millions of positions per second, predicts opponent game patterns, and dynamically adapts its strategy. Implemented in C++ for maximum computational performance.',
+        proj10Subtitle: 'Cryptographic Entropy',
+        proj10Desc: "Project inspired by Cloudflare's LavaRand for generating truly random cryptographic entropy. Uses image processing to extract visual noise and convert it into high-quality cryptographic seeds. Implemented in Rust to ensure memory safety and bare-metal performance.",
+        skillsTitle: 'Tech Stack',
+        skillsCat1: 'Languages', skillsCat3: 'AI / ML & Data', skillsCat4: 'Cloud & DevOps', skillsCat6: 'Mobile & Cross-Platform',
         contactTitle: "Let's Talk?",
-        contactSubtitle: 'Get in Touch',
-        contactDesc: "I'm always open to new opportunities and interesting projects. Let's create something amazing together!",
+        contactDesc: "I'm always open to new opportunities, challenging projects, and strategic partnerships. Let's build something extraordinary together.",
         contactPhone: 'Phone',
-        formName: 'Name',
-        formSubject: 'Subject',
-        formMessage: 'Message',
-        formSubmit: 'Send Message',
-        footerText: '&copy; 2025 Samuel Mauli. Developed with 💙 and lots of ☕'
+        formName: 'Name', formSubject: 'Subject', formMessage: 'Message', formSubmit: 'Send Message',
+        footerText: '© 2025 Samuel Mauli. Curitiba, PR.'
     },
     es: {
-        loadingMessage: 'Inicializando sistema...',
-        navHome: 'Inicio',
-        navAbout: 'Yo',
-        navExperience: 'Bagaje',
-        navProjects: 'Proyectos',
-        navSkills: 'Habilidades',
-        navContact: 'Contacto',
-        navCurriculum: 'CV',
-        heroTitleLine: 'Hola, soy',
-        heroRole: 'Desarrollador Full Stack,Especialista en IA,Arquitecto de Soluciones,Innovador Tecnológico',
-        heroDescription: 'Transformando ideas en soluciones tecnológicas innovadoras. Especializado en <span class="highlight">Fintech</span>, <span class="highlight">Martech</span> e <span class="highlight">Inteligencia Artificial</span>.',
-        heroBtnProjects: 'Ver Proyectos',
-        heroBtnContact: 'Contacto',
-        heroScroll: 'Desliza para explorar',
+        navHome: 'Inicio', navAbout: 'Sobre Mí', navExperience: 'Experiencia',
+        navProjects: 'Proyectos', navSkills: 'Stack', navContact: 'Contacto', navCurriculum: 'CV',
+        heroGreeting: 'Hola, soy',
+        heroRole: 'Desarrollador Full-Stack,Ingeniero de Software,Especialista en IA,Arquitecto de Soluciones',
+        heroDescription: 'Desarrollador Full-Stack trilingüe enfocado en arquitectura de soluciones integrales. Construyo sistemas escalables con <span class="text-accent">IA</span>, <span class="text-accent">Cloud</span> y <span class="text-accent">automatización inteligente</span>.',
+        heroBtnProjects: 'Ver Proyectos', heroBtnContact: 'Contacto',
+        heroBadge: 'Disponible para proyectos', heroScroll: 'scroll',
         aboutTitle: 'Sobre Mí',
-        aboutSubtitle: 'Desarrollador Full Stack',
-        aboutDesc1: 'Soy Samuel Mauli, un desarrollador apasionado por la tecnología y la innovación. Actualmente trabajo en <strong>Grupo Negócios Públicos</strong> como Desarrollador Full Stack, sumergiéndome en los desafíos de los mercados <strong>Fintech</strong> y <strong>Martech</strong>.',
-        aboutDesc2: 'Mi trayectoria incluye el desarrollo de sistemas complejos, desde sistemas de gestión comercial hasta integraciones seguras con instituciones bancarias y proyectos complejos de <strong>inteligencia artificial</strong> y <strong>visión por computadora</strong>. Tengo experiencia con diversas tecnologías, incluyendo <strong>Laravel</strong>, <strong>Python</strong> y <strong>React</strong>.',
-        aboutDesc3: 'He tenido varias oportunidades en proyectos internacionales, mejorando mis habilidades técnicas y de comunicación. Siempre estoy en busca de nuevos desafíos y oportunidades para crecer y contribuir con soluciones innovadoras.',
-        aboutStat1: 'Años de Experiencia',
-        aboutStat2: 'Proyectos Completados',
-        aboutStat3: 'Tecnologías',
-        experienceTitle: 'Experiencia Profesional',
-        exp1Title: 'Desarrollador Full Stack',
-        exp1Period: 'Jul 2025 - Actualidad',
-        exp1Desc: 'Actuación en los mercados de Martech y Fintech, desarrollando sistemas complejos, desde plataformas de gestión comercial hasta integraciones seguras para el procesamiento de pagos. Destaca la creación de un sistema de Active Directory personalizado para un control de acceso granular.',
-        exp2Title: 'Desarrollador Java',
-        exp2Period: 'Ago 2024 - Jul 2025',
-        exp2Desc: 'Enfoque en soluciones escalables, automatización e IA. Desarrollé una plataforma fiscal completa con Laravel, automaticé procesos manuales con Python y creé dos herramientas de IA (Ballesol CareAI y BlauSight) utilizando Flask, React, TensorFlow y PyTorch en un entorno de AWS.',
-        exp3Title: 'Agente de Soporte de TI',
-        exp3Period: 'Dic 2023 - Jul 2024',
-        exp3Desc: 'Soporte técnico para International Meal Company (IMC), administrando el backlog, gestionando demandas y aplicando las mejores prácticas de ITIL. Actué en la comunicación directa con proveedores para resolver problemas técnicos complejos.',
-        exp4Title: 'Consultor Técnico',
-        exp4Period: 'Mar 2023 - Ago 2023',
-        exp4Desc: 'Trabajé en proyectos nacionales e internacionales de implementación de Oracle, desarrollando integraciones y aplicaciones con Oracle Integration Cloud (OIC) y creando informes con Oracle BI Publisher.',
-        exp5Title: 'Técnico de Soporte N1',
-        exp5Period: 'Ago 2022 - Mar 2023',
-        exp5Desc: 'Proporcioné soporte técnico inicial al Ayuntamiento de Curitiba, resolviendo problemas de software y hardware, y colaborando con equipos de infraestructura y NOC para garantizar soluciones rápidas y eficaces.',
+        aboutLead: 'Desarrollador Full-Stack trilingüe enfocado en arquitectura de soluciones integrales e impacto real en los negocios.',
+        aboutDesc1: 'Mi experiencia abarca <strong>Java (Spring Boot)</strong>, <strong>PHP (Laravel)</strong>, <strong>Python</strong>, <strong>Go</strong>, <strong>Rust</strong> y <strong>Node.js</strong>, donde me centro en la creación de sistemas robustos y la automatización inteligente de procesos. En el front-end, desarrollo interfaces reactivas con <strong>React</strong>, <strong>Vue</strong> y <strong>Next.js</strong>, así como aplicaciones móviles multiplataforma con <strong>Flutter</strong>, <strong>Kotlin</strong> y <strong>Swift</strong>.',
+        aboutDesc2: 'Trabajo con infraestructura Cloud e implemento prácticas DevOps (CI/CD, Docker, Kubernetes) para garantizar alta disponibilidad y escalabilidad. Aplico <strong>Inteligencia Artificial</strong> — desde visión computacional hasta LLMs — para resolver problemas complejos y aportar valor medible, creando plataformas escalables como SGI, CRM y LMS con integraciones bancarias y pasarelas de pago.',
+        aboutStat1: 'Años de Experiencia', aboutStat2: 'Proyectos Entregados', aboutStat3: 'Tecnologías', aboutStat4: 'Idiomas',
+        experienceTitle: 'Experiencia',
+        exp1Title: 'Desarrollador Pleno', exp1Period: '2025 — Actualidad',
+        exp1Desc: 'Lidero el desarrollo y la arquitectura de la plataforma integrada de SGI y CRM. Responsable de la ingeniería de sistemas de control de pagos y la orquestación de APIs con pasarelas de pago y servicios de mensajería. Trabajo multistack con PHP, Go, Python y Node.js para diferentes microservicios y soluciones de automatización de procesos de negocio (BPA). Gestión de infraestructura Cloud (AWS), aprovisionamiento de recursos y mantenimiento de pipelines CI/CD. Automatización de procesos con inteligencia artificial, visión computacional e integraciones con LLMs.',
+        exp2Title: 'Developer & Consultor', exp2Period: '2024 — Actualidad',
+        exp2Desc: 'Consultor de software entregando soluciones integrales complejas — desde aplicaciones web/móviles hasta sistemas de IA. Desarrollé un motor de Inteligencia Artificial para la industria química (PLN + Machine Learning para análisis predictivo de causa raíz). Implementé soluciones de Visión Computacional como sistema de gestión de almacenes con reconocimiento facial. El portafolio incluye apps mobile (gestión de facturas, energía solar), plataformas E-learning (LMS), sistemas de control de acceso industrial y microservicios de geoprocesamiento en tiempo real.',
+        exp3Title: 'Desarrollador Java & PHP', exp3Period: '2024 — 2025',
+        exp3Desc: 'Desarrollador Full-Stack con Java (Spring Boot, Hibernate/JPA, Maven) y PHP (Laravel) para APIs RESTful de alto rendimiento. Liderazgo técnico en proyectos de Python y Machine Learning, centrado en la optimización de pipelines de datos (ETL/ELT) para el sector farmacéutico. Creación de BlauSight — sistema de gestión de calidad con IA generativa — y Ballesol CareAI, agente de IA con cifrado E2E alojado en AWS.',
+        exp4Title: 'Agente de Soporte TI', exp4Period: '2023 — 2024',
+        exp4Desc: 'Integré el equipo de Tech Services de Positivo brindando soporte técnico a International Meal Company (IMC). Responsable de la administración y triaje del backlog, distribución de demandas al equipo y aplicación de buenas prácticas ITIL para priorización por criticidad. Mantuve comunicación directa con proveedores para resolución de cuestiones técnicas que involucraban infraestructura, redes y sistemas críticos de operación. Experiencia práctica en troubleshooting de ambientes complejos y gestión de SLAs a gran escala.',
+        exp5Title: 'Consultor Técnico Oracle', exp5Period: '2023',
+        exp5Desc: 'Trabajé en proyectos nacionales e internacionales de implementación del ecosistema Oracle. Desarrollé integraciones entre sistemas corporativos utilizando Oracle Integration Cloud (OIC), construyendo flujos de orquestación, transformación de datos y conexiones con APIs REST/SOAP. Creé informes analíticos y operacionales con Oracle BI Publisher para toma de decisiones. Experiencia en ambientes enterprise con ciclos de implementación complejos y stakeholders multinacionales.',
+        exp6Title: 'Técnico de Soporte N1', exp6Period: '2022 — 2023',
+        exp6Desc: 'Soporte técnico directo al Municipio de Curitiba, abarcando diagnóstico y resolución de problemas de software, hardware y red. Colaboración constante con equipos de infraestructura, NOC y técnicos de campo para escalamiento eficiente de incidentes. Responsable de la documentación de tickets y contribución activa a la base de conocimiento del proyecto, garantizando trazabilidad y mejora continua de los procesos de atención.',
         projectsTitle: 'Proyectos Destacados',
-        projFilterAll: 'Todos',
-        projFilterAi: 'IA/ML',
-        projFilterWeb: 'Web',
-        projFilterSystem: 'Sistemas',
-        proj1Title: 'Quimera - IA de Ajedrez',
-        proj1Desc: 'Modelo de IA para ajedrez con doble habilidad y modelado predictivo del oponente. Algoritmos avanzados de machine learning.',
-        proj2Desc: 'Sistema avanzado de visión por computadora para el análisis y procesamiento de imágenes en tiempo real con aplicaciones de IA.',
-        proj3Desc: 'Plataforma de accesibilidad para la traducción e interpretación de la Lengua de Señas Brasileña (Libras) utilizando inteligencia artificial y visión por computadora.',
-        proj4Desc: 'Sistema inteligente de gestión empresarial con IA para la optimización de procesos y la toma de decisiones automatizada.',
-        proj5Title: 'Sistema Active Directory Personalizado',
-        proj5Desc: 'Un sistema de control de acceso granular y centralizado desarrollado para abordar necesidades críticas de seguridad empresarial.',
-        proj6Desc: 'Proyecto educativo inspirado en LavaRand de Cloudflare para la generación de entropía criptográfica utilizando imágenes aleatorias.',
-        skillsTitle: 'Habilidades Técnicas',
-        skillsCat3: 'IA/ML & Datos',
-        skillsCat4: 'DevOps & Herramientas',
+        projFilterAll: 'Todos', projFilterAi: 'IA / ML', projFilterPlatform: 'Plataformas', projFilterSystem: 'Sistemas',
+        proj1Subtitle: 'Motor Predictivo de Calidad y Compliance',
+        proj1Desc: 'Solución de Machine Learning para la industria farmacéutica que identifica fallas sistémicas en líneas de producción, categoriza anomalías por origen (humana, operacional, maquinaria) y genera planes de acción correctiva automatizados. Integra chatbot de soporte a la calidad con IA generativa, conectado a la base de datos en tiempo real vía API REST con cifrado de extremo a extremo. Arquitectura Flask + React alojada en AWS.',
+        proj2Title: 'IA Aplicada con Propósito', proj2Subtitle: 'Inteligencia Artificial para Impacto Real',
+        proj2Desc: 'Desarrollo de soluciones de IA enfocadas en impacto real y medible para negocios. Proyectos que combinan modelos de lenguaje (LLMs), visión computacional y automatización inteligente para resolver desafíos estratégicos — desde análisis predictivo de causa raíz en procesos industriales hasta automatización de documentos fiscales y agentes conversacionales con acceso a datos en tiempo real.',
+        proj3Title: 'Solar Hub', proj3Subtitle: 'Plataforma de Gestión de Energía Solar',
+        proj3Desc: 'Plataforma integrada para gestión operacional de plantas solares y distribución de energía en modelo cooperativo. Incluye app móvil B2C para consumidores finales con monitoreo en tiempo real del consumo y generación, dashboard administrativo para operadores, hub de beneficios para cooperados y sistema de facturación automatizado integrado a pasarelas de pago.',
+        proj4Title: 'EduStack', proj4Subtitle: 'Ecosistema EdTech & E-commerce Educacional',
+        proj4Desc: 'Plataforma educacional integral para curso preparatorio: gestión de contenido programático, aprendizaje gamificado con sistema de XP y rankings, análisis de rendimiento individual con dashboards visuales, motor de recomendaciones de estudio personalizadas y e-commerce integrado para venta de materiales y cursos con checkout propio.',
+        proj5Title: 'CareLink', proj5Subtitle: 'Plataforma de Cuidados con Adultos Mayores',
+        proj5Desc: 'Plataforma digital para gestión integrada de cuidados con adultos mayores, conectando familias, cuidadores y equipos de salud en un único ecosistema. Funcionalidades incluyen monitoreo en tiempo real de signos vitales, agenda inteligente de cuidados y medicaciones, historia clínica electrónica compartida, canal de comunicación seguro entre stakeholders y sistema de alertas configurables.',
+        proj6Title: 'SecureGate', proj6Subtitle: 'Gobernanza de Accesos & Gestión de Facilities',
+        proj6Desc: 'Sistema para el sector bioquímico con control de seguridad perimetral, acreditación digital de proveedores y conductores, validación automática de NF-e en la entrada y gestión inteligente de espacios corporativos (salas de reunión, auditorios, laboratorios). Incluye módulo de reconocimiento facial para control de acceso y dashboard de ocupación en tiempo real.',
+        proj7Subtitle: 'Interfaz de IA Asistiva',
+        proj7Desc: 'Solución de inclusión digital que automatiza la traducción de lengua de señas a texto utilizando Edge Computing con latencia ultrabaja. El sistema procesa gestos en tiempo real vía cámara, eliminando barreras de accesibilidad y permitiendo comunicación fluida entre sordos y oyentes sin necesidad de intérprete humano.',
+        proj8Title: 'GeoTrack', proj8Subtitle: 'Geoprocesamiento en Tiempo Real',
+        proj8Desc: 'Microservicio de alta performance desarrollado en Go para rastreo geoespacial en tiempo real. Alimenta simultáneamente cientos de usuarios conectados vía WebSocket con actualización de posición de más de 100 conductores en tiempo real. Arquitectura optimizada para baja latencia y alta concurrencia, con persistencia geoespacial y caché distribuido.',
+        proj9Subtitle: 'Motor de Ajedrez con IA',
+        proj9Desc: 'Motor de ajedrez con inteligencia artificial que combina búsqueda minimax con poda alfa-beta y evaluación posicional mediante redes neuronales. El sistema analiza millones de posiciones por segundo, predice patrones de juego del oponente y adapta su estrategia dinámicamente. Implementado en C++ para máximo rendimiento computacional.',
+        proj10Subtitle: 'Entropía Criptográfica',
+        proj10Desc: 'Proyecto inspirado en LavaRand de Cloudflare para generación de entropía criptográfica verdaderamente aleatoria. Utiliza procesamiento de imágenes para extraer ruido visual y convertirlo en semillas criptográficas de alta calidad. Implementado en Rust para garantizar seguridad de memoria y rendimiento bare-metal.',
+        skillsTitle: 'Tech Stack',
+        skillsCat1: 'Lenguajes', skillsCat3: 'IA / ML & Datos', skillsCat4: 'Cloud & DevOps', skillsCat6: 'Mobile & Multiplataforma',
         contactTitle: '¿Hablamos?',
-        contactSubtitle: 'Ponte en Contacto',
-        contactDesc: 'Siempre estoy abierto a nuevas oportunidades y proyectos interesantes. ¡Creemos algo increíble juntos!',
+        contactDesc: 'Siempre estoy abierto a nuevas oportunidades, proyectos desafiantes y alianzas estratégicas. Construyamos algo extraordinario juntos.',
         contactPhone: 'Teléfono',
-        formName: 'Nombre',
-        formSubject: 'Asunto',
-        formMessage: 'Mensaje',
-        formSubmit: 'Enviar Mensaje',
-        footerText: '&copy; 2025 Samuel Mauli. Desarrollado con 💙 y mucho ☕'
+        formName: 'Nombre', formSubject: 'Asunto', formMessage: 'Mensaje', formSubmit: 'Enviar Mensaje',
+        footerText: '© 2025 Samuel Mauli. Curitiba, PR.'
     }
 };
 
-const setLanguage = (lang) => {
-    const elements = document.querySelectorAll('[data-key]');
-    elements.forEach(el => {
-        const key = el.getAttribute('data-key');
-        if (translations[lang][key]) {
+// ===== LANGUAGE SYSTEM =====
+// Trusted translations only - all HTML content is developer-controlled
+function setLanguage(lang) {
+    document.querySelectorAll('[data-key]').forEach(function(el) {
+        var key = el.getAttribute('data-key');
+        if (translations[lang] && translations[lang][key]) {
+            // These are trusted developer-defined strings, not user input
             el.innerHTML = translations[lang][key];
         }
     });
 
-    // Atualiza o efeito de digitação
-    const typingElement = document.querySelector('.typing-text');
-    if (typingElement) {
-        typingElement.setAttribute('data-text', translations[lang].heroRole);
+    // Update typing effect
+    var typingEl = document.querySelector('.typing-text');
+    if (typingEl) {
+        typingEl.setAttribute('data-text', translations[lang].heroRole);
     }
 
-    // Atualiza o link de download do currículo
-    const cvLink = document.getElementById('cv-download-link');
-    const cvLinkMobile = document.getElementById('cv-download-link-mobile');
-    if (lang === 'en') {
-        cvLink.href = 'Doc/SamuelMaui_en.pdf';
-        cvLinkMobile.href = 'Doc/SamuelMaui_en.pdf';
-    } else if (lang === 'es') {
-        cvLink.href = 'Doc/SamuelMauli_Es.pdf';
-        cvLinkMobile.href = 'Doc/SamuelMauli_Es.pdf';
-    } else {
-        cvLink.href = 'Doc/SamuelMauli_PtBr.pdf';
-        cvLinkMobile.href = 'Doc/SamuelMauli_PtBr.pdf';
-    }
+    // CV downloads match selected language
+    var cvUrls = {
+        pt: 'Doc/SamuelMauli_PtBr.pdf',
+        en: 'Doc/SamuelMaui_en.pdf',
+        es: 'Doc/SamuelMauli_Es.pdf'
+    };
+    var cvLink = document.getElementById('cv-download-link');
+    var cvLinkMobile = document.getElementById('cv-download-link-mobile');
+    if (cvLink) cvLink.href = cvUrls[lang] || cvUrls.en;
+    if (cvLinkMobile) cvLinkMobile.href = cvUrls[lang] || cvUrls.en;
 
-    // Salva a preferência de idioma
+    // Update active language button
+    document.querySelectorAll('.language-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
     localStorage.setItem('language', lang);
-};
-
-// Global variables
-let isLoading = true;
-let currentSection = 'home';
-let scrollPosition = 0;
-let isScrolling = false;
-
-// DOM elements
-const loadingScreen = document.getElementById('loading-screen');
-const navbar = document.getElementById('navbar');
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
+}
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', function() {
-    initializeApp();
-    
-    // Configura os botões de idioma
-    const langButtons = document.querySelectorAll('.language-btn');
-    langButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const lang = button.getAttribute('data-lang');
-            setLanguage(lang);
-        });
-    });
+    initLoading();
+    initNavigation();
+    initTypingEffect();
+    initCounters();
+    initProjectFilters();
+    initContactForm();
+    initScrollReveal();
+    initScrollSpy();
 
-    // Carrega o idioma salvo ou define o padrão
-    const savedLang = localStorage.getItem('language') || 'pt';
-    setLanguage(savedLang);
+    // Language
+    document.querySelectorAll('.language-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() { setLanguage(btn.dataset.lang); });
+    });
+    setLanguage(localStorage.getItem('language') || 'pt');
 });
 
-function initializeApp() {
-    // Show loading screen
-    showLoadingScreen();
-    
-    // Initialize components
-    setTimeout(() => {
-        initializeNavigation();
-        initializeScrollEffects();
-        initializeTypingEffect();
-        initializeCounters();
-        initializeSkillBars();
-        initializeProjectFilters();
-        initializeContactForm();
-        initializeIntersectionObserver();
-        
-        // Hide loading screen
-        hideLoadingScreen();
-    }, 2000);
-}
+// ===== LOADING =====
+function initLoading() {
+    var screen = document.getElementById('loading-screen');
+    var progress = screen.querySelector('.loading-progress');
+    var width = 0;
 
-// ===== LOADING SCREEN =====
-function showLoadingScreen() {
-    const progressBar = document.querySelector('.loading-progress');
-    const loadingMessage = document.querySelector('.loading-message');
-    
-    const messages = [
-        'Inicializando sistema...',
-        'Carregando componentes...',
-        'Configurando interface...',
-        'Preparando experiência...',
-        'Sistema pronto!'
-    ];
-    
-    let progress = 0;
-    let messageIndex = 0;
-    
-    const interval = setInterval(() => {
-        progress += Math.random() * 25;
-        
-        if (progress >= 100) {
-            progress = 100;
+    var interval = setInterval(function() {
+        width += Math.random() * 35;
+        if (width >= 100) {
+            width = 100;
             clearInterval(interval);
+            setTimeout(function() { screen.classList.add('hidden'); }, 300);
         }
-        
-        progressBar.style.width = progress + '%';
-        
-        if (messageIndex < messages.length - 1 && progress > (messageIndex + 1) * 20) {
-            messageIndex++;
-            loadingMessage.textContent = messages[messageIndex];
-        }
-    }, 400);
-}
-
-function hideLoadingScreen() {
-    loadingScreen.classList.add('hidden');
-    document.body.classList.remove('no-scroll');
-    isLoading = false;
-    
-    // Trigger entrance animations
-    triggerEntranceAnimations();
-}
-
-function triggerEntranceAnimations() {
-    // Animate hero elements
-    const heroElements = document.querySelectorAll('.hero-text > *, .hero-visual > *');
-    heroElements.forEach((element, index) => {
-        setTimeout(() => {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, index * 200);
-    });
+        progress.style.width = width + '%';
+    }, 200);
 }
 
 // ===== NAVIGATION =====
-function initializeNavigation() {
-    // Mobile menu toggle
-    navToggle.addEventListener('click', toggleMobileMenu);
-    
-    // Navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', handleNavClick);
+function initNavigation() {
+    var navbar = document.getElementById('navbar');
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('nav-menu');
+
+    // Mobile toggle
+    toggle.addEventListener('click', function() {
+        toggle.classList.toggle('active');
+        menu.classList.toggle('active');
     });
-    
-    // Scroll spy
-    window.addEventListener('scroll', throttle(updateActiveNavLink, 100));
-    window.addEventListener('scroll', throttle(updateNavbarStyle, 100));
-}
 
-function toggleMobileMenu() {
-    navMenu.classList.toggle('active');
-    navToggle.classList.toggle('active');
-    
-    // Animate hamburger bars
-    const bars = navToggle.querySelectorAll('.bar');
-    bars.forEach((bar, index) => {
-        bar.style.transform = navToggle.classList.contains('active') 
-            ? `rotate(${index === 0 ? 45 : index === 2 ? -45 : 0}deg) translate(${index === 1 ? '100px' : '0'}, ${index === 0 ? '6px' : index === 2 ? '-6px' : '0'})`
-            : 'none';
-        bar.style.opacity = index === 1 && navToggle.classList.contains('active') ? '0' : '1';
+    // Close on link click
+    menu.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                window.scrollTo({ top: target.offsetTop - 72, behavior: 'smooth' });
+            }
+            toggle.classList.remove('active');
+            menu.classList.remove('active');
+        });
     });
-}
 
-function handleNavClick(e) {
-    e.preventDefault();
-    const targetId = e.target.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    
-    if (targetSection) {
-        smoothScrollTo(targetSection.offsetTop - 70);
-        
-        // Close mobile menu if open
-        if (navMenu.classList.contains('active')) {
-            toggleMobileMenu();
-        }
-    }
-}
-
-function updateActiveNavLink() {
-    const sections = document.querySelectorAll('section[id]');
-    const scrollPos = window.scrollY + 100;
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                    currentSection = sectionId;
-                }
-            });
-        }
-    });
-}
-
-function updateNavbarStyle() {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-}
-
-// ===== SCROLL EFFECTS =====
-function initializeScrollEffects() {
-    window.addEventListener('scroll', throttle(handleScroll, 16));
-}
-
-function handleScroll() {
-    scrollPosition = window.scrollY;
-    
-    // Update parallax effects
-    updateParallaxEffects();
-    
-    // Update scroll-based animations
-    updateScrollAnimations();
-}
-
-function updateParallaxEffects() {
-    const parallaxElements = document.querySelectorAll('[data-parallax]');
-    
-    parallaxElements.forEach(element => {
-        const speed = element.dataset.parallax || 0.5;
-        const yPos = -(scrollPosition * speed);
-        element.style.transform = `translateY(${yPos}px)`;
-    });
-}
-
-function updateScrollAnimations() {
-    const animatedElements = document.querySelectorAll('[data-animate]');
-    
-    animatedElements.forEach(element => {
-        const elementTop = element.offsetTop;
-        const elementHeight = element.offsetHeight;
-        const windowHeight = window.innerHeight;
-        
-        if (scrollPosition + windowHeight > elementTop + elementHeight * 0.1) {
-            element.classList.add('animated');
-        }
-    });
+    // Scroll effect
+    window.addEventListener('scroll', function() {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
 }
 
 // ===== TYPING EFFECT =====
-function initializeTypingEffect() {
-    const typingElement = document.querySelector('.typing-text');
-    if (!typingElement) return;
-    
-    let texts = (typingElement.dataset.text || '').split(',');
-    let textIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-    
-    function typeText() {
-        texts = (typingElement.getAttribute('data-text') || '').split(',');
-        const currentText = texts[textIndex];
-        
-        if (isDeleting) {
-            typingElement.textContent = currentText.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 50;
+function initTypingEffect() {
+    var el = document.querySelector('.typing-text');
+    if (!el) return;
+
+    var texts = (el.getAttribute('data-text') || '').split(',');
+    var textIdx = 0, charIdx = 0, deleting = false, speed = 100;
+
+    function type() {
+        texts = (el.getAttribute('data-text') || '').split(',');
+        var current = texts[textIdx] || '';
+
+        if (deleting) {
+            el.textContent = current.substring(0, charIdx - 1);
+            charIdx--;
+            speed = 40;
         } else {
-            typingElement.textContent = currentText.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 100;
+            el.textContent = current.substring(0, charIdx + 1);
+            charIdx++;
+            speed = 80;
         }
-        
-        if (!isDeleting && charIndex === currentText.length) {
-            typingSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            textIndex = (textIndex + 1) % texts.length;
-            typingSpeed = 500;
+
+        if (!deleting && charIdx === current.length) {
+            speed = 2500;
+            deleting = true;
+        } else if (deleting && charIdx === 0) {
+            deleting = false;
+            textIdx = (textIdx + 1) % texts.length;
+            speed = 400;
         }
-        
-        setTimeout(typeText, typingSpeed);
+
+        setTimeout(type, speed);
     }
-    
-    typeText();
+
+    type();
 }
 
 // ===== COUNTERS =====
-function initializeCounters() {
-    const counters = document.querySelectorAll('[data-count]');
-    
-    counters.forEach(counter => {
-        const target = parseInt(counter.dataset.count);
-        const duration = 2000;
-        const increment = target / (duration / 16);
-        let current = 0;
-        
-        const updateCounter = () => {
-            current += increment;
-            if (current < target) {
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-        
-        // Start counter when element is visible
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    updateCounter();
-                    observer.unobserve(entry.target);
-                }
-            });
-        });
-        
-        observer.observe(counter);
-    });
-}
-
-// ===== SKILL BARS =====
-function initializeSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+function initCounters() {
+    var counters = document.querySelectorAll('[data-count]');
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
             if (entry.isIntersecting) {
-                const progress = entry.target.dataset.progress;
-                entry.target.style.width = progress + '%';
-                observer.unobserve(entry.target);
+                var el = entry.target;
+                var target = parseInt(el.dataset.count);
+                var duration = 1500;
+                var step = target / (duration / 16);
+                var current = 0;
+
+                function update() {
+                    current += step;
+                    if (current < target) {
+                        el.textContent = Math.floor(current);
+                        requestAnimationFrame(update);
+                    } else {
+                        el.textContent = target;
+                    }
+                }
+                update();
+                observer.unobserve(el);
             }
         });
-    });
-    
-    skillBars.forEach(bar => observer.observe(bar));
+    }, { threshold: 0.5 });
+
+    counters.forEach(function(c) { observer.observe(c); });
 }
 
 // ===== PROJECT FILTERS =====
-function initializeProjectFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.dataset.filter;
-            
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            
-            // Filter projects
-            projectCards.forEach(card => {
-                const category = card.dataset.category;
-                
-                if (filter === 'all' || category === filter) {
-                    card.style.display = 'block';
+function initProjectFilters() {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.project-card');
+
+    buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var filter = btn.dataset.filter;
+            buttons.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            cards.forEach(function(card) {
+                var match = filter === 'all' || card.dataset.category === filter;
+                card.style.display = match ? '' : 'none';
+                if (match) {
                     card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    
-                    setTimeout(() => {
+                    card.style.transform = 'translateY(16px)';
+                    requestAnimationFrame(function() {
+                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
                         card.style.opacity = '1';
                         card.style.transform = 'translateY(0)';
-                    }, 100);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300);
+                    });
                 }
             });
         });
@@ -579,321 +368,53 @@ function initializeProjectFilters() {
 }
 
 // ===== CONTACT FORM =====
-function initializeContactForm() {
-    const contactForm = document.getElementById('contactForm');
-    if (!contactForm) return;
-    
-    contactForm.addEventListener('submit', handleFormSubmit);
-    
-    // Add input focus effects
-    const formInputs = contactForm.querySelectorAll('.form-input, .form-textarea');
-    formInputs.forEach(input => {
-        input.addEventListener('focus', () => {
-            input.parentElement.classList.add('focused');
-        });
-        
-        input.addEventListener('blur', () => {
-            if (!input.value) {
-                input.parentElement.classList.remove('focused');
-            }
-        });
+function initContactForm() {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = Object.fromEntries(new FormData(form));
+        var subject = encodeURIComponent(data.subject);
+        var body = encodeURIComponent('Nome: ' + data.name + '\nEmail: ' + data.email + '\n\nMensagem:\n' + data.message);
+        window.location.href = 'mailto:samuel.mauli@gmail.com?subject=' + subject + '&body=' + body;
+        form.reset();
     });
 }
 
-function handleFormSubmit(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-    
-    // Show loading state
-    const submitButton = e.target.querySelector('.form-submit');
-    const originalText = submitButton.querySelector('.btn-text').textContent;
-    submitButton.querySelector('.btn-text').textContent = 'Enviando...';
-    submitButton.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(() => {
-        // Create mailto link
-        const subject = encodeURIComponent(data.subject);
-        const body = encodeURIComponent(`Nome: ${data.name}\nEmail: ${data.email}\n\nMensagem:\n${data.message}`);
-        const mailtoLink = `mailto:samuel.mauli@gmail.com?subject=${subject}&body=${body}`;
-        
-        window.location.href = mailtoLink;
-        
-        // Reset form
-        e.target.reset();
-        submitButton.querySelector('.btn-text').textContent = originalText;
-        submitButton.disabled = false;
-        
-        // Show success message
-        showNotification('Mensagem preparada! Seu cliente de email será aberto.', 'success');
-    }, 1000);
-}
-
-// ===== INTERSECTION OBSERVER =====
-function initializeIntersectionObserver() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+// ===== SCROLL REVEAL =====
+function initScrollReveal() {
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                
-                // Special animations for timeline items
-                if (entry.target.classList.contains('timeline-item')) {
-                    entry.target.classList.add('active');
-                }
             }
         });
-    }, observerOptions);
-    
-    // Observe all sections and animated elements
-    const elementsToObserve = document.querySelectorAll('section, .timeline-item, .project-card, .skill-category');
-    elementsToObserve.forEach(element => observer.observe(element));
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('[data-aos]').forEach(function(el) { observer.observe(el); });
 }
 
-// ===== UTILITY FUNCTIONS =====
-function throttle(func, limit) {
-    let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    }
-}
+// ===== SCROLL SPY =====
+function initScrollSpy() {
+    var sections = document.querySelectorAll('section[id]');
+    var links = document.querySelectorAll('.nav-link');
 
-function debounce(func, wait, immediate) {
-    let timeout;
-    return function() {
-        const context = this, args = arguments;
-        const later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
+    window.addEventListener('scroll', function() {
+        var scrollPos = window.scrollY + 150;
+        sections.forEach(function(section) {
+            var top = section.offsetTop;
+            var height = section.offsetHeight;
+            var id = section.id;
 
-function smoothScrollTo(target) {
-    const start = window.pageYOffset;
-    const distance = target - start;
-    const duration = 1000;
-    let startTime = null;
-    
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = easeInOutQuad(timeElapsed, start, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-    }
-    
-    function easeInOutQuad(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-    
-    requestAnimationFrame(animation);
-}
-
-function showNotification(message, type = 'info') {
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-    
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: ${type === 'success' ? 'var(--accent-color)' : 'var(--primary-color)'};
-        color: var(--bg-primary);
-        padding: var(--spacing-sm) var(--spacing-md);
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow-lg);
-        z-index: var(--z-tooltip);
-        transform: translateX(100%);
-        transition: transform var(--transition-normal);
-        font-weight: 600;
-    `;
-    
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-    
-    setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-            document.body.removeChild(notification);
-        }, 300);
-    }, 3000);
-}
-
-// ===== EASTER EGGS =====
-function initializeEasterEggs() {
-    // Konami code
-    let konamiCode = [];
-    const konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-    
-    document.addEventListener('keydown', (e) => {
-        konamiCode.push(e.keyCode);
-        
-        if (konamiCode.length > konamiSequence.length) {
-            konamiCode.shift();
-        }
-        
-        if (konamiCode.join(',') === konamiSequence.join(',')) {
-            activateMatrixMode();
-            konamiCode = [];
-        }
-    });
-    
-    // Double click on logo
-    const logo = document.querySelector('.nav-logo');
-    let clickCount = 0;
-    
-    logo.addEventListener('click', () => {
-        clickCount++;
-        if (clickCount === 2) {
-            activateGlitchMode();
-            clickCount = 0;
-        }
-        setTimeout(() => clickCount = 0, 500);
-    });
-}
-
-function activateMatrixMode() {
-    document.body.classList.add('matrix-mode');
-    showNotification('Matrix Mode Ativado! 🕶️', 'success');
-    
-    setTimeout(() => {
-        document.body.classList.remove('matrix-mode');
-    }, 10000);
-}
-
-function activateGlitchMode() {
-    document.body.classList.add('glitch-mode');
-    showNotification('Glitch Mode Ativado! ⚡', 'success');
-    
-    setTimeout(() => {
-        document.body.classList.remove('glitch-mode');
-    }, 5000);
-}
-
-// ===== PERFORMANCE OPTIMIZATION =====
-function optimizePerformance() {
-    // Lazy load images
-    const images = document.querySelectorAll('img[data-src]');
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                imageObserver.unobserve(img);
+            if (scrollPos >= top && scrollPos < top + height) {
+                links.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
             }
         });
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
-    
-    // Preload critical resources
-    const criticalResources = [
-        'assets/css/animations.css',
-        'components/particles.js'
-    ];
-    
-    criticalResources.forEach(resource => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.href = resource;
-        link.as = resource.endsWith('.css') ? 'style' : 'script';
-        document.head.appendChild(link);
-    });
+    }, { passive: true });
 }
-
-// ===== ACCESSIBILITY =====
-function initializeAccessibility() {
-    // Reduced motion preference
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.body.classList.add('reduced-motion');
-    }
-    
-    // Focus management
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Tab') {
-            document.body.classList.add('keyboard-navigation');
-        }
-    });
-    
-    document.addEventListener('mousedown', () => {
-        document.body.classList.remove('keyboard-navigation');
-    });
-    
-    // Skip to content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main-content';
-    skipLink.textContent = 'Pular para o conteúdo principal';
-    skipLink.className = 'skip-link';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: var(--primary-color);
-        color: var(--bg-primary);
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        z-index: 1000;
-        transition: top 0.3s;
-    `;
-    
-    skipLink.addEventListener('focus', () => {
-        skipLink.style.top = '6px';
-    });
-    
-    skipLink.addEventListener('blur', () => {
-        skipLink.style.top = '-40px';
-    });
-    
-    document.body.insertBefore(skipLink, document.body.firstChild);
-}
-
-// Initialize everything when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    initializeEasterEggs();
-    optimizePerformance();
-    initializeAccessibility();
-});
-
-// Handle page visibility changes
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        // Pause animations when page is not visible
-        document.body.classList.add('paused');
-    } else {
-        // Resume animations when page becomes visible
-        document.body.classList.remove('paused');
-    }
-});
-
-// Handle resize events
-window.addEventListener('resize', debounce(() => {
-    // Recalculate positions and sizes
-    updateParallaxEffects();
-    updateScrollAnimations();
-}, 250));

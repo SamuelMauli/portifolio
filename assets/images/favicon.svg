@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#080808"/>
+  <text x="6" y="47" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="36" fill="#F5F5F5" letter-spacing="-2">SM</text>
+  <circle cx="55" cy="44" r="4.5" fill="#E8FF47"/>
+</svg>

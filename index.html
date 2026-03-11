@@ -4,754 +4,698 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samuel Mauli - Desenvolvedor Full Stack especializado em IA, Fintech e Martech">
-    <meta name="keywords"
-        content="desenvolvedor, full stack, python, php, javascript, react, laravel, inteligencia artificial">
+    <meta name="description" content="Samuel Mauli - Desenvolvedor Full Stack | IA, Cloud & Sistemas Escaláveis">
+    <meta name="keywords" content="desenvolvedor, full stack, java, python, go, rust, php, react, inteligencia artificial, cloud">
     <meta name="author" content="Samuel Mauli">
 
-    <title>Samuel Mauli | Desenvolvedor Full Stack</title>
+    <title>Samuel Mauli | Full-Stack Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-    <meta property="og:title" content="Samuel Mauli | Desenvolvedor Full Stack">
-    <meta property="og:description" content="Desenvolvedor Full Stack especializado em IA, Fintech e Martech">
+    <meta property="og:title" content="Samuel Mauli | Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer | IA, Cloud & Sistemas Escaláveis">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://samuelmauli.github.io/portifolio/">
-
-    <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="preload" href="assets/js/main.js" as="script">
 </head>
 
 <body>
+    <!-- Loading -->
     <div id="loading-screen" class="loading-screen">
         <div class="loading-content">
-            <div class="loading-logo">
-                <span class="loading-text">SM</span>
-            </div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-            <p class="loading-message" data-key="loadingMessage">Inicializando sistema...</p>
+            <div class="loading-logo">SM</div>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
         </div>
-        <div class="matrix-bg"></div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home" class="logo-full-name">
-                    <span class="logo-text">Samuel</span>
-                    <span class="logo-accent">Mauli</span>
-                </a>
-            </div>
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Samuel</span><span class="logo-accent">Mauli</span>
+            </a>
 
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link active" data-section="home"
-                        data-key="navHome">Início</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link" data-section="about"
-                        data-key="navAbout">Sobre</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link" data-section="experience"
-                        data-key="navExperience">Experiência</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects"
-                        data-key="navProjects">Projetos</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link" data-section="skills"
-                        data-key="navSkills">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact"
-                        data-key="navContact">Contato</a></li>
-                <li class="nav-item nav-item-mobile-only">
-                    <a href="Doc/SamuelMauli_PtBr.pdf" download class="btn btn-secondary" id="cv-download-link-mobile">
-                        <span class="btn-text" data-key="navCurriculum">Currículo</span>
+                <li><a href="#home" class="nav-link active" data-key="navHome">Início</a></li>
+                <li><a href="#about" class="nav-link" data-key="navAbout">Sobre</a></li>
+                <li><a href="#experience" class="nav-link" data-key="navExperience">Experiência</a></li>
+                <li><a href="#projects" class="nav-link" data-key="navProjects">Projetos</a></li>
+                <li><a href="#skills" class="nav-link" data-key="navSkills">Stack</a></li>
+                <li><a href="#contact" class="nav-link" data-key="navContact">Contato</a></li>
+                <li class="nav-item-mobile-only">
+                    <a href="Doc/SamuelMaui_en.pdf" download class="btn btn-accent btn-sm" id="cv-download-link-mobile">
+                        <span data-key="navCurriculum">Currículo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     </a>
                 </li>
             </ul>
 
             <div class="nav-actions">
                 <div class="language-selector">
-                    <button class="language-btn" data-lang="pt"><img src="assets/images/icons/brasil.jpg"
-                            alt="Português"></button>
-                    <button class="language-btn" data-lang="en"><img src="assets/images/icons/uk.png"
-                            alt="English"></button>
-                    <button class="language-btn" data-lang="es"><img src="assets/images/icons/Es.png"
-                            alt="Español"></button>
+                    <button class="language-btn" data-lang="pt" title="Português">
+                        <img src="assets/images/icons/brasil.jpg" alt="PT">
+                    </button>
+                    <button class="language-btn" data-lang="en" title="English">
+                        <img src="assets/images/icons/uk.png" alt="EN">
+                    </button>
+                    <button class="language-btn" data-lang="es" title="Español">
+                        <img src="assets/images/icons/Es.png" alt="ES">
+                    </button>
                 </div>
-                <a href="Doc/SamuelMauli_PtBr.pdf" download class="btn btn-primary nav-cv-btn" id="cv-download-link">
-                    <span class="btn-text" data-key="navCurriculum">Currículo</span>
-                    <span class="btn-glow"></span>
+                <a href="Doc/SamuelMaui_en.pdf" download class="btn btn-accent btn-sm nav-cv-btn" id="cv-download-link">
+                    <span data-key="navCurriculum">Currículo</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 </a>
-                <div class="nav-toggle" id="nav-toggle">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
 
-    <main class="main-content">
+    <main>
+        <!-- Hero -->
         <section id="home" class="hero-section">
-            <div class="particles-container" id="particles"></div>
-            <div class="hero-content">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+            </div>
+            <div class="container hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line" data-key="heroTitleLine">Olá, eu sou</span>
-                        <br>
-                        <span class="title-name">Samuel Mauli</span>
-                        <span class="title-role typing-text" data-text-keys="heroRole"></span>
-                    </h1>
+                    <p class="hero-greeting" data-key="heroGreeting">Olá, eu sou</p>
+                    <h1 class="hero-name">Samuel<br>Mauli<span class="accent-dot">.</span></h1>
+                    <div class="hero-role-wrapper">
+                        <span class="hero-role-label">&gt;</span>
+                        <span class="hero-role typing-text" data-text-keys="heroRole"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
                     <p class="hero-description" data-key="heroDescription">
-                        Transformando ideias em soluções tecnológicas inovadoras.
-                        Especializado em <span class="highlight">Fintech</span>,
-                        <span class="highlight">Martech</span> e
-                        <span class="highlight">Inteligência Artificial</span>.
+                        Desenvolvedor Full-Stack trilíngue focado em arquitetura de soluções end-to-end.
+                        Construo sistemas escaláveis com <span class="text-accent">IA</span>,
+                        <span class="text-accent">Cloud</span> e
+                        <span class="text-accent">automação inteligente</span>.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <span class="btn-text" data-key="heroBtnProjects">Ver Projetos</span>
-                            <span class="btn-glow"></span>
+                        <a href="#projects" class="btn btn-accent">
+                            <span data-key="heroBtnProjects">Ver Projetos</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span class="btn-text" data-key="heroBtnContact">Contato</span>
-                            <span class="btn-glow"></span>
+                        <a href="#contact" class="btn btn-outline">
+                            <span data-key="heroBtnContact">Contato</span>
                         </a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-image-container">
-                        <div class="hologram-effect">
-                            <img src="assets/images/hero/samuel-photo.jpg" alt="Samuel Mauli" class="hero-image">
-                            <div class="hologram-lines"></div>
-                            <div class="hologram-glitch"></div>
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" data-tech="Python">
-                                <img src="assets/images/icons/python.png" alt="Python" class="floating-tech-icon">
-                            </div>
-                            <div class="floating-icon" data-tech="JavaScript">
-                                <img src="assets/images/icons/js.png" alt="JavaScript" class="floating-tech-icon">
-                            </div>
-                            <div class="floating-icon" data-tech="React">
-                                <img src="assets/images/icons/php.png" alt="php" class="floating-tech-icon">
-                            </div>
-                            <div class="floating-icon" data-tech="Java">
-                                <img src="assets/images/icons/java.png" alt="java" class="floating-tech-icon">
-                            </div>
+                    <div class="hero-photo-wrapper">
+                        <img src="assets/images/hero/samuel-photo.jpg" alt="Samuel Mauli" class="hero-photo">
+                        <div class="photo-border"></div>
+                        <div class="photo-badge">
+                            <span class="badge-dot"></span>
+                            <span data-key="heroBadge">Disponível para projetos</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="scroll-indicator">
-                <div class="scroll-arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <p class="scroll-text" data-key="heroScroll">Scroll para explorar</p>
+                <div class="scroll-line"></div>
+                <span data-key="heroScroll">scroll</span>
             </div>
         </section>
 
+        <!-- About -->
         <section id="about" class="about-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-number">01.</span>
-                        <span data-key="aboutTitle">Sobre Mim</span>
-                    </h2>
-                    <div class="title-line"></div>
+                    <span class="section-number">01</span>
+                    <h2 class="section-title" data-key="aboutTitle">Sobre Mim</h2>
+                    <div class="section-line"></div>
                 </div>
 
                 <div class="about-content">
                     <div class="about-text">
-                        <div class="about-card glass-card">
-                            <h3 class="about-subtitle" data-key="aboutSubtitle">Desenvolvedor Full Stack</h3>
-                            <p class="about-description" data-key="aboutDesc1">
-                                Sou Samuel Mauli, desenvolvedor apaixonado por tecnologia e inovação.
-                                Atualmente trabalho no <strong>Grupo Negócios Públicos</strong> como
-                                Desenvolvedor Full Stack, mergulhando nos desafios dos mercados de
-                                <strong>Fintech</strong> e <strong>Martech</strong>.
-                            </p>
-                            <p class="about-description" data-key="aboutDesc2">
-                                Minha jornada inclui o desenvolvimento de sistemas complexos, desde
-                                sistemas de gestão comercial até integrações seguras com instituições
-                                bancárias. A projetos complexos de <strong>inteligência artificial</strong> e
-                                <strong>visão computacional</strong>. Tenho experiência com diversas
-                                tecnologias, incluindo
-                                <strong>Laravel</strong>, <strong>Python</strong> e <strong>React</strong>.
-                            </p>
-                            <p class="about-description" data-key="aboutDesc3">
-                                Grande tive diversas oporotunidades em projetos internacionais,
-                                aprimorando minhas habilidades técnicas e de comunicação. Estou sempre
-                                em busca de novos desafios e oportunidades para crescer e contribuir
-                                com soluções inovadoras.
-                            </p>
-                        </div>
-
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <span class="stat-number" data-count="3">0</span>
-                                <span class="stat-label" data-key="aboutStat1">Anos de Experiência</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number" data-count="15">0</span>
-                                <span class="stat-label" data-key="aboutStat2">Projetos Concluídos</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number" data-count="8">0</span>
-                                <span class="stat-label" data-key="aboutStat3">Tecnologias</span>
-                            </div>
-                        </div>
+                        <p class="about-lead" data-key="aboutLead">
+                            Desenvolvedor Full-Stack trilíngue com foco em arquitetura de soluções end-to-end e impacto real nos negócios.
+                        </p>
+                        <p data-key="aboutDesc1">
+                            Minha experiência abrange <strong>Java (Spring Boot)</strong>, <strong>PHP (Laravel)</strong>, <strong>Python</strong>, <strong>Go</strong>, <strong>Rust</strong> e <strong>Node.js</strong>, onde foco na construção de sistemas robustos e na automação inteligente de processos. No front-end, desenvolvo interfaces reativas com <strong>React</strong>, <strong>Vue</strong> e <strong>Next.js</strong>, além de aplicativos móveis multiplataforma com <strong>Flutter</strong>, <strong>Kotlin</strong> e <strong>Swift</strong>.
+                        </p>
+                        <p data-key="aboutDesc2">
+                            Trabalho com infraestrutura Cloud e implemento práticas DevOps (CI/CD, Docker, Kubernetes) para garantir alta disponibilidade e escalabilidade. Aplico <strong>Inteligência Artificial</strong> — desde visão computacional até LLMs — para resolver problemas complexos e agregar valor mensurável, construindo plataformas escaláveis como SGI, CRMs e LMS com integrações bancárias e gateways de pagamento.
+                        </p>
                     </div>
-                    <div class="about-visual">
-                        <div class="about-image-container">
-                            <div class="tech-orbit">
-                                <div class="orbit-center">
-                                    <img src="assets/images/hero/samuel-photo.jpg" alt="Samuel Mauli"
-                                        class="about-image">
-                                </div>
-                                <div class="orbit-ring ring-1">
-                                    <div class="orbit-item" data-tech="js">
-                                        <img src="assets/images/icons/js.png" alt="js" class="tech-icon">
-                                    </div>
-                                    <div class="orbit-item" data-tech="Python">
-                                        <img src="assets/images/icons/python.png" alt="Python" class="tech-icon">
-                                    </div>
-                                </div>
-                                <div class="orbit-ring ring-2">
-                                    <div class="orbit-item" data-tech="React">
-                                        <img src="assets/images/icons/react.png" alt="React" class="tech-icon">
-                                    </div>
-                                    <div class="orbit-item" data-tech="JavaScript">
-                                        <img src="assets/images/icons/html-5.png" alt="HTML5" class="tech-icon">
-                                    </div>
-                                    <div class="orbit-item" data-tech="PHP">
-                                        <img src="assets/images/icons/php.png" alt="PHP" class="tech-icon">
-                                    </div>
-                                </div>
-                                <div class="orbit-ring ring-3">
-                                    <div class="orbit-item" data-tech="AI/ML">
-                                        <img src="assets/images/icons/java.png" alt="Java" class="tech-icon">
-                                    </div>
-                                    <div class="orbit-item" data-tech="Database">
-                                        <img src="assets/images/icons/sql.png" alt="SQL" class="tech-icon">
-                                    </div>
-                                    <div class="orbit-item" data-tech="Cloud">
-                                        <img src="assets/images/icons/cloud.png" alt="Cloud" class="tech-icon">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label" data-key="aboutStat1">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="20">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label" data-key="aboutStat2">Projetos Entregues</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label" data-key="aboutStat3">Tecnologias</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label" data-key="aboutStat4">Idiomas</span>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
+        <!-- Experience -->
         <section id="experience" class="experience-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-number">02.</span>
-                        <span data-key="experienceTitle">Experiência Profissional</span>
-                    </h2>
-                    <div class="title-line"></div>
+                    <span class="section-number">02</span>
+                    <h2 class="section-title" data-key="experienceTitle">Experiência</h2>
+                    <div class="section-line"></div>
                 </div>
 
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-
-                    <div class="timeline-item active" data-year="2025">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-card glass-card">
-                                <div class="timeline-header">
-                                    <h3 class="timeline-title" data-key="exp1Title">Full Stack Developer</h3>
-                                    <span class="timeline-company">Grupo Negócios Públicos</span>
-                                    <span class="timeline-period" data-key="exp1Period">Jul 2025 - o momento</span>
-                                </div>
-                                <div class="timeline-description">
-                                    <p data-key="exp1Desc">
-                                        Como Desenvolvedor Full Stack, mergulhei nos desafios dos mercados de Martech e
-                                        Fintech para entregar soluções tecnológicas que impulsionam o negócio. Minha
-                                        atuação envolveu o desenvolvimento de ponta a ponta de sistemas complexos, desde
-                                        plataformas de gestão comercial até a integração segura com instituições
-                                        bancárias para processamento de pagamentos. Utilizando um stack tecnológico
-                                        versátil com Laravel, Python e React, não apenas construí novas funcionalidades,
-                                        mas também desenvolvi ferramentas internas que otimizaram processos e aumentaram
-                                        a produtividade da equipe. O ponto alto dessa experiência foi a criação de um
-                                        sistema de Active Directory customizado, um projeto que resolveu a necessidade
-                                        crítica de um controle de acesso granular e centralizado. Essa jornada
-                                        proporcionou um aprendizado fantástico sobre as regras de negócio, permitindo-me
-                                        traduzir as necessidades do mercado em software funcional e eficiente.
-                                    </p>
-                                </div>
+                <div class="experience-grid">
+                    <!-- Exp 1: Grupo Negocios Publicos -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                             </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp1Title">Desenvolvedor Pleno</h3>
+                                <span class="exp-company">Grupo Negócios Públicos (Vanlink)</span>
+                            </div>
+                            <span class="exp-period" data-key="exp1Period">2025 — Presente</span>
+                        </div>
+                        <p class="exp-description" data-key="exp1Desc">
+                            Lidero o desenvolvimento e a arquitetura da plataforma integrada de SGI e CRM. Responsável pela engenharia de sistemas de controle de pagamento e orquestração de APIs com gateways de pagamento e serviços de mensageria. Atuação cross-stack com PHP, Go, Python e Node.js para microsserviços e soluções de automação de processos (BPA). Gestão de infraestrutura Cloud (AWS), provisionamento de recursos e manutenção de pipelines CI/CD com bancos MySQL e PostgreSQL. Automação de processos com inteligência artificial, visão computacional e integrações com LLMs.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">PHP</span><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Node.js</span>
+                            <span class="tag">CI/CD</span><span class="tag">AWS</span><span class="tag">IA</span>
+                            <span class="tag">LLMs</span><span class="tag">Microsserviços</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
                         </div>
                     </div>
 
-                    <div class="timeline-item" data-year="2024">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-card glass-card">
-                                <div class="timeline-header">
-                                    <h3 class="timeline-title" data-key="exp2Title">Java Developer</h3>
-                                    <span class="timeline-company">Meisters Solutions</span>
-                                    <span class="timeline-period" data-key="exp2Period">Ago 2024 - Jul 2025</span>
-                                </div>
-                                <div class="timeline-description">
-                                    <p data-key="exp2Desc">
-                                        Atuei com desenvolvimento e sustentação de sistemas, com foco em soluções
-                                        escaláveis, automação de processos e integração de Inteligência Artificial. Tive
-                                        experiência em ambientes de missão crítica e projetos com grande impacto
-                                        operacional, utilizando tecnologias modernas e legadas.
-
-                                        Principais responsabilidades e conquistas:
-
-                                        Atuei na sustentação e evolução de sistema legado em Java 8 com Apache Tomcat e
-                                        MySQL, rodando em ambiente Linux.
-
-                                        Desenvolvi um sistema para um dos maiores centros de cuidados a idosos da
-                                        Europa, utilizando PHP (procedural) com Apache, MySQL e integração com jQuery e
-                                        sistemas internos.
-
-                                        Criei uma plataforma fiscal para gestão completa de NF-e, CT-e e NFS-e,
-                                        utilizando Laravel, PHP 8, MySQL e APIs REST.
-
-                                        Automatizei processos internos, reduzindo tarefas manuais que levavam em média 1
-                                        hora para menos de 5 minutos, com uso de scripts Python e agendamentos em Linux
-                                        (cron) e Windows Server (Tarefas Agendadas).
-
-                                        Criei ferramentas de Inteligência Artificial, com foco em análise preditiva e
-                                        suporte à decisão, usando Python, TensorFlow, PyTorch e Scikit-learn.
-
-                                        Desenvolvi dois sistemas beta com IA:
-
-                                        Ballesol CareAI um agente de IA com criptografia de ponta a ponta, que fornecia
-                                        informações em tempo real diretamente do banco de dados via API REST, hospedado
-                                        em AWS EC2.
-
-                                        BlauSight um sistema de gestão da qualidade para a indústria farmacêutica, que
-                                        integrava Flask + React com IA generativa para automação de processos internos,
-                                        análise de desvios, classificação e plano de ação.
-
-                                        Prestei apoio à análise de sistemas, levantamento de requisitos, elaboração de
-                                        relatórios técnicos e acompanhamento de todo o ciclo de desenvolvimento de
-                                        software.
-
-                                        Stack tecnológica utilizada:
-                                        Java 8, Apache Tomcat, PHP (procedural e Laravel), Node.js, React, Python,
-                                        Flask, TensorFlow, PyTorch, Scikit-learn, MySQL, AWS (EC2, S3), Docker, jQuery,
-                                        REST APIs, Linux, Windows Server.
-
-
-                                    </p>
-                                </div>
+                    <!-- Exp 2: Doublethree -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                             </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp2Title">Developer & Consultor</h3>
+                                <span class="exp-company">Doublethree</span>
+                            </div>
+                            <span class="exp-period" data-key="exp2Period">2024 — Presente</span>
+                        </div>
+                        <p class="exp-description" data-key="exp2Desc">
+                            Consultor de software entregando soluções end-to-end complexas — de aplicações web/móveis a sistemas de IA. Desenvolvi um motor de Inteligência Artificial para a indústria química (PLN + Machine Learning para análise preditiva de causa-raiz). Implementei soluções de Visão Computacional como sistema de almoxarifado com reconhecimento facial. Portfólio inclui apps mobile (gestão de faturas, energia solar), plataformas E-learning (LMS), sistemas de controle de acesso industrial e microserviços de geoprocessamento em tempo real.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Java</span><span class="tag">Go</span><span class="tag">Python</span>
+                            <span class="tag">ML/AI</span><span class="tag">Flutter</span><span class="tag">React</span>
+                            <span class="tag">Computer Vision</span><span class="tag">NLP</span>
                         </div>
                     </div>
 
-                    <div class="timeline-item" data-year="2023">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-card glass-card">
-                                <div class="timeline-header">
-                                    <h3 class="timeline-title" data-key="exp3Title">Agente de Suporte de TI</h3>
-                                    <span class="timeline-company">Positivo Tecnologia</span>
-                                    <span class="timeline-period" data-key="exp3Period">Dez 2023 - Jul 2024</span>
-                                </div>
-                                <div class="timeline-description">
-                                    <p data-key="exp3Desc">
-                                        Fiz parte do time de Tech Services da Positivo, onde desempenhei um papel
-                                        importante no suporte técnico para a International Meal Company (IMC). Minhas
-                                        atividades envolviam a administração do backlog, cuidando da distribuição das
-                                        demandas entre os colegas da equipe. Busquei seguir as boas práticas da ITIL
-                                        para avaliar a criticidade dos chamados de maneira mais eficiente.
-
-                                        Além disso, mantive uma comunicação direta com os fornecedores, lidando com
-                                        questões técnicas relacionadas a diversas tecnologias e sistemas fundamentais
-                                        para o suporte à IMC. Nesse ambiente, percebi que o sucesso do suporte técnico
-                                        dependia bastante dos conhecimentos individuais de cada membro da equipe e da
-                                        nossa base de conhecimento específica do projeto. A colaboração constante com os
-                                        fornecedores foi crucial para resolver problemas mais complexos e manter as
-                                        operações funcionando sem problemas, contribuindo para a satisfação contínua dos
-                                        clientes da IMC.
-                                    </p>
-                                </div>
+                    <!-- Exp 3: Meisters Solutions -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
                             </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp3Title">Java & PHP Developer</h3>
+                                <span class="exp-company">Meisters Solutions</span>
+                            </div>
+                            <span class="exp-period" data-key="exp3Period">2024 — 2025</span>
+                        </div>
+                        <p class="exp-description" data-key="exp3Desc">
+                            Desenvolvedor Full-Stack com Java (Spring Boot, Hibernate/JPA, Maven) e PHP (Laravel) para APIs RESTful de alta performance. Liderança técnica em projetos de Python e Machine Learning, focado na otimização de pipelines de dados (ETL/ELT) para o setor farmacêutico. Criação do BlauSight — sistema de gestão da qualidade com IA generativa — e do Ballesol CareAI, agente de IA com criptografia E2E hospedado em AWS.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Laravel</span>
+                            <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">AWS</span>
+                            <span class="tag">ETL/ELT</span><span class="tag">Docker</span>
                         </div>
                     </div>
 
-                    <div class="timeline-item" data-year="2023">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-card glass-card">
-                                <div class="timeline-header">
-                                    <h3 class="timeline-title" data-key="exp4Title">Technical Consultant</h3>
-                                    <span class="timeline-company">TRI CS Inc.</span>
-                                    <span class="timeline-period" data-key="exp4Period">Mar 2023 - Ago 2023</span>
-                                </div>
-                                <div class="timeline-description">
-                                    <p data-key="exp4Desc">
-                                        Atuei em projetos nacionais e internacionais de implementação Oracle,
-                                        desenvolvendo integrações e aplicativos com Oracle Integration Cloud (OIC) e
-                                        criando relatórios com Oracle BI Publisher.
-                                    </p>
-                                </div>
+                    <!-- Exp 4: Positivo -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                             </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp4Title">Agente de Suporte TI</h3>
+                                <span class="exp-company">Positivo Tecnologia</span>
+                            </div>
+                            <span class="exp-period" data-key="exp4Period">2023 — 2024</span>
+                        </div>
+                        <p class="exp-description" data-key="exp4Desc">
+                            Integrei o time de Tech Services da Positivo no suporte técnico à International Meal Company (IMC). Responsável pela administração e triagem do backlog, distribuição de demandas à equipe e aplicação de boas práticas ITIL para priorização por criticidade. Mantive comunicação direta com fornecedores para resolução de questões técnicas envolvendo infraestrutura, redes e sistemas críticos de operação. Experiência prática em troubleshooting de ambientes complexos e gestão de SLAs em operação de larga escala.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">ITIL</span><span class="tag">Troubleshooting</span><span class="tag">SLA</span>
+                            <span class="tag">Infraestrutura</span><span class="tag">Gestão de Backlog</span>
                         </div>
                     </div>
 
-                    <div class="timeline-item" data-year="2022">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-card glass-card">
-                                <div class="timeline-header">
-                                    <h3 class="timeline-title" data-key="exp5Title">Técnico de Suporte N1</h3>
-                                    <span class="timeline-company">ICI - Instituto Curitiba de Informática</span>
-                                    <span class="timeline-period" data-key="exp5Period">Ago 2022 - Mar 2023</span>
-                                </div>
-                                <div class="timeline-description">
-                                    <p data-key="exp5Desc">
-                                        Como Técnico de Suporte N1, fui responsável por fornecer suporte técnico inicial
-                                        à Prefeitura de Curitiba, solucionando problemas de software e hardware de forma
-                                        eficiente. Isso envolvia atendimento direto, diagnóstico e correção de erros de
-                                        sistema, manutenção de equipamentos e, quando necessário, escalonamento de
-                                        questões mais complexas para outros níveis de suporte. Trabalhei em colaboração
-                                        constante com equipes de infraestrutura, NOC, técnicos de campo, entre outros, e
-                                        fornecedores, para garantir soluções rápidas e eficazes, sempre mantendo a
-                                        comunicação clara com os clientes e documentando todos os chamados para um
-                                        melhor acompanhamento.
-                                    </p>
-                                </div>
+                    <!-- Exp 5: TRI CS -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                             </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp5Title">Consultor Técnico Oracle</h3>
+                                <span class="exp-company">TRI CS Inc.</span>
+                            </div>
+                            <span class="exp-period" data-key="exp5Period">2023</span>
+                        </div>
+                        <p class="exp-description" data-key="exp5Desc">
+                            Atuei em projetos nacionais e internacionais de implementação do ecossistema Oracle. Desenvolvi integrações entre sistemas corporativos utilizando Oracle Integration Cloud (OIC), construindo fluxos de orquestração, transformação de dados e conexões com APIs REST/SOAP. Criei relatórios analíticos e operacionais com Oracle BI Publisher para tomada de decisão. Experiência em ambientes enterprise com ciclos de implementação complexos e stakeholders multinacionais.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Oracle Cloud</span><span class="tag">OIC</span><span class="tag">BI Publisher</span>
+                            <span class="tag">REST/SOAP</span><span class="tag">Integrações</span><span class="tag">Enterprise</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp 6: ICI -->
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-accent"></div>
+                        <div class="exp-header">
+                            <div class="exp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="exp-title" data-key="exp6Title">Técnico de Suporte N1</h3>
+                                <span class="exp-company">ICI — Instituto Curitiba de Informática</span>
+                            </div>
+                            <span class="exp-period" data-key="exp6Period">2022 — 2023</span>
+                        </div>
+                        <p class="exp-description" data-key="exp6Desc">
+                            Suporte técnico direto à Prefeitura de Curitiba, abrangendo diagnóstico e resolução de problemas de software, hardware e rede. Colaboração constante com equipes de infraestrutura, NOC e técnicos de campo para escalonamento eficiente de incidentes. Responsável pela documentação de chamados e contribuição ativa à base de conhecimento do projeto, garantindo rastreabilidade e melhoria contínua dos processos de atendimento.
+                        </p>
+                        <div class="exp-tags">
+                            <span class="tag">Suporte N1</span><span class="tag">Redes</span><span class="tag">Hardware</span>
+                            <span class="tag">NOC</span><span class="tag">Documentação</span><span class="tag">ITSM</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-number">03.</span>
-                        Projetos em Destaque
-                    </h2>
-                    <div class="title-line"></div>
+                    <span class="section-number">03</span>
+                    <h2 class="section-title" data-key="projectsTitle">Projetos em Destaque</h2>
+                    <div class="section-line"></div>
                 </div>
 
                 <div class="projects-filter">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="ai">IA/ML</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="system">Sistemas</button>
+                    <button class="filter-btn active" data-filter="all" data-key="projFilterAll">Todos</button>
+                    <button class="filter-btn" data-filter="ai" data-key="projFilterAi">IA / ML</button>
+                    <button class="filter-btn" data-filter="platform" data-key="projFilterPlatform">Plataformas</button>
+                    <button class="filter-btn" data-filter="system" data-key="projFilterSystem">Sistemas</button>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 2: Quimera -->
-                    <div class="project-card glass-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/images/projects/quimera.jpg" alt="Quimera Chess AI">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/SamuelMauli/Quimera" class="project-link"
-                                        title="Ver Projeto">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                                    </a>
-                                </div>
-                            </div>
+
+                    <!-- BlauSight -->
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #6C5CE7; --icon-bg-light: rgba(108,92,231,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/></svg>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Quimera - Chess AI</h3>
-                            <p class="project-description">
-                                Modelo de IA para xadrez com dupla habilidade e modelagem preditiva do oponente.
-                                Algoritmos avançados de machine learning.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">C++</span>
-                                <span class="tech-tag">AI/ML</span>
-                                <span class="tech-tag">Algorithms</span>
-                                <span class="tech-tag">Chess Engine</span>
-                            </div>
+                        <h3 class="project-title">BlauSight</h3>
+                        <p class="project-subtitle" data-key="proj1Subtitle">Motor Preditivo de Qualidade e Compliance</p>
+                        <p class="project-description" data-key="proj1Desc">
+                            Solução de Machine Learning para a indústria farmacêutica que identifica falhas sistêmicas em linhas de produção, categoriza anomalias por origem (humana, operacional, maquinário) e gera planos de ação corretiva automatizados. Integra chatbot de suporte à qualidade com IA generativa, conectado ao banco de dados em tempo real via API REST, com criptografia ponta a ponta. Arquitetura Flask + React hospedada em AWS.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span><span class="tag">Flask</span><span class="tag">React</span>
+                            <span class="tag">Farmacêutica</span><span class="tag">Chatbot IA</span><span class="tag">AWS</span>
+                        </div>
+                    </article>
+
+                    <!-- IA Aplicada -->
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #E8FF47; --icon-bg-light: rgba(232,255,71,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><path d="M8.56 13a8 8 0 0 0-2.3 3.5"/><path d="M15.44 13a8 8 0 0 1 2.3 3.5"/><path d="M6 21h12"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj2Title">IA Aplicada com Propósito</h3>
+                        <p class="project-subtitle" data-key="proj2Subtitle">Inteligência Artificial para Impacto Real</p>
+                        <p class="project-description" data-key="proj2Desc">
+                            Desenvolvimento de soluções de IA com foco em impacto real e mensurável para negócios. Projetos que combinam modelos de linguagem (LLMs), visão computacional e automação inteligente para resolver desafios estratégicos — desde análise preditiva de causa-raiz em processos industriais até automação de documentos fiscais e agentes conversacionais com acesso a dados em tempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">LLMs</span><span class="tag">Computer Vision</span><span class="tag">NLP</span>
+                            <span class="tag">Automação</span><span class="tag">Estratégia</span>
+                        </div>
+                    </article>
+
+                    <!-- Energia Solar -->
+                    <article class="project-card" data-category="platform" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #FBBF24; --icon-bg-light: rgba(251,191,36,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj3Title">Solar Hub</h3>
+                        <p class="project-subtitle" data-key="proj3Subtitle">Plataforma de Gestão de Energia Solar</p>
+                        <p class="project-description" data-key="proj3Desc">
+                            Plataforma integrada para gestão operacional de usinas solares e distribuição de energia em modelo cooperativo. Inclui aplicativo mobile B2C para consumidores finais com monitoramento em tempo real do consumo e geração, dashboard administrativo para operadores, hub de benefícios para cooperados e sistema de faturamento automatizado integrado a gateways de pagamento.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span><span class="tag">Flutter</span><span class="tag">Node.js</span>
+                            <span class="tag">Energia Solar</span><span class="tag">B2C</span><span class="tag">Cooperativa</span>
+                        </div>
+                    </article>
+
+                    <!-- EdTech -->
+                    <article class="project-card" data-category="platform" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #34D399; --icon-bg-light: rgba(52,211,153,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj4Title">EduStack</h3>
+                        <p class="project-subtitle" data-key="proj4Subtitle">Ecossistema EdTech & E-commerce Educacional</p>
+                        <p class="project-description" data-key="proj4Desc">
+                            Plataforma educacional end-to-end para curso preparatório: gestão de conteúdo programático, aprendizagem gamificada com sistema de XP e rankings, análise de desempenho individual com dashboards visuais, motor de recomendações de estudo personalizadas e e-commerce integrado para venda de materiais e cursos com checkout próprio.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span><span class="tag">Laravel</span><span class="tag">MySQL</span>
+                            <span class="tag">Gamificação</span><span class="tag">LMS</span><span class="tag">E-commerce</span>
+                        </div>
+                    </article>
+
+                    <!-- Cuidados Idosos -->
+                    <article class="project-card" data-category="platform" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #F472B6; --icon-bg-light: rgba(244,114,182,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj5Title">CareLink</h3>
+                        <p class="project-subtitle" data-key="proj5Subtitle">Plataforma de Cuidados com Idosos</p>
+                        <p class="project-description" data-key="proj5Desc">
+                            Plataforma digital para gestão integrada de cuidados com idosos, conectando famílias, cuidadores e equipes de saúde em um único ecossistema. Funcionalidades incluem monitoramento em tempo real de sinais vitais, agenda inteligente de cuidados e medicações, prontuário eletrônico compartilhado, canal de comunicação seguro entre stakeholders e sistema de alertas configuráveis.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span><span class="tag">jQuery</span><span class="tag">MySQL</span>
+                            <span class="tag">Saúde</span><span class="tag">Mobile</span><span class="tag">API REST</span>
+                        </div>
+                    </article>
+
+                    <!-- SecureGate -->
+                    <article class="project-card" data-category="system" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #60A5FA; --icon-bg-light: rgba(96,165,250,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj6Title">SecureGate</h3>
+                        <p class="project-subtitle" data-key="proj6Subtitle">Governança de Acessos & Gestão de Facilities</p>
+                        <p class="project-description" data-key="proj6Desc">
+                            Sistema para o setor bioquímico com controle de segurança perimetral, credenciamento digital de fornecedores e motoristas, validação automática de NF-e na entrada e gestão inteligente de espaços corporativos (salas de reunião, auditórios, laboratórios). Inclui módulo de reconhecimento facial para controle de acesso e dashboard de ocupação em tempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span><span class="tag">Python</span><span class="tag">OpenCV</span>
+                            <span class="tag">Segurança</span><span class="tag">Facilities</span><span class="tag">NF-e</span>
+                        </div>
+                    </article>
+
+                    <!-- LibrasNow -->
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #A78BFA; --icon-bg-light: rgba(167,139,250,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 13"/></svg>
+                        </div>
+                        <h3 class="project-title">LibrasNow</h3>
+                        <p class="project-subtitle" data-key="proj7Subtitle">Interface de IA Assistiva</p>
+                        <p class="project-description" data-key="proj7Desc">
+                            Solução de inclusão digital que automatiza a tradução de linguagem de sinais para texto utilizando Edge Computing com baixíssima latência. O sistema processa gestos em tempo real via câmera, eliminando barreiras de acessibilidade e permitindo comunicação fluida entre surdos e ouvintes sem necessidade de intérprete humano.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">Edge AI</span><span class="tag">OpenCV</span>
+                            <span class="tag">Acessibilidade</span><span class="tag">Tempo Real</span>
+                        </div>
+                    </article>
+
+                    <!-- GeoTrack -->
+                    <article class="project-card" data-category="system" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #FB923C; --icon-bg-light: rgba(251,146,60,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <h3 class="project-title" data-key="proj8Title">GeoTrack</h3>
+                        <p class="project-subtitle" data-key="proj8Subtitle">Geoprocessamento em Tempo Real</p>
+                        <p class="project-description" data-key="proj8Desc">
+                            Microserviço de alta performance desenvolvido em Go para rastreamento geoespacial em tempo real. Alimenta simultaneamente centenas de usuários conectados via WebSocket com atualização de posição de mais de 100 motoristas em tempo real. Arquitetura otimizada para baixa latência e alta concorrência, com persistência geoespacial e cache distribuído.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Go</span><span class="tag">WebSocket</span><span class="tag">Redis</span>
+                            <span class="tag">PostGIS</span><span class="tag">Tempo Real</span><span class="tag">Docker</span>
+                        </div>
+                    </article>
+
+                    <!-- Quimera -->
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #F87171; --icon-bg-light: rgba(248,113,113,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 16l-1.447.724a1 1 0 0 0-.553.894V20a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.382a1 1 0 0 0-.553-.894L16 16"/><path d="M6 2h12l2 6H4z"/><path d="M6 8v8h12V8"/><line x1="10" y1="12" x2="10" y2="12.01"/><line x1="14" y1="12" x2="14" y2="12.01"/></svg>
+                        </div>
+                        <h3 class="project-title">Quimera</h3>
+                        <p class="project-subtitle" data-key="proj9Subtitle">Chess AI Engine</p>
+                        <p class="project-description" data-key="proj9Desc">
+                            Motor de xadrez com inteligência artificial que combina busca minimax com poda alfa-beta e avaliação posicional por redes neurais. O sistema analisa milhões de posições por segundo, prevê padrões de jogo do oponente e adapta sua estratégia dinamicamente. Implementado em C++ para máxima performance computacional.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span><span class="tag">AI/ML</span><span class="tag">Algorithms</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                    </article>
+
+                    <!-- Rust LavaLamp -->
+                    <article class="project-card" data-category="system" data-aos="fade-up">
+                        <div class="project-icon" style="--icon-bg: #E8FF47; --icon-bg-light: rgba(232,255,71,0.12)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <h3 class="project-title">Rust LavaLamp</h3>
+                        <p class="project-subtitle" data-key="proj10Subtitle">Entropia Criptográfica</p>
+                        <p class="project-description" data-key="proj10Desc">
+                            Projeto inspirado no LavaRand da Cloudflare para geração de entropia criptográfica verdadeiramente aleatória. Utiliza processamento de imagens para extrair ruído visual e convertê-lo em sementes criptográficas de alta qualidade. Implementado em Rust para garantir segurança de memória e performance bare-metal.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Rust</span><span class="tag">Criptografia</span><span class="tag">Segurança</span>
+                            <span class="tag">Image Processing</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills / Stack -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title" data-key="skillsTitle">Tech Stack</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title" data-key="skillsCat1">Linguagens</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>Java</span></div>
+                            <div class="skill-chip"><span>Python</span></div>
+                            <div class="skill-chip"><span>Go</span></div>
+                            <div class="skill-chip"><span>Rust</span></div>
+                            <div class="skill-chip"><span>PHP</span></div>
+                            <div class="skill-chip"><span>TypeScript</span></div>
+                            <div class="skill-chip"><span>JavaScript</span></div>
+                            <div class="skill-chip"><span>C++</span></div>
+                            <div class="skill-chip"><span>Dart</span></div>
+                            <div class="skill-chip"><span>Kotlin</span></div>
+                            <div class="skill-chip"><span>Swift</span></div>
+                            <div class="skill-chip"><span>SQL</span></div>
                         </div>
                     </div>
 
-                    <!-- Project 3: BlauSight -->
-                    <div class="project-card glass-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/images/projects/blausight.jpg" alt="BlauSight">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/SamuelMauli/BlauSight" class="project-link"
-                                        title="Ver Projeto">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">BlauSight</h3>
-                            <p class="project-description">
-                                Sistema de visão computacional avançado para análise e processamento
-                                de imagens em tempo real com aplicações em IA.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Computer Vision</span>
-                                <span class="tech-tag">OpenCV</span>
-                                <span class="tech-tag">Deep Learning</span>
-                            </div>
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title">Frameworks & Libraries</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>Spring Boot</span></div>
+                            <div class="skill-chip"><span>Laravel</span></div>
+                            <div class="skill-chip"><span>React</span></div>
+                            <div class="skill-chip"><span>Next.js</span></div>
+                            <div class="skill-chip"><span>Vue.js</span></div>
+                            <div class="skill-chip"><span>Node.js</span></div>
+                            <div class="skill-chip"><span>Flask</span></div>
+                            <div class="skill-chip"><span>Flutter</span></div>
+                            <div class="skill-chip"><span>Hibernate/JPA</span></div>
+                            <div class="skill-chip"><span>jQuery</span></div>
                         </div>
                     </div>
 
-                    <!-- Project 4: LibrasNow -->
-                    <div class="project-card glass-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/images/projects/librasnow.jpg" alt="LibrasNow">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/SamuelMauli/LibrasNow" class="project-link"
-                                        title="Ver Projeto">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">LibrasNow</h3>
-                            <p class="project-description">
-                                Plataforma de acessibilidade para tradução e interpretação de Libras
-                                usando inteligência artificial e visão computacional.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">AI/ML</span>
-                                <span class="tech-tag">Accessibility</span>
-                                <span class="tech-tag">Libras</span>
-                            </div>
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title" data-key="skillsCat3">IA / ML & Dados</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>TensorFlow</span></div>
+                            <div class="skill-chip"><span>PyTorch</span></div>
+                            <div class="skill-chip"><span>Scikit-learn</span></div>
+                            <div class="skill-chip"><span>OpenCV</span></div>
+                            <div class="skill-chip"><span>LLMs</span></div>
+                            <div class="skill-chip"><span>NLP</span></div>
+                            <div class="skill-chip"><span>Computer Vision</span></div>
+                            <div class="skill-chip"><span>ETL/ELT</span></div>
                         </div>
                     </div>
 
-                    <!-- Project 5: ManagerAI -->
-                    <div class="project-card glass-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/images/projects/managerai.jpg" alt="ManagerAI">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/SamuelMauli/ManagerAI" class="project-link"
-                                        title="Ver Projeto">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">ManagerAI</h3>
-                            <p class="project-description">
-                                Sistema inteligente de gerenciamento empresarial com IA para
-                                otimização de processos e tomada de decisões automatizada.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">AI/ML</span>
-                                <span class="tech-tag">Management</span>
-                                <span class="tech-tag">Automation</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 1: Sistema Active Directory -->
-                    <div class="project-card glass-card" data-category="system">
-                        <div class="project-image">
-                            <img src="assets/images/projects/active-directory.jpg" alt="Sistema Active Directory">
-                            <div class="project-overlay">
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Sistema Active Directory Customizado</h3>
-                            <p class="project-description">
-                                Sistema de controle de acesso granular e centralizado desenvolvido para
-                                resolver necessidades críticas de segurança empresarial.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Laravel</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">LDAP</span>
-                                <span class="tech-tag">Security</span>
-                            </div>
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title" data-key="skillsCat4">Cloud & DevOps</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>AWS</span></div>
+                            <div class="skill-chip"><span>Docker</span></div>
+                            <div class="skill-chip"><span>CI/CD</span></div>
+                            <div class="skill-chip"><span>Git</span></div>
+                            <div class="skill-chip"><span>Linux</span></div>
+                            <div class="skill-chip"><span>Nginx</span></div>
+                            <div class="skill-chip"><span>Redis</span></div>
+                            <div class="skill-chip"><span>RabbitMQ</span></div>
                         </div>
                     </div>
 
-                    <!-- Project 6: Rust LavaLamp -->
-                    <div class="project-card glass-card" data-category="system">
-                        <div class="project-image">
-                            <img src="assets/images/projects/rust-lavalamp.jpg" alt="Rust LavaLamp">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/SamuelMauli/Rust-LavaLamp" class="project-link"
-                                        title="Ver Projeto">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title">Databases</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>PostgreSQL</span></div>
+                            <div class="skill-chip"><span>MySQL</span></div>
+                            <div class="skill-chip"><span>MongoDB</span></div>
+                            <div class="skill-chip"><span>PostGIS</span></div>
+                            <div class="skill-chip"><span>Amazon Redshift</span></div>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Rust LavaLamp</h3>
-                            <p class="project-description">
-                                Projeto educacional inspirado no LavaRand da Cloudflare para geração
-                                de entropia criptográfica usando imagens aleatórias.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Rust</span>
-                                <span class="tech-tag">Cryptography</span>
-                                <span class="tech-tag">Security</span>
-                                <span class="tech-tag">Random</span>
-                            </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-cat-title" data-key="skillsCat6">Mobile & Multiplataforma</h3>
+                        <div class="skill-items">
+                            <div class="skill-chip"><span>Flutter</span></div>
+                            <div class="skill-chip"><span>Kotlin</span></div>
+                            <div class="skill-chip"><span>Swift</span></div>
+                            <div class="skill-chip"><span>React Native</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Contact -->
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-number">05.</span>
-                        <span data-key="contactTitle">Vamos Conversar?</span>
-                    </h2>
-                    <div class="title-line"></div>
+                    <span class="section-number">05</span>
+                    <h2 class="section-title" data-key="contactTitle">Vamos Conversar?</h2>
+                    <div class="section-line"></div>
                 </div>
 
                 <div class="contact-content">
                     <div class="contact-info">
-                        <div class="contact-card glass-card">
-                            <h3 class="contact-subtitle" data-key="contactSubtitle">Entre em Contato</h3>
-                            <p class="contact-description" data-key="contactDesc">
-                                Estou sempre aberto a novas oportunidades e projetos interessantes.
-                                Vamos criar algo incrível juntos!
-                            </p>
-
-                            <div class="contact-methods">
-                                <a href="mailto:samuel.mauli@gmail.com" class="contact-method">
-                                    <div class="method-icon">
-                                        <img src="assets/images/icons/gmail.png" alt="Email" class="method-img-icon">
-                                    </div>
-                                    <div class="method-info">
-                                        <span class="method-label">Email</span>
-                                        <span class="method-value">samuel.mauli@gmail.com</span>
-                                    </div>
-                                </a>
-
-                                <a href="tel:+5547992770701" class="contact-method">
-                                    <div class="method-icon">
-                                        <img src="assets/images/icons/smartphone.png" alt="Telefone"
-                                            class="method-img-icon">
-                                    </div>
-                                    <div class="method-info">
-                                        <span class="method-label" data-key="contactPhone">Telefone</span>
-                                        <span class="method-value">+55 (47) 99277-0701</span>
-                                    </div>
-                                </a>
-
-                                <a href="https://www.linkedin.com/in/samuelmauli/" class="contact-method">
-                                    <div class="method-icon">
-                                        <img src="assets/images/icons/linkedin.png" alt="LinkedIn"
-                                            class="method-img-icon">
-                                    </div>
-                                    <div class="method-info">
-                                        <span class="method-label">LinkedIn</span>
-                                        <span class="method-value">in/samuelmauli</span>
-                                    </div>
-                                </a>
-
-                                <a href="https://github.com/SamuelMauli" class="contact-method">
-                                    <div class="method-icon">
-                                        <img src="assets/images/icons/github.png" alt="GitHub" class="method-img-icon">
-                                    </div>
-                                    <div class="method-info">
-                                        <span class="method-label">GitHub</span>
-                                        <span class="method-value">SamuelMauli</span>
-                                    </div>
-                                </a>
-                            </div>
+                        <p class="contact-lead" data-key="contactDesc">
+                            Estou sempre aberto a novas oportunidades, projetos desafiadores e parcerias estratégicas. Vamos construir algo extraordinário juntos.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="mailto:samuel.mauli@gmail.com" class="contact-card">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">samuel.mauli@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/samuelmauli/" class="contact-card" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value">in/samuelmauli</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/SamuelMauli" class="contact-card" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                <div>
+                                    <span class="contact-label">GitHub</span>
+                                    <span class="contact-value">SamuelMauli</span>
+                                </div>
+                            </a>
+                            <a href="tel:+5547992770701" class="contact-card">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div>
+                                    <span class="contact-label" data-key="contactPhone">Telefone</span>
+                                    <span class="contact-value">+55 (47) 99277-0701</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="contact-form-container">
-                        <form class="contact-form glass-card" id="contactForm">
-                            <div class="form-group">
-                                <label for="name" class="form-label" data-key="formName">Nome</label>
-                                <input type="text" id="name" name="name" class="form-input" required>
-                                <div class="input-glow"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" name="email" class="form-input" required>
-                                <div class="input-glow"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject" class="form-label" data-key="formSubject">Assunto</label>
-                                <input type="text" id="subject" name="subject" class="form-input" required>
-                                <div class="input-glow"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message" class="form-label" data-key="formMessage">Mensagem</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="5"
-                                    required></textarea>
-                                <div class="input-glow"></div>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary form-submit">
-                                <span class="btn-text" data-key="formSubmit">Enviar Mensagem</span>
-                                <span class="btn-glow"></span>
-                            </button>
-                        </form>
-                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="formName">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-key="formSubject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="formMessage">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-full">
+                            <span data-key="formSubmit">Enviar Mensagem</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p data-key="footerText">&copy; 2025 Samuel Mauli. Desenvolvido com 💙 e muito ☕</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://github.com/SamuelMauli" class="social-link" title="GitHub">
-                        <img src="assets/images/icons/github.png" alt="GitHub" class="social-img-icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/samuelmauli/" class="social-link" title="LinkedIn">
-                        <img src="assets/images/icons/linkedin.png" alt="LinkedIn" class="social-img-icon">
-                    </a>
-                    <a href="mailto:samuel.mauli@gmail.com" class="social-link" title="Email">
-                        <img src="assets/images/icons/gmail.png" alt="Email" class="social-img-icon">
-                    </a>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">SM<span class="accent-dot">.</span></span>
+                <p class="footer-text" data-key="footerText">&copy; 2025 Samuel Mauli. Curitiba, PR.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/SamuelMauli" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/samuelmauli/" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="mailto:samuel.mauli@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
-    <script src="components/particles.js"></script>
-    <script src="components/matrix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/skills-chart.js"></script>
 </body>
 
 </html>
