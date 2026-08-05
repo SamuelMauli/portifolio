@@ -288,12 +288,14 @@ ul { list-style: none; }
 }
 .about-text strong { color: var(--text); font-weight: 600; }
 
+/* auto-fit em vez de 2 colunas fixas: com 6 indicadores, colar em 1fr 1fr
+   empilharia 3 linhas altas na coluna lateral. */
 .about-stats {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); gap: 0.8rem;
 }
 .stat-card {
   background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 1.5rem;
+  border-radius: var(--radius); padding: 1.1rem 0.9rem;
   text-align: center; transition: all var(--transition);
 }
 .stat-card:hover {
@@ -502,6 +504,39 @@ ul { list-style: none; }
   border-color: var(--accent); box-shadow: 0 0 0 3px rgba(232,255,71,0.1);
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
+
+/* Honeypot anti-bot: precisa existir no DOM e ser submetido, mas nunca ser
+   visto nem alcançado por teclado. `display:none` é evitado de propósito —
+   parte dos bots ignora campo com display none. */
+.form-honeypot {
+  position: absolute; left: -9999px; width: 1px; height: 1px;
+  overflow: hidden; opacity: 0; pointer-events: none;
+}
+
+.form-consent label {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  font-size: 0.8rem; line-height: 1.5; color: var(--text-secondary);
+  cursor: pointer;
+}
+.form-consent input[type="checkbox"] {
+  margin-top: 0.15rem; width: 16px; height: 16px; flex-shrink: 0;
+  accent-color: var(--accent); cursor: pointer;
+}
+.form-consent label:hover { color: var(--text); }
+
+/* Vazio por padrão: só ocupa espaço quando há mensagem para mostrar. */
+.form-status { font-size: 0.82rem; line-height: 1.5; margin: 0; }
+.form-status:empty { display: none; }
+.form-status-success {
+  color: #34D399; padding: 0.7rem 0.9rem; border-radius: var(--radius-sm);
+  background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.25);
+}
+.form-status-error {
+  color: #F87171; padding: 0.7rem 0.9rem; border-radius: var(--radius-sm);
+  background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.25);
+}
+
+#contactSubmit:disabled { opacity: 0.55; cursor: not-allowed; }
 
 /* ===== FOOTER ===== */
 .footer {
