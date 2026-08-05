@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=20260805">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=20260805">
 
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -784,12 +784,28 @@
                         </div>
 
                         <button type="submit" class="btn btn-accent btn-full" id="contactSubmit">
+                            <span class="btn-spinner" aria-hidden="true"></span>
                             <span data-key="formSubmit">Enviar Mensagem</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                         </button>
 
                         <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
                     </form>
+
+                    <!-- Confirmação: substitui o formulário quando a mensagem sai -->
+                    <div class="form-sent" id="contactSent" role="status" aria-live="polite" hidden>
+                        <div class="form-sent-check" aria-hidden="true">
+                            <svg viewBox="0 0 52 52">
+                                <circle class="check-circle" cx="26" cy="26" r="23" fill="none"/>
+                                <path class="check-mark" fill="none" d="M14 27l8 8 16-16"/>
+                            </svg>
+                        </div>
+                        <h3 class="form-sent-title" data-key="formSentTitle">Mensagem enviada</h3>
+                        <p class="form-sent-text" data-key="formSentText">Chegou direto no meu e-mail. Retorno em até 1 dia útil.</p>
+                        <button type="button" class="btn btn-outline btn-sm" id="contactAgain">
+                            <span data-key="formSentAgain">Enviar outra mensagem</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -816,7 +832,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20260805"></script>
 </body>
 
 </html>

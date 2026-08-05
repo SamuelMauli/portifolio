@@ -1,6 +1,9 @@
 // ===== TRANSLATIONS =====
 const translations = {
     pt: {
+        formSentTitle: "Mensagem enviada",
+        formSentText: "Chegou direto no meu e-mail. Retorno em até 1 dia útil.",
+        formSentAgain: "Enviar outra mensagem",
         aboutStat3: "Produtos Próprios",
         aboutStat4: "Apps nas Lojas",
         aboutStat5: "Linguagens",
@@ -111,6 +114,9 @@ const translations = {
         proj16Subtitle: "20 processos, 8 negócios, 1 servidor",
     },
     en: {
+        formSentTitle: "Message sent",
+        formSentText: "It landed straight in my inbox. I'll get back to you within 1 business day.",
+        formSentAgain: "Send another message",
         aboutStat3: "Own Products",
         aboutStat4: "Apps on Stores",
         aboutStat5: "Languages (code)",
@@ -221,6 +227,9 @@ const translations = {
         exp2Desc3: "I also own the infrastructure: a full migration from AWS EC2 to a VPS (databases and object storage), around 20 processes for eight businesses behind Caddy, observability with Prometheus/Grafana/Loki/Alertmanager, and backups with proven PITR (RTO measured at 38 minutes).",
     },
     es: {
+        formSentTitle: "Mensaje enviado",
+        formSentText: "Llegó directo a mi correo. Respondo en hasta 1 día hábil.",
+        formSentAgain: "Enviar otro mensaje",
         aboutStat3: "Productos Propios",
         aboutStat4: "Apps en Tiendas",
         aboutStat5: "Lenguajes",
@@ -558,7 +567,19 @@ function initContactForm() {
 
     var botao = document.getElementById('contactSubmit');
     var status = document.getElementById('contactStatus');
+    var confirmacao = document.getElementById('contactSent');
+    var botaoNovaMensagem = document.getElementById('contactAgain');
     var rotuloBotao = botao ? botao.querySelector('[data-key="formSubmit"]') : null;
+
+    // "Enviar outra mensagem" traz o formulário de volta, em branco.
+    if (botaoNovaMensagem) {
+        botaoNovaMensagem.addEventListener('click', function() {
+            if (confirmacao) confirmacao.hidden = true;
+            form.hidden = false;
+            var primeiroCampo = form.querySelector('#name');
+            if (primeiroCampo) primeiroCampo.focus();
+        });
+    }
 
     function mostrarStatus(tipo, chave) {
         if (!status) return;
@@ -594,7 +615,10 @@ function initContactForm() {
             return;
         }
 
-        if (botao) botao.disabled = true;
+        if (botao) {
+            botao.disabled = true;
+            botao.classList.add('is-sending');
+        }
         if (rotuloBotao) rotuloBotao.textContent = t('formSending');
 
         fetch(CONTACT_ENDPOINT, {
@@ -615,7 +639,16 @@ function initContactForm() {
         }).then(function(r) {
             if (r.status === 201) {
                 form.reset();
-                mostrarStatus('success', 'formSuccess');
+                limparStatus();
+                // Troca o formulário pelo card de confirmação — o check é
+                // desenhado por CSS quando o elemento deixa de estar hidden.
+                if (confirmacao) {
+                    form.hidden = true;
+                    confirmacao.hidden = false;
+                    confirmacao.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    mostrarStatus('success', 'formSuccess');
+                }
                 return;
             }
             if (r.status === 429) {
@@ -636,7 +669,10 @@ function initContactForm() {
         }).catch(function() {
             mostrarStatus('error', 'formErrorNetwork');
         }).finally(function() {
-            if (botao) botao.disabled = false;
+            if (botao) {
+                botao.disabled = false;
+                botao.classList.remove('is-sending');
+            }
             // Resolve pelo idioma corrente em vez de restaurar um texto
             // capturado no init — o visitante pode ter trocado o idioma.
             if (rotuloBotao) rotuloBotao.textContent = t('formSubmit');
