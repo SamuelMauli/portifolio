@@ -496,6 +496,27 @@ function initTypingEffect() {
 }
 
 // ===== COUNTERS =====
+// Anos completos desde uma data — usado pelo contador de experiência para não
+// depender de alguém lembrar de trocar o número todo aniversário. O
+// `data-count` do HTML continua servindo de valor de fallback, caso o atributo
+// de data esteja ausente ou mal formado.
+function anosCompletosDesde(dataIso) {
+    var partes = String(dataIso || '').split('-');
+    if (partes.length !== 3) return null;
+
+    var ano = parseInt(partes[0], 10);
+    var mes = parseInt(partes[1], 10);
+    var dia = parseInt(partes[2], 10);
+    if (!ano || !mes || !dia) return null;
+
+    var hoje = new Date();
+    var anos = hoje.getFullYear() - ano;
+    // Ainda não chegou o mês/dia do aniversário neste ano: desconta um.
+    var mesAtual = hoje.getMonth() + 1;
+    if (mesAtual < mes || (mesAtual === mes && hoje.getDate() < dia)) anos -= 1;
+    return anos > 0 ? anos : null;
+}
+
 function initCounters() {
     var counters = document.querySelectorAll('[data-count]');
     var observer = new IntersectionObserver(function(entries) {
@@ -503,6 +524,10 @@ function initCounters() {
             if (entry.isIntersecting) {
                 var el = entry.target;
                 var target = parseInt(el.dataset.count);
+                if (el.dataset.countSince) {
+                    var calculado = anosCompletosDesde(el.dataset.countSince);
+                    if (calculado !== null) target = calculado;
+                }
                 var duration = 1500;
                 var step = target / (duration / 16);
                 var current = 0;
