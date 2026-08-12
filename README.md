@@ -35,9 +35,12 @@ python3 -m http.server 8000   # http://localhost:8000
 
 GitHub Pages pelo workflow em `.github/workflows/` — todo push em `main` publica.
 
-## Acessibilidade
+## Acessibilidade — estado atual
 
-Respeita `prefers-reduced-motion`, navegável por teclado e com contraste verificado no par fundo/acento.
+`prefers-reduced-motion` hoje cobre apenas o spinner e a confirmação do formulário
+(`assets/css/main.css`). Parallax, revelações de scroll e o efeito do hero **não**
+respeitam a preferência ainda, e o estilo de foco visível está definido em um único
+seletor. Pendente.
 
 ---
 
