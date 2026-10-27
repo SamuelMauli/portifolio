@@ -31,7 +31,6 @@ const translations = {
         heroDescription: "Lidero equipes de desenvolvimento e a entrega de produto de ponta a ponta — do problema de negócio ao que roda em produção. Cofundador da Doublethree e tech lead, com <span class=\"text-accent\">10 produtos próprios</span> no ar, apps <span class=\"text-accent\">mobile</span> nas duas lojas e <span class=\"text-accent\">IA rodando dentro do perímetro do cliente</span>.",
         heroBtnProjects: "Ver Projetos",
         heroBtnContact: "Contato",
-        heroBadge: "Disponível para projetos",
         heroScroll: "scroll",
         aboutTitle: "Sobre Mim",
         aboutLead: "Cofundador e tech lead. Lidero equipes de desenvolvimento e levo produto do problema de negócio à produção — e depois respondo por mantê-lo no ar.",
@@ -183,7 +182,6 @@ const translations = {
         heroDescription: "I lead development teams and own product delivery end to end — from the business problem to what runs in production. Co-founder at Doublethree and tech lead, with <span class=\"text-accent\">10 proprietary products</span> live, <span class=\"text-accent\">mobile</span> apps on both stores, and <span class=\"text-accent\">AI running inside the client's perimeter</span>.",
         heroBtnProjects: 'View Projects',
         heroBtnContact: 'Contact',
-        heroBadge: 'Available for projects',
         heroScroll: 'scroll',
         aboutTitle: 'About Me',
         aboutLead: "Co-founder and tech lead. I lead development teams and take products from the business problem to production — and then own keeping them up.",
@@ -301,7 +299,6 @@ const translations = {
         heroDescription: "Lidero equipos de desarrollo y soy responsable de la entrega de producto de punta a punta — del problema de negocio a lo que corre en producción. Cofundador de Doublethree y tech lead, con <span class=\"text-accent\">10 productos propios</span> en el aire, apps <span class=\"text-accent\">mobile</span> en las dos tiendas e <span class=\"text-accent\">IA corriendo dentro del perímetro del cliente</span>.",
         heroBtnProjects: 'Ver Proyectos',
         heroBtnContact: 'Contacto',
-        heroBadge: 'Disponible para proyectos',
         heroScroll: 'scroll',
         aboutTitle: 'Sobre Mí',
         aboutLead: "Cofundador y tech lead. Lidero equipos de desarrollo y llevo el producto del problema de negocio a la producción — y después respondo por mantenerlo en el aire.",
@@ -578,16 +575,22 @@ function initProjectFilters() {
 
             cards.forEach(function(card) {
                 var match = filter === 'all' || card.dataset.category === filter;
-                card.style.display = match ? '' : 'none';
-                if (match) {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(16px)';
-                    requestAnimationFrame(function() {
-                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    });
-                }
+                if (!match) { card.style.display = 'none'; return; }
+                card.style.display = '';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(16px)';
+                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                requestAnimationFrame(function() {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+                // Limpa o estilo inline após a entrada, senão o transform/transition
+                // grudado sobrepõe o :hover do CSS e mata a interação do card.
+                setTimeout(function() {
+                    card.style.transition = '';
+                    card.style.transform = '';
+                    card.style.opacity = '';
+                }, 460);
             });
         });
     });

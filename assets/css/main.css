@@ -338,19 +338,6 @@ ul { list-style: none; }
   border-radius: calc(var(--r-panel) + 8px);
   opacity: 0.3;
 }
-.photo-badge {
-  position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
-  background: var(--bg-card); border: 1px solid var(--border-hover);
-  border-radius: var(--r-pill); padding: var(--s-2) var(--s-4);
-  display: flex; align-items: center; gap: var(--s-2);
-  font-size: var(--fs-xs); color: var(--text-secondary); white-space: nowrap;
-  box-shadow: var(--lift-rest);
-}
-.badge-dot {
-  width: 8px; height: 8px; background: var(--success); border-radius: 50%;
-  animation: badgePulse calc(var(--f) * 60) var(--ease-signature) infinite;
-}
-
 .scroll-indicator {
   position: absolute; bottom: var(--s-8); left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: var(--s-2);
@@ -761,10 +748,6 @@ ul { list-style: none; }
 @keyframes blink {
   0%, 100% { opacity: 1; } 50% { opacity: 0; }
 }
-@keyframes badgePulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(1.4); }
-}
 @keyframes scrollPulse {
   0% { opacity: 1; transform: scaleY(1); }
   50% { opacity: 0.3; }
@@ -805,7 +788,7 @@ ul { list-style: none; }
   html { scroll-behavior: auto; }
   .hero-greeting, .hero-name, .hero-role-wrapper, .hero-description,
   .hero-buttons, .hero-visual, .scroll-indicator { animation: none; }
-  .loading-logo, .badge-dot, .scroll-line { animation: none; }
+  .loading-logo, .scroll-line { animation: none; }
   .typing-cursor { animation: none; }
   [data-aos="fade-up"] { transform: none; transition: opacity var(--t-micro) linear; }
   [data-aos="fade-up"].visible { transform: none; }
