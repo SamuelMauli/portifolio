@@ -115,6 +115,8 @@ const translations = {
         proj15Subtitle: "App de escala de plantão",
         proj16Desc: "Migrei toda a operação de AWS EC2 para um VPS de 8 vCPU e 32 GB, incluindo bancos e objetos, e hoje sustento cerca de 20 processos de oito negócios distintos atrás de Caddy com certificado wildcard por DNS-01. Observabilidade completa com Prometheus, Grafana, Loki, Alertmanager e exporters. O backup tem PITR provado, não presumido: um restore com recovery_target_time parou a 1,2 segundo do alvo, com dado validado e RTO medido em 38 minutos.",
         proj16Subtitle: "20 processos, 8 negócios, 1 servidor",
+        proj17Subtitle: "Camada de WhatsApp sobre a Cloud API da Meta",
+        proj17Desc: "Camada conversacional de WhatsApp que conecta os produtos da casa ao canal onde o cliente realmente responde. Sobre a Cloud API oficial da Meta, com webhook assinado e verificado: entrega de resultados (o Licitaqui manda ao usuário só os editais que ele pode ganhar), qualificação de leads e atendimento com agente de IA. O LLM responde com RAG sobre a base da conta e a IA pode rodar on-premise, sem o dado da conversa sair do perímetro do cliente.",
     },
     en: {
         formSentTitle: "Message sent",
@@ -167,6 +169,8 @@ const translations = {
         proj15Desc: "A Flutter app for managing the on-call rota of a network operations centre, with a Firebase backend. Shift distribution, swaps between operators and change notifications.",
         proj16Subtitle: "20 processes, 8 businesses, 1 server",
         proj16Desc: "I migrated the whole operation from AWS EC2 to an 8 vCPU / 32 GB VPS, databases and object storage included, and today I run around 20 processes for eight distinct businesses behind Caddy with a wildcard certificate issued over DNS-01. Full observability with Prometheus, Grafana, Loki, Alertmanager and exporters. The backup has proven PITR, not assumed: a restore with recovery_target_time landed 1.2 seconds from target, data validated, RTO measured at 38 minutes.",
+        proj17Subtitle: "WhatsApp layer on top of Meta Cloud API",
+        proj17Desc: "A conversational WhatsApp layer that plugs the in-house products into the channel where clients actually reply. Built on Meta's official Cloud API with a signed, verified webhook: result delivery (Licitaqui sends each user only the tenders they can win), lead qualification and support through an AI agent. The LLM answers with RAG over the account's own base, and the AI can run on-premise so the conversation data never leaves the client perimeter.",
         navHome: 'Home',
         navAbout: 'About',
         navExperience: 'Experience',
@@ -283,6 +287,8 @@ const translations = {
         proj15Desc: "App Flutter para gestión de turnos de guardia de un centro de operaciones de red, con backend Firebase. Distribución de turnos, cambios entre operadores y notificación de cambios.",
         proj16Subtitle: "20 procesos, 8 negocios, 1 servidor",
         proj16Desc: "Migré toda la operación de AWS EC2 a un VPS de 8 vCPU y 32 GB, incluyendo bases y objetos, y hoy sostengo cerca de 20 procesos de ocho negocios distintos detrás de Caddy con certificado wildcard por DNS-01. Observabilidad completa con Prometheus, Grafana, Loki, Alertmanager y exporters. El backup tiene PITR probado, no presumido: un restore con recovery_target_time paró a 1,2 segundos del objetivo, con RTO medido en 38 minutos.",
+        proj17Subtitle: "Capa de WhatsApp sobre la Cloud API de Meta",
+        proj17Desc: "Capa conversacional de WhatsApp que conecta los productos de la casa al canal donde el cliente realmente responde. Sobre la Cloud API oficial de Meta, con webhook firmado y verificado: entrega de resultados (Licitaqui envía al usuario solo las licitaciones que puede ganar), calificación de leads y atención con un agente de IA. El LLM responde con RAG sobre la base de la cuenta y la IA puede correr on-premise, sin que el dato de la conversación salga del perímetro del cliente.",
         navHome: 'Inicio',
         navAbout: 'Sobre Mí',
         navExperience: 'Experiencia',
@@ -384,9 +390,9 @@ function setLanguage(lang) {
 
     // CV downloads match selected language
     var cvUrls = {
-        pt: 'Doc/SamuelMauli_PtBr.pdf',
-        en: 'Doc/SamuelMauli_en.pdf',
-        es: 'Doc/SamuelMauli_Es.pdf'
+        pt: 'Doc/SamuelMauli_PtBr.pdf?v=20261026',
+        en: 'Doc/SamuelMauli_en.pdf?v=20261026',
+        es: 'Doc/SamuelMauli_Es.pdf?v=20261026'
     };
     var cvLink = document.getElementById('cv-download-link');
     var cvLinkMobile = document.getElementById('cv-download-link-mobile');
