@@ -325,12 +325,12 @@ ul { list-style: none; }
   animation: fadeIn var(--t-title) var(--ease-signature) calc(var(--f) * 14) both;
 }
 .hero-photo-wrapper {
-  position: relative; width: 320px; height: 384px;
+  position: relative; width: 340px; height: 452px;
 }
 .hero-photo {
-  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 18%;
   border-radius: var(--r-panel);
-  filter: grayscale(20%) contrast(1.05);
+  filter: grayscale(100%) contrast(1.04);
 }
 /* cantos concêntricos: raio externo = raio da foto + folga de 8px */
 .photo-border {
